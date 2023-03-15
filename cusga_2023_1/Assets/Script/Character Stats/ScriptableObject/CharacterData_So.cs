@@ -10,7 +10,5 @@ public class CharacterData_So : ScriptableObject
 
     public int currentHealth;//当前生命值
 
-    public int maxDenfence;//最大护盾值
-
-    public int currentDefence;//当前护盾值
+    public int Defence;//当前护盾值
 }

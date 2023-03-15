@@ -27,6 +27,7 @@ public class EnemyFSM : MonoBehaviour
     public float patrolRange;
     public float patrolMaxTime;
     public float patrolMinTime;
+    public Obstacles obstacles;//TODO 只是测试，后面改
     [HideInInspector] public Vector2 awakePos;
     [HideInInspector] public Vector2 targetPos;
     
@@ -81,10 +82,18 @@ public class EnemyFSM : MonoBehaviour
     {
         float randomX = Random.Range(-patrolRange,patrolRange);
         float randomY = Random.Range(-patrolRange, patrolRange);
-        
-        targetPos = new Vector2(awakePos.x+randomX,awakePos.y + randomY);
-        
-        FlipTo();
+
+        targetPos.x = awakePos.x + randomX;
+        targetPos.y = awakePos.y + randomY;
+
+        while (obstacles.GetPosInCollider(targetPos))
+        {
+            randomX = Random.Range(-patrolRange,patrolRange);
+            randomY = Random.Range(-patrolRange, patrolRange);
+            
+            targetPos.x = awakePos.x + randomX;
+            targetPos.y = awakePos.y + randomY; 
+        }
     }
 
     public void FlipTo()//转向函数
@@ -105,12 +114,12 @@ public class EnemyFSM : MonoBehaviour
 
         GameObject newBullet = PoolManager.Release(bullet, basicBullet.position, Quaternion.identity);
 
-        newBullet.GetComponent<EnemyBullet>().SetSpeed(direction);
+        newBullet.GetComponent<Bullet>().SetSpeed(direction);
         
     }
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireCube(awakePos,new Vector2(4,4));
+        Gizmos.DrawWireCube(awakePos,new Vector2(patrolRange*2,patrolRange*2));
     }
 }

@@ -40,20 +40,10 @@ public class CharacterInfo : MonoBehaviour
     {
         get
         {
-            if (characterData != null) return characterData.maxDenfence;
+            if (characterData != null) return characterData.Defence;
             else return 0;
         }
-        set { characterData.maxDenfence = value; }
-    }
-
-    public int CurrentDefence
-    {
-        get
-        {
-            if (characterData != null) return characterData.currentDefence;
-            else return 0;
-        }
-        set { characterData.currentDefence = value; }
+        set { characterData.Defence = value; }
     }
 
     public float AttackRange
@@ -75,27 +65,7 @@ public class CharacterInfo : MonoBehaviour
         }
         set { attackData.findRange = value; }
     }
-
-    public float CriticalMultiplier{
-        get
-        {
-            if (attackData != null) return attackData.criticalMultiplier;
-            else return 0;
-        }
-        set { attackData.criticalMultiplier = value; }
-        
-    }
-
-    public float CritialPercent
-    {
-        get
-        {
-            if (attackData != null) return attackData.critialPercent;
-            else return 0;
-        }
-        set { attackData.critialPercent = value; }
-    }
-
+    
     public float Demage
     {
         get
@@ -115,17 +85,7 @@ public class CharacterInfo : MonoBehaviour
         }
         set { attackData.CoolDown = value; }
     }
-
-    public float WaitTime
-    {
-        get
-        {
-            if (attackData != null) return attackData.waitTime;
-            else return 0;
-        }
-        set { attackData.waitTime = value; }
-    }
-    #endregion
+    #endregion 
 
     #region Read from Combat
 

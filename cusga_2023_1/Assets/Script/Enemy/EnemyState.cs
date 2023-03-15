@@ -51,6 +51,7 @@ public class PatrolState : IState
     {
         m_Enemy.animator.Play("Move");
         m_Enemy.ChoosePatrolTarget();
+        m_Enemy.FlipTo();
         Debug.Log(this);
     }
 
@@ -105,6 +106,11 @@ public class ChaseState : IState
 
         RaycastHit2D hit2D = Physics2D.Raycast(m_Enemy.transform.position,
             m_Enemy.targetPos - (Vector2) m_Enemy.transform.position);
+
+        if (hit2D)
+        {
+            Debug.Log(hit2D.collider.gameObject.name); 
+        }
         
         if (((Vector2)m_Enemy.transform.position - m_Enemy.targetPos).magnitude <
             0.9f * m_Enemy.enemyInfo.AttackRange&& hit2D&&hit2D.collider.CompareTag("Player"))

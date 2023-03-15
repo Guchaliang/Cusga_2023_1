@@ -9,13 +9,7 @@ public class AttackData_So : ScriptableObject
 
     public float findRange;//索敌距离
 
-    public float criticalMultiplier;//暴击效果
-
-    public float critialPercent;//暴击率
-
     public float demage;//伤害值
 
     public float CoolDown;//冷却
-
-    public float waitTime;//停留时间
 }

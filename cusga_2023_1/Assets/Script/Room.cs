@@ -15,7 +15,6 @@ public class Room : MonoBehaviour
         doorRight.SetActive(roomRight);
         doorUp.SetActive(roomUp);
         doorDown.SetActive(roomDown);*/
-       
     }
 
     // Update is called once per frame

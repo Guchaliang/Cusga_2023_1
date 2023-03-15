@@ -61,9 +61,9 @@
      <Compile Include="Assets\Script\Enemy\IState.cs" />
      <Compile Include="Assets\Script\RotatingCamera.cs" />
      <Compile Include="Assets\Script\Character Stats\ScriptableObject\CharacterData_So.cs" />
+     <Compile Include="Assets\Script\Obstacles.cs" />
      <Compile Include="Assets\Script\Pool System\Pool.cs" />
      <Compile Include="Assets\Script\Test\PlayerTest.cs" />
-     <Compile Include="Assets\Script\Bullet\EnemyBullet.cs" />
      <Compile Include="Assets\Script\Bullet\Bullet.cs" />
      <Compile Include="Assets\Script\Manager\DialogueManager.cs" />
      <Compile Include="Assets\Script\Room.cs" />
@@ -646,40 +646,40 @@
  <HintPath>F:/unity/2020.3.30f1c1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Cinemachine">
- <HintPath>F:/unity/project/cusga_2023_1/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>F:/unity/project/cusga_2023_1/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.cinemachine.editor">
- <HintPath>F:/unity/project/cusga_2023_1/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>F:/unity/project/cusga_2023_1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>F:/unity/project/cusga_2023_1/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>F:/unity/project/cusga_2023_1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>F:/unity/project/cusga_2023_1/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>F:/unity/project/cusga_2023_1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>F:/unity/project/cusga_2023_1/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>F:/unity/project/cusga_2023_1/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>F:/unity/project/cusga_2023_1/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>F:/unity/project/cusga_2023_1/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
