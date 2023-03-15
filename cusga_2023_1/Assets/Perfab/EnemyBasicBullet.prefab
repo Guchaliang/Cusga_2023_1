@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -1850995901610881514}
   - component: {fileID: -4436332984714223692}
   - component: {fileID: 1057551149888937239}
+  - component: {fileID: 1907522240410268932}
   m_Layer: 0
   m_Name: EnemyBasicBullet
   m_TagString: Untagged
@@ -138,3 +139,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!58 &1907522240410268932
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2928596645361232866}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.022951037, y: 0.03442651}
+  serializedVersion: 2
+  m_Radius: 0.095896214

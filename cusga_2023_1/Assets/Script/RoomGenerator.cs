@@ -6,11 +6,16 @@ using UnityEngine.SceneManagement;
 public class RoomGenerator : MonoBehaviour
 {
     public enum Direction { up,down,left,right};//枚举
+   //public enum Stone1 { stone1,stone2, stone3,stone4 };//枚举石头
     public Direction direction;
+    //public Stone1 stone;
     [Header("房间信息")]
     public GameObject roomPrefab_main; 
     public GameObject roomPrefab;
+    //public GameObject stonePrefab;
     public int roomNumber;//房间数量
+   // public int stone_NumberMax;//每个房间石头数量最大值
+   // public int stone_Number;//房间石头数量
     public Color startColor, endColor;
     private GameObject endRoom;
 
@@ -21,7 +26,7 @@ public class RoomGenerator : MonoBehaviour
     public LayerMask roomLayer; //图层
     public int maxStep;
     public List<Room> rooms = new List<Room>(); //List存储房间
-  
+    //public List<Stone> stones = new List<Stone>();
     List<GameObject> farRooms = new List<GameObject>();//最远的房间
     List<GameObject> lessFarRooms=new List<GameObject>();//比最远的近一点的房间
     List<GameObject>oneWayRooms=new List<GameObject>();//单独入口房间
@@ -30,9 +35,19 @@ public class RoomGenerator : MonoBehaviour
     {
         
         for (int i = 0; i < roomNumber; i++)
-        {
-            if (i == 0) { rooms.Add(Instantiate(roomPrefab_main, generatorPoint.position, Quaternion.identity).GetComponent<Room>()); }
-            else { rooms.Add(Instantiate(roomPrefab, generatorPoint.position, Quaternion.identity).GetComponent<Room>()); }//生成roomNumber个房间add进List
+        { /*stone_Number = Random.Range(0, stone_NumberMax);//随机确定石头数量*/
+            if (i == 0) 
+            {
+                rooms.Add(Instantiate(roomPrefab_main, generatorPoint.position, Quaternion.identity).GetComponent<Room>());
+                rooms[0].name = "Room0";
+            }
+            else
+            {
+                rooms.Add(Instantiate(roomPrefab, generatorPoint.position, Quaternion.identity).GetComponent<Room>());
+                rooms[i].name = "Room" + i;
+                //for ( int j = 0; j<stone_Number; j++) {
+                //stones.Add(Instantiate(stonePrefab, generatorPoint.position, Quaternion.identity).GetComponent<Stone>()); }
+            }//生成roomNumber个房间add进List,加入stone列表
 
             //改变Point 位置
             ChangePos();
@@ -66,7 +81,7 @@ public class RoomGenerator : MonoBehaviour
         do
         {
             direction = (Direction)Random.Range(0, 4);
-
+            //stone=(Stone1)Random.Range(0, 4);//4种随机选一种
             switch (direction)
             {
                 case Direction.up:
@@ -86,11 +101,16 @@ public class RoomGenerator : MonoBehaviour
     }
     public void SetupRoom(Room newRoom,Vector3 roomPosition)
     {
+        //bool j;
         newRoom.roomUp = Physics2D.OverlapCircle(roomPosition + new Vector3(0, yOffset, 0), 0.2f, roomLayer);
         newRoom.roomDown = Physics2D.OverlapCircle(roomPosition + new Vector3(0, -yOffset, 0), 0.2f, roomLayer);
         newRoom.roomLeft = Physics2D.OverlapCircle(roomPosition + new Vector3(-xOffset, 0, 0), 0.2f, roomLayer);
         newRoom.roomRight = Physics2D.OverlapCircle(roomPosition + new Vector3(xOffset, 0, 0), 0.2f, roomLayer);
-
+       //for(int x = 0; x < 4; x++) { 
+       // int i=Random.Range(0, 2);
+       // if (i == 0) j = false; else j = true;
+       // newRoom.stone_1 = j;
+       // }
         newRoom.UpdateRoom(xOffset,yOffset);
     }
     public void FindEndRoom()
@@ -109,8 +129,8 @@ public class RoomGenerator : MonoBehaviour
                 lessFarRooms.Add(room.gameObject);
             
         }
-        Debug.Log(farRooms.Count);
-        Debug.Log(lessFarRooms.Count);
+        //Debug.Log(farRooms.Count);
+        //Debug.Log(lessFarRooms.Count);
         //判断有无单项门房间
         for(int i = 0;i<farRooms.Count;i++)
         {
@@ -122,7 +142,7 @@ public class RoomGenerator : MonoBehaviour
             if (lessFarRooms[i].GetComponent<Room>().doorNumber == 1)
                 oneWayRooms.Add(lessFarRooms[i]);
         }
-        Debug.Log(oneWayRooms.Count);
+        //Debug.Log(oneWayRooms.Count);
         //有最远房间为单向门
         if(oneWayRooms.Count != 0)
         {

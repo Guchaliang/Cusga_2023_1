@@ -36,7 +36,7 @@ public class CharacterInfo : MonoBehaviour
         set { characterData.currentHealth = value; }
     }
 
-    public int Maxdefence
+    public int Defence
     {
         get
         {
@@ -65,16 +65,6 @@ public class CharacterInfo : MonoBehaviour
         }
         set { attackData.findRange = value; }
     }
-    
-    public float Demage
-    {
-        get
-        {
-            if (attackData != null) return attackData.demage;
-            else return 0;
-        }
-        set {attackData.demage = value; }
-    }
 
     public float CoolDown
     {
@@ -89,8 +79,13 @@ public class CharacterInfo : MonoBehaviour
 
     #region Read from Combat
 
-    //TODO 攻击判定
+    //TODO 近身攻击判定
     public void TakeDamage(CharacterInfo attacker, CharacterInfo defener)
+    {
+    }
+    
+    //TODO 攻击判定
+    public void TakeDamage(float damage, CharacterInfo defener)
     {
         
     }
