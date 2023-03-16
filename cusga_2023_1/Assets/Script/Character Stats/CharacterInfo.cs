@@ -36,7 +36,11 @@ public class CharacterInfo : MonoBehaviour
         set { characterData.currentHealth = value; }
     }
 
+<<<<<<< HEAD
     public float Defence
+=======
+    public int Defence
+>>>>>>> main
     {
         get
         {
@@ -65,6 +69,7 @@ public class CharacterInfo : MonoBehaviour
         }
         set { attackData.findRange = value; }
     }
+<<<<<<< HEAD
     
     public float Damage
     {
@@ -75,6 +80,8 @@ public class CharacterInfo : MonoBehaviour
         }
         set {attackData.damage = value; }
     }
+=======
+>>>>>>> main
 
     public float CoolDown
     {
@@ -89,9 +96,10 @@ public class CharacterInfo : MonoBehaviour
 
     #region Read from Combat
 
-    //TODO 攻击判定
+    //TODO 近身攻击判定
     public void TakeDamage(CharacterInfo attacker, CharacterInfo defener)
     {
+<<<<<<< HEAD
         if (defener.Defence != 0)
         {
             defener.Defence -= attacker.Damage;
@@ -112,6 +120,14 @@ public class CharacterInfo : MonoBehaviour
         {
             defener.CurrentHealth -= damage;
         }
+=======
+    }
+    
+    //TODO 攻击判定
+    public void TakeDamage(float damage, CharacterInfo defener)
+    {
+        
+>>>>>>> main
     }
 
     #endregion 

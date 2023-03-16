@@ -7,7 +7,11 @@ public class Bullet : MonoBehaviour
 {
     private Rigidbody2D rb;
     public float speed;
+<<<<<<< HEAD
     public float damage;
+=======
+    public int demage;
+>>>>>>> main
     private Animator animator;
 
     private void Awake()
@@ -26,6 +30,7 @@ public class Bullet : MonoBehaviour
         rb.velocity = direction * speed;
     }
 
+<<<<<<< HEAD
     protected void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -45,4 +50,13 @@ public class Bullet : MonoBehaviour
             this.gameObject.SetActive(false);
         }
     }
+=======
+    /*private void OnTriggerEnter2D(Collider other)
+    {
+        if (other.CompareTag("Stone"))
+        {
+            
+        }
+    }*/
+>>>>>>> main
 }

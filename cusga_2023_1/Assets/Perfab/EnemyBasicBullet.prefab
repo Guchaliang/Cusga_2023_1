@@ -13,7 +13,11 @@ GameObject:
   - component: {fileID: -1850995901610881514}
   - component: {fileID: -4436332984714223692}
   - component: {fileID: 1057551149888937239}
+<<<<<<< HEAD
   - component: {fileID: 7979789490941651881}
+=======
+  - component: {fileID: 1907522240410268932}
+>>>>>>> main
   m_Layer: 0
   m_Name: EnemyBasicBullet
   m_TagString: Untagged
@@ -139,8 +143,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+<<<<<<< HEAD
   damage: 1
 --- !u!58 &7979789490941651881
+=======
+--- !u!58 &1907522240410268932
+>>>>>>> main
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,6 +161,12 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+<<<<<<< HEAD
   m_Offset: {x: -0.02546978, y: 0.03320837}
   serializedVersion: 2
   m_Radius: 0.09552483
+=======
+  m_Offset: {x: -0.022951037, y: 0.03442651}
+  serializedVersion: 2
+  m_Radius: 0.095896214
+>>>>>>> main

@@ -5,51 +5,37 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;//速度
-    public float inertia;//惯性参数
-    public float addSpeed;//速度增加参数
     public float maxSpeed;//最大速度
     new private Rigidbody2D rigidbody;
     private Animator animator;
-    private float inputX, inputY;
+    public float inputX, inputY;
     private float stopX, stopY;
-    Vector2 oldInput; 
-
+    public  Vector2 oldvec;//老输入
+    public  float olddrag,newdrag;
     void Start()
     {
+        Application.targetFrameRate = 60;
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         inputX = Input.GetAxisRaw("Horizontal");
         inputY = Input.GetAxisRaw("Vertical");
         Vector2 input = (transform.right * inputX + transform.up * inputY).normalized;
-        if(input.magnitude!=0)
-        {
-            oldInput = input;
+        speed = rigidbody.velocity.magnitude;//得到当前速度
+        if (input!=Vector2.zero)//如果这一帧有输入
+         {
+         rigidbody.drag = olddrag;//改变阻力
+         if (speed <= maxSpeed)//速度小于最大速度一直加到最大
+            rigidbody.AddForce(new Vector2(inputX*3,inputY*3));
         }
-        if (input.magnitude!=0)
-            if (speed <= maxSpeed)
-            {
-                speed += addSpeed*Time.deltaTime;
-                rigidbody.velocity = input * speed;
-            }
-            else
-                rigidbody.velocity = input * maxSpeed;
         else
-            if (speed >= 0)
         {
-            Debug.Log(oldInput);
-            speed -= (1/inertia)*10*Time.deltaTime;
-            rigidbody.velocity = oldInput * speed;
+            rigidbody.drag = newdrag;
         }
-            if(speed < 0)
-        {
-            speed = 0;
-            rigidbody.velocity = oldInput * speed;
-        }
-            
+
         if (input != Vector2.zero)
         {
             animator.SetBool("isMoving", true);
@@ -64,4 +50,5 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("InputY", stopY);
 
     }
+    
 }

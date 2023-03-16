@@ -75,12 +75,22 @@ PrefabInstance:
     - target: {fileID: 5710616017447536232, guid: 7855e595c8f1bfa44a12f9ea5389398f,
         type: 3}
       propertyPath: m_Name
-      value: doorclose-down
+      value: doorclose-down Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7191551542683345553, guid: 7855e595c8f1bfa44a12f9ea5389398f,
         type: 3}
       propertyPath: m_FlipY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7191551542683345553, guid: 7855e595c8f1bfa44a12f9ea5389398f,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7191551542683345553, guid: 7855e595c8f1bfa44a12f9ea5389398f,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1309881045
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7855e595c8f1bfa44a12f9ea5389398f, type: 3}
