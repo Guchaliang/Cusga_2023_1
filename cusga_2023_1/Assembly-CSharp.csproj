@@ -73,6 +73,7 @@
      <Compile Include="Assets\Script\Bullet\Bullet.cs" />
      <Compile Include="Assets\Script\Manager\DialogueManager.cs" />
      <Compile Include="Assets\Script\Room.cs" />
+     <Compile Include="Assets\Script\Enemy\EnemyFSM_Bat.cs" />
      <Compile Include="Assets\Script\Stone.cs" />
      <Compile Include="Assets\Script\FacingCamera.cs" />
      <Compile Include="Assets\Script\Pool System\PoolManager.cs" />
@@ -80,7 +81,6 @@
      <Compile Include="Assets\Script\Dialogue\Talkable.cs" />
      <Compile Include="Assets\Script\Tools\Singleton.cs" />
      <Compile Include="Assets\Script\PlayerMovement.cs" />
-     <Compile Include="Assets\Script\Enemy\EnemyFSM_Bat.cs" />
  <Reference Include="UnityEngine">
  <HintPath>F:/unity/2020.3.30f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
