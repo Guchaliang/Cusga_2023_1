@@ -73,6 +73,7 @@
      <Compile Include="Assets\Script\Bullet\Bullet.cs" />
      <Compile Include="Assets\Script\Manager\DialogueManager.cs" />
      <Compile Include="Assets\Script\Room.cs" />
+     <Compile Include="Assets\Script\Enemy\EnemyFSM_Bat.cs" />
      <Compile Include="Assets\Script\Stone.cs" />
      <Compile Include="Assets\Script\FacingCamera.cs" />
      <Compile Include="Assets\Script\Pool System\PoolManager.cs" />
