@@ -17,7 +17,7 @@ public class CharacterInfo : MonoBehaviour
 
     #region Read from Info
 
-    public int MaxHealth
+    public float MaxHealth
     {
         get
         {
@@ -27,7 +27,7 @@ public class CharacterInfo : MonoBehaviour
         set { characterData.maxHealth = value; }
     }
 
-    public int CurrentHealth{
+    public float CurrentHealth{
         get
         {
             if (characterData != null) return characterData.currentHealth;
@@ -36,7 +36,7 @@ public class CharacterInfo : MonoBehaviour
         set { characterData.currentHealth = value; }
     }
 
-    public int Maxdefence
+    public float Defence
     {
         get
         {
@@ -66,14 +66,14 @@ public class CharacterInfo : MonoBehaviour
         set { attackData.findRange = value; }
     }
     
-    public float Demage
+    public float Damage
     {
         get
         {
-            if (attackData != null) return attackData.demage;
+            if (attackData != null) return attackData.damage;
             else return 0;
         }
-        set {attackData.demage = value; }
+        set {attackData.damage = value; }
     }
 
     public float CoolDown
@@ -92,7 +92,26 @@ public class CharacterInfo : MonoBehaviour
     //TODO 攻击判定
     public void TakeDamage(CharacterInfo attacker, CharacterInfo defener)
     {
-        
+        if (defener.Defence != 0)
+        {
+            defener.Defence -= attacker.Damage;
+        }
+        else
+        {
+            defener.CurrentHealth -= attacker.Damage;
+        }
+    }
+    
+    public void TakeDamage(float damage, CharacterInfo defener)
+    {
+        if (defener.Defence != 0)
+        {
+            defener.Defence -= damage;
+        }
+        else
+        {
+            defener.CurrentHealth -= damage;
+        }
     }
 
     #endregion 

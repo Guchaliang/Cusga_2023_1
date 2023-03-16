@@ -9,7 +9,7 @@ public class AttackData_So : ScriptableObject
 
     public float findRange;//索敌距离
 
-    public float demage;//伤害值
+    public float damage;//伤害值
 
     public float CoolDown;//冷却
 }

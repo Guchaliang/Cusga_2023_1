@@ -15,14 +15,10 @@ public class EnemyFSM : MonoBehaviour
     [HideInInspector] public Animator animator;
     [HideInInspector] public CharacterInfo enemyInfo;
     [HideInInspector] public PolyNavAgent agent;
-    [HideInInspector] public bool getHit;
+    [HideInInspector] public bool getHit; 
+    [HideInInspector] public GameObject Player;//直接获得，不后期获得了,后期放到OnEnable
+    public Transform attackPoint;
 
-    public GameObject Player;//直接获得，不后期获得了,后期放到OnEnable
-
-    [Header("子弹")]
-    public GameObject bullet;
-    public Transform basicBullet;
-    
     [Header("巡逻")]
     public float patrolRange;
     public float patrolMaxTime;
@@ -108,16 +104,20 @@ public class EnemyFSM : MonoBehaviour
         }
     }
     
-    public void AttackPlayer()
+    protected virtual void AttackPlayer()
     {
-        Vector2 direction = (Player.transform.position - this.transform.position).normalized;
-
-        GameObject newBullet = PoolManager.Release(bullet, basicBullet.position, Quaternion.identity);
-
-        newBullet.GetComponent<Bullet>().SetSpeed(direction);
         
     }
 
+    
+    protected void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Player"))
+        {
+            enemyInfo.TakeDamage(1,other.gameObject.GetComponent<CharacterInfo>());
+        }
+    }
+    
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(awakePos,new Vector2(patrolRange*2,patrolRange*2));
