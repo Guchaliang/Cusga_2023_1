@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolyNav", "PolyNav.csproj", "{C4603DA7-45EF-19B3-112E-FF0BEBB31F38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.Player.csproj", "{28BB89FD-243B-9529-13C2-F54266A80A24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolyNav", "PolyNav.Player.csproj", "{2BE2B96E-93D3-0725-6F97-3501A646D931}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{C4603DA7-45EF-19B3-112E-FF0BEBB31F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4603DA7-45EF-19B3-112E-FF0BEBB31F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4603DA7-45EF-19B3-112E-FF0BEBB31F38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28BB89FD-243B-9529-13C2-F54266A80A24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28BB89FD-243B-9529-13C2-F54266A80A24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28BB89FD-243B-9529-13C2-F54266A80A24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28BB89FD-243B-9529-13C2-F54266A80A24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE2B96E-93D3-0725-6F97-3501A646D931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE2B96E-93D3-0725-6F97-3501A646D931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE2B96E-93D3-0725-6F97-3501A646D931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE2B96E-93D3-0725-6F97-3501A646D931}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

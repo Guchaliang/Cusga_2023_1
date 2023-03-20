@@ -57,6 +57,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\scripts\Tear.cs" />
+    <Compile Include="Assets\bag\BagMangaer.cs" />
+    <Compile Include="Assets\bag\Itemm.cs" />
     <Compile Include="Assets\Script\Manager\EnemyManager.cs" />
     <Compile Include="Assets\Script\Doormanager.cs" />
     <Compile Include="Assets\Script\RoomGenerator.cs" />
@@ -69,8 +71,10 @@
     <Compile Include="Assets\Script\RotatingCamera.cs" />
     <Compile Include="Assets\Script\Character Stats\ScriptableObject\CharacterData_So.cs" />
     <Compile Include="Assets\Script\Obstacles.cs" />
+    <Compile Include="Assets\bag\ItemOnWorld.cs" />
     <Compile Include="Assets\scripts\PlayDeath.cs" />
     <Compile Include="Assets\Script\Pool System\Pool.cs" />
+    <Compile Include="Assets\bag\openbag.cs" />
     <Compile Include="Assets\scripts\TidyObject.cs" />
     <Compile Include="Assets\Script\Test\PlayerTest.cs" />
     <Compile Include="Assets\scripts\PlayerTest2.cs" />
@@ -79,11 +83,13 @@
     <Compile Include="Assets\Script\Room.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyFSM_Bat.cs" />
     <Compile Include="Assets\Script\Stone.cs" />
+    <Compile Include="Assets\bag\BagList.cs" />
     <Compile Include="Assets\Script\FacingCamera.cs" />
     <Compile Include="Assets\Script\Pool System\PoolManager.cs" />
     <Compile Include="Assets\Block_Sui.cs" />
     <Compile Include="Assets\Script\Dialogue\Talkable.cs" />
     <Compile Include="Assets\Script\Tools\Singleton.cs" />
+    <Compile Include="Assets\bag\Slot.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
