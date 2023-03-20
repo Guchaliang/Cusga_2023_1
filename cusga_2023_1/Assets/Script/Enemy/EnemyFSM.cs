@@ -82,13 +82,13 @@ public class EnemyFSM : MonoBehaviour
         targetPos.x = awakePos.x + randomX;
         targetPos.y = awakePos.y + randomY;
 
-        while (obstacles.GetPosInCollider(targetPos))
+        while (!agent.map.PointIsValid(targetPos))
         {
-            randomX = Random.Range(-patrolRange,patrolRange);
+            randomX = Random.Range(-patrolRange, patrolRange);
             randomY = Random.Range(-patrolRange, patrolRange);
-            
+
             targetPos.x = awakePos.x + randomX;
-            targetPos.y = awakePos.y + randomY; 
+            targetPos.y = awakePos.y + randomY;
         }
     }
 
@@ -106,7 +106,7 @@ public class EnemyFSM : MonoBehaviour
     
     protected virtual void AttackPlayer()
     {
-        
+          Physics2D.OverlapCircle(attackPoint.position, enemyInfo.AttackRange);
     }
 
     

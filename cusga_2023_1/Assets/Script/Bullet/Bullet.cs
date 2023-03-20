@@ -6,11 +6,9 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float speed;
+    [HideInInspector]public float speed;
 
     public float damage;
-
-    public int demage;
 
     private Animator animator;
 
