@@ -7,8 +7,6 @@ public class PlayerTest : MonoBehaviour
     private Rigidbody2D rb;
 
     [SerializeField] private float moveSpeed;
-
-    public Transform center;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
