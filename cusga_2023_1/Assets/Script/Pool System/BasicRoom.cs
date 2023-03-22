@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using PolyNav;
 using UnityEngine;
 
@@ -18,7 +19,8 @@ public class BasicRoom : MonoBehaviour
 {
     [Header("房间属性")] 
     public bool isArrived;//玩家是否抵达
-    public RoomType myType;//当前房间的类型
+    public bool isCleared;//玩家是否清理空怪物
+    public RoomType roomType;//当前房间的类型
     public Vector2 coordinate;//坐标
 
     public int activeDoorNum
@@ -36,7 +38,7 @@ public class BasicRoom : MonoBehaviour
         
     }
 
-    //将对应方向的房间门启用
+    //将对应方向的房间门显示
     public void SetDoorActive(Direction direction,BasicRoom neighbor)
     {
         GameObject door = doorList[(int) direction];
@@ -50,14 +52,37 @@ public class BasicRoom : MonoBehaviour
     }
     
     //打开已激活的门
-    public void OpenActiveDoor()
+    public void OpenDoorActive(bool active)
     {
-        for (int i = 0; i < neighboringRooms.Count; i++)
+        foreach(Direction direction in neighboringRooms.Keys)
         {
-            if (neighboringRooms.ContainsKey(Direction.up))
-            {
-                
-            }
+            this.doorList[(int)direction].transform.GetChild(1).gameObject.SetActive(active);
+            this.doorList[(int) direction].GetComponent<BoxCollider2D>().enabled = active;
         }
+    }
+
+    public void Initialize()
+    {
+        if (this.roomType == RoomType.Initial)
+        {
+            this.isCleared = true;
+        }
+        else if (this.roomType == RoomType.Enemy||this.roomType == RoomType.Boss)
+        {
+            
+        }
+        else if (this.roomType == RoomType.Award)
+        {
+            this.isCleared = true;
+        }
+        else if (this.roomType == RoomType.Store)
+        {
+            this.isCleared = true;
+        }
+    }
+
+    public void GenerateObjectInRoomWithPosition(GameObject obj, Vector2 Pos)
+    {
+        PoolManager.Release(obj, Pos);
     }
 }
