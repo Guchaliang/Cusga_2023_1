@@ -1,0 +1,2003 @@
+Using pre-set license
+Built from '2020.3/china_unity/release' branch; Version is '2020.3.30f1c1 (b9cd9c36b8f8) revision 12176796'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 16235 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+F:\unity\2020.3.30f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+F:/Github/Cusga_2023_1/cusga_2023_1
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+3714
+Successfully changed project path to: F:/Github/Cusga_2023_1/cusga_2023_1
+F:/Github/Cusga_2023_1/cusga_2023_1
+Using Asset Import Pipeline V2.
+AS: AutoStreaming module initializing.Refreshing native plugins compatible for Editor in 43.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.30f1c1 (b9cd9c36b8f8)
+[Subsystems] Discovering subsystems at path F:/unity/2020.3.30f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/Github/Cusga_2023_1/cusga_2023_1/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25e0)
+    Vendor:   
+    VRAM:     3976 MB
+    Driver:   31.0.15.2756
+Initialize mono
+Mono path[0] = 'F:/unity/2020.3.30f1c1/Editor/Data/Managed'
+Mono path[1] = 'F:/unity/2020.3.30f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'F:/unity/2020.3.30f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56768
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: F:/unity/2020.3.30f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001055 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 45.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.608 seconds
+Domain Reload Profiling:
+	ReloadAssembly (608ms)
+		BeginReloadAssembly (83ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (461ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (153ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (170ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (46ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (84ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002446 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.005 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1006ms)
+		BeginReloadAssembly (176ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (764ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (256ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (301ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1693 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 75.1 MB.
+System memory in use after: 75.1 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2129.
+Total: 3.068500 ms (FindLiveObjects: 0.153800 ms CreateObjectMapping: 0.055500 ms MarkObjects: 2.760900 ms  DeleteObjects: 0.097000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/1.png
+  artifactKey: Guid(05c3ca05a2271e447b2529dff51d3a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/1.png using Guid(05c3ca05a2271e447b2529dff51d3a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e289cf12d0764409a876e484c478f94') in 0.096939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/1.png
+  artifactKey: Guid(e47b041c81d1eed4d8861d5042f8c151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/1.png using Guid(e47b041c81d1eed4d8861d5042f8c151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86fae6201b5315fc479be32162ef2a1f') in 0.010199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/7.png
+  artifactKey: Guid(4b393357652bc824eac78a8627cf6bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/7.png using Guid(4b393357652bc824eac78a8627cf6bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9fb9a79dbb40a594ea6bdd6232cd873') in 0.012568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/4.png
+  artifactKey: Guid(784ed72ba28d7b44fb379ae6dcba1fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/4.png using Guid(784ed72ba28d7b44fb379ae6dcba1fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7157c2e9c18fa6ccc82ec124d9308f8') in 0.010874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000560 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/10.png
+  artifactKey: Guid(8389c261c54c6bc41b315ba08778b997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/10.png using Guid(8389c261c54c6bc41b315ba08778b997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce7a3c91ac73c32ae83f61ceb42f598f') in 0.014292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/1.png
+  artifactKey: Guid(312389926b776ea4c98be5adca18740f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/1.png using Guid(312389926b776ea4c98be5adca18740f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'add151870965894392e13bc8c5c53797') in 0.008967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/5.png
+  artifactKey: Guid(2ae8dc7b5c1debe459b99f56fb0b009e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/5.png using Guid(2ae8dc7b5c1debe459b99f56fb0b009e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '486929474e0311b69405591f720f5d37') in 0.013676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右8.png
+  artifactKey: Guid(cdc2c34fd9acb5a49bcecb42f6f835ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右8.png using Guid(cdc2c34fd9acb5a49bcecb42f6f835ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ec611a8510c956710cd1e232da063e9') in 0.012229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/10.png
+  artifactKey: Guid(10d528e7938c92d4393bf3815d7f6147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/10.png using Guid(10d528e7938c92d4393bf3815d7f6147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e65fc23d8dda026e4985e09c4de01e6b') in 0.010715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/13.png
+  artifactKey: Guid(5525ce10a4971af468c62c0587d18560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/13.png using Guid(5525ce10a4971af468c62c0587d18560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '960eddd4cf6cc36073d4d35e68bdffe9') in 0.010728 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000481 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/4.png
+  artifactKey: Guid(d215e060e6fc0f049bbe69a473a2fe6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/4.png using Guid(d215e060e6fc0f049bbe69a473a2fe6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c133d07a7317fde3c7b2c69b9c473115') in 0.012475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/8.png
+  artifactKey: Guid(526ae1bd054b53d418419b4208d156f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/8.png using Guid(526ae1bd054b53d418419b4208d156f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eafa77c3eab84cf97c17dffa9b4d3e58') in 0.012407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/UI-artassets/deities/5d766b7aa07f701a8fda18e4dd0afdb.png
+  artifactKey: Guid(d355df83cf5af064bb9195ab968918dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI-artassets/deities/5d766b7aa07f701a8fda18e4dd0afdb.png using Guid(d355df83cf5af064bb9195ab968918dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae30fb014e2348e83ae544b1cf4928e1') in 0.021647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/9.png
+  artifactKey: Guid(55b2aadbd03cb934f8d20069fdc47cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/9.png using Guid(55b2aadbd03cb934f8d20069fdc47cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb940d0da8ec1a9d2a903f9f302ec15') in 0.011326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/死神/待机/1.png
+  artifactKey: Guid(1827902c1c9eb5d4a854cae64a72d543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/死神/待机/1.png using Guid(1827902c1c9eb5d4a854cae64a72d543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efef5eeb346b5553c2a4714d50bc7666') in 0.011723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/4.png
+  artifactKey: Guid(867d85ee960abdb45826809184ea6fcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/4.png using Guid(867d85ee960abdb45826809184ea6fcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da750e5fe9a5579ae10366667e21c6c') in 0.009223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/12.png
+  artifactKey: Guid(bc44bedee801f984c953498a78d7590c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/12.png using Guid(bc44bedee801f984c953498a78d7590c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b13c2c1bb20d8e93e67c595c9ad158c') in 0.011751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/左4.png
+  artifactKey: Guid(8d385b0bd537309409284f159baa2668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/左4.png using Guid(8d385b0bd537309409284f159baa2668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfaf258460a631e8b6abf301aca5f108') in 0.010301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000528 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左8.png
+  artifactKey: Guid(bf3b94e37ffcde641afd93859650c618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左8.png using Guid(bf3b94e37ffcde641afd93859650c618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51d6d5832c81f53504f1f2ef2a130c3f') in 0.012506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/ParadoxNotion/PolyNav2D/DEMO/spaceship.png
+  artifactKey: Guid(19bbb0e77d8074a42a9e2c9de8736ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ParadoxNotion/PolyNav2D/DEMO/spaceship.png using Guid(19bbb0e77d8074a42a9e2c9de8736ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca8083afe9d7736f6d4fa7cafef43367') in 0.012461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000713 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/待机/1.png
+  artifactKey: Guid(7afe47731c9d0fe4ca00175dbc0010cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/待机/1.png using Guid(7afe47731c9d0fe4ca00175dbc0010cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a37db6ad61802c9c6919c8cd4e1c804d') in 0.012054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/光炮/生成/2.png
+  artifactKey: Guid(e8376cb6fd2c3c24aa1dee9597154581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/光炮/生成/2.png using Guid(e8376cb6fd2c3c24aa1dee9597154581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bbacbc6317446e43f0816b708cb72eb') in 0.010209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/UI-artassets/border.png
+  artifactKey: Guid(3265e6995c0bc24449372ee0f88c1553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI-artassets/border.png using Guid(3265e6995c0bc24449372ee0f88c1553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1071c13e6ec780da273d11efdac03bfa') in 0.012916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000481 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/大地神/待机/1.png
+  artifactKey: Guid(50c33bd62e5003a4ebbb2bcbe5c70e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/大地神/待机/1.png using Guid(50c33bd62e5003a4ebbb2bcbe5c70e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ddb38cc93860d652c0a3d55f4e76857') in 0.012018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000562 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/3.png
+  artifactKey: Guid(74de795f51f231f49bedc50510191fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/3.png using Guid(74de795f51f231f49bedc50510191fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45f4d3cbc351965353ce86eed77d0f77') in 0.009923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/9.png
+  artifactKey: Guid(3d2ac9cd779bd004597ad84a00bcd5f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/9.png using Guid(3d2ac9cd779bd004597ad84a00bcd5f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9dd71c292f16be6853a7767cacc04fd') in 0.009877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/5.png
+  artifactKey: Guid(70e229655c2efd5409b3e0555a373684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/5.png using Guid(70e229655c2efd5409b3e0555a373684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c060eb6c3b4c6f71f0515bea3468b2f') in 0.012713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/4.png
+  artifactKey: Guid(588817a949f21a34583cab736457413a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/4.png using Guid(588817a949f21a34583cab736457413a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b723753004886e9b7dbe0a39a1896744') in 0.010176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/UI-artassets/gods.png
+  artifactKey: Guid(48fd6373048d33343b4a993f2460cfcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI-artassets/gods.png using Guid(48fd6373048d33343b4a993f2460cfcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1d61637a544a90ac85730cdd1810c47') in 0.011595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右11.png
+  artifactKey: Guid(5494cf13c31f07c4bbfff1664e040053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右11.png using Guid(5494cf13c31f07c4bbfff1664e040053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '132f4c5af0502991ece683915c18cc70') in 0.012724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/8.png
+  artifactKey: Guid(6d9c3fa782a5b2441919e20a467b4ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/8.png using Guid(6d9c3fa782a5b2441919e20a467b4ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ced038d70d490081ae4ac970cd9d0d7f') in 0.011586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000504 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右10.png
+  artifactKey: Guid(0680f0038082a6e458be9d586d18cc09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右10.png using Guid(0680f0038082a6e458be9d586d18cc09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95c4e964271de8f8a70cb3fd9851b11b') in 0.009513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右6.png
+  artifactKey: Guid(4a33083ef3540494b95ee10abe49c2b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右6.png using Guid(4a33083ef3540494b95ee10abe49c2b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d97e380791816ffb741220e70597963') in 0.011747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左1.png
+  artifactKey: Guid(85333a1acc831ac40a8884a32597132d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左1.png using Guid(85333a1acc831ac40a8884a32597132d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e34501c87970cc1f130f11948ffe038') in 0.010710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/2.png
+  artifactKey: Guid(42de42e9dcaff2645a634ec086a56222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/2.png using Guid(42de42e9dcaff2645a634ec086a56222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055b93aaff7e7856a87e1eb5e9779db3') in 0.010177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/10.png
+  artifactKey: Guid(9ad7240656ef32240b5a278dd04da7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/10.png using Guid(9ad7240656ef32240b5a278dd04da7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4796b5f8f63d924b6efa587569f312a0') in 0.010488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000476 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/3.png
+  artifactKey: Guid(9f09530aea724554c8708b42bc82e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/3.png using Guid(9f09530aea724554c8708b42bc82e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '286db8e4747840a7291aabc242495ad2') in 0.012256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/3.png
+  artifactKey: Guid(54e089cecf2f6124895d02c5da33d6ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/3.png using Guid(54e089cecf2f6124895d02c5da33d6ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0b481a55bfba1571db0ea5733cd6a82') in 0.011900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/主角/移动/左2.png
+  artifactKey: Guid(edb16b4a62ce5944fb0ed5e318c69f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/主角/移动/左2.png using Guid(edb16b4a62ce5944fb0ed5e318c69f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f7292a4b689cf0ba80874870784f17') in 0.010388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/2.png
+  artifactKey: Guid(0baa0ecb190f03d458a69cb448330715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/2.png using Guid(0baa0ecb190f03d458a69cb448330715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d699278ff042649574b73d1e5b63610') in 0.012597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000384 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左10.png
+  artifactKey: Guid(5ff0ec9ea905bf142b8834545ce28585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左10.png using Guid(5ff0ec9ea905bf142b8834545ce28585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865f4c5a6c14c720344ff5f6bb2714b5') in 0.009014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左11.png
+  artifactKey: Guid(aba6e4d455f71204aa6df09722484403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左11.png using Guid(aba6e4d455f71204aa6df09722484403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12918f26a252aa577998b1cd19364b2b') in 0.009652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/9.png
+  artifactKey: Guid(63a49f88d7bea63438b8533b98f478c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/9.png using Guid(63a49f88d7bea63438b8533b98f478c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaf9d85ecd7559e936e0b58535367118') in 0.010132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/UI-artassets/main-pixel.jpg.png
+  artifactKey: Guid(cb357af79cf957043ac8506fa53a55de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI-artassets/main-pixel.jpg.png using Guid(cb357af79cf957043ac8506fa53a55de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77cec8224eb2fd2a7e454f93ca6c42e3') in 0.035489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右4.png
+  artifactKey: Guid(da919c78181c60d4baccb9297f28cf9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右4.png using Guid(da919c78181c60d4baccb9297f28cf9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa74ea3d0c2ba8595a08f99806511007') in 0.010581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000444 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/近战木乃伊/死亡/正面右1.png
+  artifactKey: Guid(80d13886cc27c254e963c8dab21d43af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/近战木乃伊/死亡/正面右1.png using Guid(80d13886cc27c254e963c8dab21d43af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d88d68e57c4068a81347ccd68beddfd') in 0.012069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/9.png
+  artifactKey: Guid(baf431f677ef56b46b6e82cf35a5c0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/9.png using Guid(baf431f677ef56b46b6e82cf35a5c0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ff26483fe17cf5cb4af090153fad9b8') in 0.012111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/8.png
+  artifactKey: Guid(d4d411e38d10bac4a8434e4fc3c83232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/8.png using Guid(d4d411e38d10bac4a8434e4fc3c83232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb7d35564cbe417a0b55930bcbbb9455') in 0.008498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/10.png
+  artifactKey: Guid(e9b31d6986eab56478f3af5f581529ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/10.png using Guid(e9b31d6986eab56478f3af5f581529ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17ada0ceb401d4da7d6c6cc87a4ffc66') in 0.011848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左4.png
+  artifactKey: Guid(1c7e2dc6e9a220a4a8adeb0d2e28fdeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左4.png using Guid(1c7e2dc6e9a220a4a8adeb0d2e28fdeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90521a99ae03943aaca8667ff3cb7d46') in 0.009730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/死神/待机/2.png
+  artifactKey: Guid(3a8708cb0cf45e14e8afe6a144965f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/死神/待机/2.png using Guid(3a8708cb0cf45e14e8afe6a144965f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57270d1c7fea8f461f7fcc0521f5cec7') in 0.010260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/右4.png
+  artifactKey: Guid(33451a700a32f664fa9ad509395828ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/右4.png using Guid(33451a700a32f664fa9ad509395828ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2f0eadc1d56c0f6b6c5b9af70676350') in 0.010939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右5.png
+  artifactKey: Guid(63688ab40292d224abc85f660d6a4a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右5.png using Guid(63688ab40292d224abc85f660d6a4a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc3a80ee34d0b8f9f5f35ee814bd262f') in 0.009371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/移动/正面右1.png
+  artifactKey: Guid(2297adb6dc05ab9488e909549d0787b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/移动/正面右1.png using Guid(2297adb6dc05ab9488e909549d0787b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83f3aa3770ec33445628da1460039ae9') in 0.012536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/5.png
+  artifactKey: Guid(f3ef14688b29cf04a9581c6e71ef5a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/5.png using Guid(f3ef14688b29cf04a9581c6e71ef5a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ae8ba2c3e5aa86afe23db1bee192e4e') in 0.012703 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/光炮/生成/1.png
+  artifactKey: Guid(f5b45c5bcd7bb224db4b0461fa790ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/光炮/生成/1.png using Guid(f5b45c5bcd7bb224db4b0461fa790ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96d9d6c3b4aefd0b4d3fb2284bc1bdb9') in 0.012155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/10.png
+  artifactKey: Guid(cd369c33a0cd9d848a347c3cd66a1190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/10.png using Guid(cd369c33a0cd9d848a347c3cd66a1190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a57a3575f1be470ed9d74b0259833b36') in 0.010826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/1.png
+  artifactKey: Guid(a22820f687b8b1147a56024de5c3df3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/1.png using Guid(a22820f687b8b1147a56024de5c3df3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a325b65a863b84b80784d7f2b6febd7') in 0.010059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000483 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/6.png
+  artifactKey: Guid(d7fe3209635c1874eb2acbacf2ff4dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/6.png using Guid(d7fe3209635c1874eb2acbacf2ff4dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dc3e6830ba1266ceda6545aace5d1f9') in 0.013549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/光炮/生成/3.png
+  artifactKey: Guid(587cf5992405c064ca54e8cadb224b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/光炮/生成/3.png using Guid(587cf5992405c064ca54e8cadb224b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '844ce4c1c188d3aaf07d2e188182324a') in 0.009837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/9.png
+  artifactKey: Guid(e7477a4699fc00e40bccd5953f69565e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/9.png using Guid(e7477a4699fc00e40bccd5953f69565e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408fe3ab6373b723ea4cd86d6c9bfa05') in 0.011427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右2.png
+  artifactKey: Guid(0401a46040fe94e40a4ba08ff260dea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右2.png using Guid(0401a46040fe94e40a4ba08ff260dea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8a839f78dbe8d39ccec4e94b3b69c57') in 0.012190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000450 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/2.png
+  artifactKey: Guid(7c336fe60c6ce3547be4f5aed3bea75d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/2.png using Guid(7c336fe60c6ce3547be4f5aed3bea75d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eab2e75b3136dde67897acc6efde772') in 0.009820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/UI-artassets/button/buttonbackground.png
+  artifactKey: Guid(cac02b5f0db4ce34385c19a387341913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI-artassets/button/buttonbackground.png using Guid(cac02b5f0db4ce34385c19a387341913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f304836e160bdd2b0ba5eeac99ec08d') in 0.008900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/光炮/消失/3.png
+  artifactKey: Guid(f0ab753bb7f3165428f1b8fec1816666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/光炮/消失/3.png using Guid(f0ab753bb7f3165428f1b8fec1816666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b7b3e01c79eeed89fcfda15b8e51963') in 0.008330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/空气神/待机/1.png
+  artifactKey: Guid(e880ddb24eb8f7e4cb8e1162e614ab22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/空气神/待机/1.png using Guid(e880ddb24eb8f7e4cb8e1162e614ab22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97b7c16cd5a18337933d817ff338035') in 0.009362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/UI-artassets/collectionbackground.jpg
+  artifactKey: Guid(f09ae0facd724614980b3b4cff6365d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI-artassets/collectionbackground.jpg using Guid(f09ae0facd724614980b3b4cff6365d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3999e78d670ca6142e41073513931ab3') in 0.041851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/左2.png
+  artifactKey: Guid(1648c7b0e5666f04a9762ef6d59f9df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/左2.png using Guid(1648c7b0e5666f04a9762ef6d59f9df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '815d753137ac73d820c6e72c3cdf6158') in 0.010437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/6.png
+  artifactKey: Guid(9803f6378e07c254d81cde9f7ab9530b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/6.png using Guid(9803f6378e07c254d81cde9f7ab9530b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5167cbc0bce7e7b22a245e6771d55a6f') in 0.009845 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/1.png
+  artifactKey: Guid(67da525744b107c429cc0bf169bcb61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/1.png using Guid(67da525744b107c429cc0bf169bcb61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b83d910215302e16913ff4356bef077') in 0.010617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000555 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/2.png
+  artifactKey: Guid(f31f9a1766c57a74f9d4f12bf63e39c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/2.png using Guid(f31f9a1766c57a74f9d4f12bf63e39c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c42b15b503c418775705231e0120a4e') in 0.010202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/左3.png
+  artifactKey: Guid(64be42768ae50f441a6cd63dd8926a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/左3.png using Guid(64be42768ae50f441a6cd63dd8926a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a137cf7c26ebebcbf85c09fe2c778079') in 0.008987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000415 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右12.png
+  artifactKey: Guid(b2914f070af478040bc06d089d8c2380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右12.png using Guid(b2914f070af478040bc06d089d8c2380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d29379cb60a269614428d44157d3720') in 0.012143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/3.png
+  artifactKey: Guid(98f1cbac2bd518545ad6b77f3161f13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/3.png using Guid(98f1cbac2bd518545ad6b77f3161f13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4bcae9d225e3ab10a90d1ab2b3e9e94') in 0.009615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000529 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/待机/2.png
+  artifactKey: Guid(5065d54e283662c4495ad21e58178f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/待机/2.png using Guid(5065d54e283662c4495ad21e58178f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b63692fe7b6433abff00154d649f6d7a') in 0.009915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/4.png
+  artifactKey: Guid(97436e1950ee87a44a89d38a3df36b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/4.png using Guid(97436e1950ee87a44a89d38a3df36b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ba664fb60ed1e37ab0219a66d1aa44b') in 0.010712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/4.png
+  artifactKey: Guid(e25352bb670e4bd47b19037cb1f222eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/4.png using Guid(e25352bb670e4bd47b19037cb1f222eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '840bb3270d758dd29d11525603327b75') in 0.011463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/6.png
+  artifactKey: Guid(eef74e88b45299744b79a967a5bbeec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/6.png using Guid(eef74e88b45299744b79a967a5bbeec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b131d8bbe625311de3138ec876f518c') in 0.011192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右13.png
+  artifactKey: Guid(619e983c752ad9048b0f2d7fffa86fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右13.png using Guid(619e983c752ad9048b0f2d7fffa86fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18c83458a53b52d8bd0b0fb55d13045') in 0.010121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000553 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/待机/2.png
+  artifactKey: Guid(f5afc0b537ccb7a4a962b9205bade308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/待机/2.png using Guid(f5afc0b537ccb7a4a962b9205bade308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af91531079f418c9a35e36f463480d93') in 0.012892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/攻击/正面右1.png
+  artifactKey: Guid(dac60616ffbcb314ab4a87e6bfe0eccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/攻击/正面右1.png using Guid(dac60616ffbcb314ab4a87e6bfe0eccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d4d707aa002e964cb8a40d72f8fc1c') in 0.010690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/待机/正面右1.png
+  artifactKey: Guid(b27de06151d51244cbd199715f62e6d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/待机/正面右1.png using Guid(b27de06151d51244cbd199715f62e6d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b07a5478fd5f3cbb805f1b94393aa1a2') in 0.009650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/5.png
+  artifactKey: Guid(1148538d9f989bb4a82613281a96a15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/5.png using Guid(1148538d9f989bb4a82613281a96a15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b88125647e5cda357a9e588a475682f') in 0.012063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左13.png
+  artifactKey: Guid(acc55533d9417b24fac9a8ce2273d888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左13.png using Guid(acc55533d9417b24fac9a8ce2273d888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f354b753c3cee22f20527ab39751e15') in 0.011941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/7.png
+  artifactKey: Guid(7ae6f53573fd5e545b0328f05552129f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/7.png using Guid(7ae6f53573fd5e545b0328f05552129f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4f9fa021eb7e2c10ce0bc46351a102b') in 0.011973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000487 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/待机/4.png
+  artifactKey: Guid(75d043a712fe24344b0f2e6980a1abc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/待机/4.png using Guid(75d043a712fe24344b0f2e6980a1abc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3173519adc1805d4472fdb22bc8bd7d') in 0.010540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/6.png
+  artifactKey: Guid(b76540225a3f9ca45859a6e7309de0e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/6.png using Guid(b76540225a3f9ca45859a6e7309de0e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c825cbe42a43f5da534b19a17c94add0') in 0.013059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/6.png
+  artifactKey: Guid(a628664ab107b0545b8fc5ba75a59ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/6.png using Guid(a628664ab107b0545b8fc5ba75a59ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '694fbb5929b7bcd19db762112ed08e85') in 0.011770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/大地神/待机/2.png
+  artifactKey: Guid(f97a6d1bcdcb06c4c9f16ca01da260f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/大地神/待机/2.png using Guid(f97a6d1bcdcb06c4c9f16ca01da260f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '064b4d44e7b5e1f7173b139a6a563fad') in 0.011031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/1.png
+  artifactKey: Guid(f684b57098fc3ef45ad88e5fd6a72dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/1.png using Guid(f684b57098fc3ef45ad88e5fd6a72dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09badd8db54cf2a93d4e4e58766ef0cf') in 0.009550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000576 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/9.png
+  artifactKey: Guid(5c2b9f9729e814640bfc551062f1be42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/9.png using Guid(5c2b9f9729e814640bfc551062f1be42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8ab08a73609699ddb6b900fc8314ac0') in 0.011312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/空气神/待机/2.png
+  artifactKey: Guid(bb3c1af67b2c96a47830b0aa28b2d376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/空气神/待机/2.png using Guid(bb3c1af67b2c96a47830b0aa28b2d376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceb9dea5847f3ba92f774c5f91d997db') in 0.010860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/4.png
+  artifactKey: Guid(aeb045b70b4eeb847939cb5745457b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/4.png using Guid(aeb045b70b4eeb847939cb5745457b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f637346526146b24a691a4aec65ecaf4') in 0.010611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/光炮/消失/2.png
+  artifactKey: Guid(f8c22d15304c6984991154659178da9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/光炮/消失/2.png using Guid(f8c22d15304c6984991154659178da9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c524a32a79577dbd9b35e605a8dfadf') in 0.010912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/6.png
+  artifactKey: Guid(3b6ec61bae39da54c87f9b9c0eceeef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/6.png using Guid(3b6ec61bae39da54c87f9b9c0eceeef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c87e7a8b9a900f68a66f6ffa80956e1') in 0.010961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/光炮/生成/4.png
+  artifactKey: Guid(0e5744b99e97da84eb72dfc5186b6237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/光炮/生成/4.png using Guid(0e5744b99e97da84eb72dfc5186b6237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0fa08a4ba5d88aaa7fa0099fe1979bf') in 0.011082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右9.png
+  artifactKey: Guid(c57af12c56a51ee49b3edfc26ebd2d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右9.png using Guid(c57af12c56a51ee49b3edfc26ebd2d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95f5a05df088dfa830992bc8bae8e8a3') in 0.011169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左6.png
+  artifactKey: Guid(86b3094d1b26ebb42a038cf6165b56b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左6.png using Guid(86b3094d1b26ebb42a038cf6165b56b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a17e26b0938dec054b558d39461021') in 0.009691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/10.png
+  artifactKey: Guid(f059ae41d4b568643994f8f2630d2778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/10.png using Guid(f059ae41d4b568643994f8f2630d2778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dd935fb998748dfc13edc6501172005') in 0.011765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000609 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左2.png
+  artifactKey: Guid(f6b3eb0398c178646b0d25a98574c672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左2.png using Guid(f6b3eb0398c178646b0d25a98574c672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c009375539beb35fac70dce73c356b21') in 0.010405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/7.png
+  artifactKey: Guid(0f687efabaf5c224b809821d179467e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/7.png using Guid(0f687efabaf5c224b809821d179467e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d9e4050d3cfe20d72611a24b03d6db') in 0.009063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右7.png
+  artifactKey: Guid(c851bed43d131f040a5b9ee358096a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右7.png using Guid(c851bed43d131f040a5b9ee358096a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12373dcc9e499fa52d92799e2cb4bb1a') in 0.008979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/主角/移动/左4.png
+  artifactKey: Guid(48455013e5afa424e8fe73c040735b37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/主角/移动/左4.png using Guid(48455013e5afa424e8fe73c040735b37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42fde8687a13653287fb83009ede628c') in 0.012834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/右3.png
+  artifactKey: Guid(5d342c833279d594e83966d969586cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/右3.png using Guid(5d342c833279d594e83966d969586cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '125576b8e5eab6d7fdd0afaeee1fc27f') in 0.010727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左12.png
+  artifactKey: Guid(2ccc239ff30fae14b9ba10aaf6eb503f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左12.png using Guid(2ccc239ff30fae14b9ba10aaf6eb503f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90573dc35a8a3895f971584a8b37280d') in 0.010106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000444 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/1.png
+  artifactKey: Guid(01a76ff4ec81e2a48914063302e35ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/1.png using Guid(01a76ff4ec81e2a48914063302e35ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a780e9fac0b44fda5998618fe8e1cd90') in 0.010013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右3.png
+  artifactKey: Guid(8cd9e87b99362e449bc63fc94f2356e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右3.png using Guid(8cd9e87b99362e449bc63fc94f2356e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf2e0890962bea82854898eec0eece1') in 0.010022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/7.png
+  artifactKey: Guid(a09345db5d033794da706cc18df11e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/7.png using Guid(a09345db5d033794da706cc18df11e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acdfc3d10949d900d92f5d700608fe98') in 0.011895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000449 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右1.png
+  artifactKey: Guid(55e20fef7600208488e3f4a000d5dcf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/右1.png using Guid(55e20fef7600208488e3f4a000d5dcf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35119e3a9751869a7398b8cd7546410c') in 0.012045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/魔法神（随从）/待机/正面右1.png
+  artifactKey: Guid(71393db73960a0a4eb271dc770cba1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/魔法神（随从）/待机/正面右1.png using Guid(71393db73960a0a4eb271dc770cba1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e031e42112a24bee4ff40d5906ab7f3f') in 0.012008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左7.png
+  artifactKey: Guid(8c3c93a85d18dcc4a999aa31981b2475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左7.png using Guid(8c3c93a85d18dcc4a999aa31981b2475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c22ddf0e9c6a7dd114ac312044d27495') in 0.009880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左3.png
+  artifactKey: Guid(bb61433bab574784caab7f30c2bc28bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左3.png using Guid(bb61433bab574784caab7f30c2bc28bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da30ae4459180e5c1e71715465f046f') in 0.009872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000435 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/近战木乃伊/走路/正面右1.png
+  artifactKey: Guid(e30a65f640e435149b42ed42a31461e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/近战木乃伊/走路/正面右1.png using Guid(e30a65f640e435149b42ed42a31461e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad7135e0fcbdd54666734d9c55c488b') in 0.012839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/5.png
+  artifactKey: Guid(8cd608587643e6942aec4e67a708a251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/5.png using Guid(8cd608587643e6942aec4e67a708a251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d69c7195c8d901525fc4a1ac3e0a217') in 0.009378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000501 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/8.png
+  artifactKey: Guid(866a91c36df07fb4ebb6eb5ff4b7af57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/8.png using Guid(866a91c36df07fb4ebb6eb5ff4b7af57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ddf6fe53a465579b883361c2a7f93a') in 0.009071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000439 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/5.png
+  artifactKey: Guid(3305c21fc38780e42b312de37e4afb34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/5.png using Guid(3305c21fc38780e42b312de37e4afb34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b00a7bad4eab08b9b550a7708ee6267') in 0.012674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/7.png
+  artifactKey: Guid(ed6671cb36e7d3a41bcd1870ca471a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/7.png using Guid(ed6671cb36e7d3a41bcd1870ca471a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30727860435252331dc374e375e43590') in 0.011324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000541 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左5.png
+  artifactKey: Guid(a22936b8732ae28479cabddec7fe2ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左5.png using Guid(a22936b8732ae28479cabddec7fe2ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e99a8f16d7b3770d4e366b0c7f80aa') in 0.008585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/右2.png
+  artifactKey: Guid(12fbabc4626ac59428b0fc67e4617413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/右2.png using Guid(12fbabc4626ac59428b0fc67e4617413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8811b8c8b0f234b7a992510e452a7d9') in 0.010664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000555 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/8.png
+  artifactKey: Guid(27aecf905aa87a7498e7a2013def242c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/8.png using Guid(27aecf905aa87a7498e7a2013def242c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a203b1d55237d51d4f392b309896d477') in 0.010830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000528 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/8.png
+  artifactKey: Guid(065365d9b210ec744bc38a0dc365d14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/8.png using Guid(065365d9b210ec744bc38a0dc365d14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b78a22c7da3511f373b8a6979a993440') in 0.011245 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000522 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/2.png
+  artifactKey: Guid(146a8e895fe752344938071db7bde3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/2.png using Guid(146a8e895fe752344938071db7bde3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46de8a64a3c3025f709ea247b94c13e3') in 0.011202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/8.png
+  artifactKey: Guid(6a865f817896c2c4aa11445afe9c18d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/8.png using Guid(6a865f817896c2c4aa11445afe9c18d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd712cfe8ef69adfdf3703c93d3a308e8') in 0.012098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/待机/3.png
+  artifactKey: Guid(7e44bd15fb8bbf44583a888beb254632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/待机/3.png using Guid(7e44bd15fb8bbf44583a888beb254632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3816cb070081c0a8ac5a3190df54184f') in 0.011228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/战争神/待机/1.png
+  artifactKey: Guid(da8cbd958b29c9740be3b9d17be56b3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/战争神/待机/1.png using Guid(da8cbd958b29c9740be3b9d17be56b3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '649739723e89f80adc566eeb3be93d58') in 0.013052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/天空神/待机/2.png
+  artifactKey: Guid(78317717c50d39b48ae628479e4b3042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/天空神/待机/2.png using Guid(78317717c50d39b48ae628479e4b3042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '859a98fbed59a589de5e1c18c1944aaf') in 0.011579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/4.png
+  artifactKey: Guid(2b38e02cf07a5b34fbb055e8d4d57f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/4.png using Guid(2b38e02cf07a5b34fbb055e8d4d57f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a0f510bf56cd4a46e98021b54dcb77') in 0.009135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/6.png
+  artifactKey: Guid(0666143c24ddfc841b7ed87aab71123c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/降临/6.png using Guid(0666143c24ddfc841b7ed87aab71123c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99da9243d18d8b0ee049677f83de0ddb') in 0.013506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000438 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/13.png
+  artifactKey: Guid(4826d698f1749ed4f8b6baa6d7e0ae19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/13.png using Guid(4826d698f1749ed4f8b6baa6d7e0ae19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e718133cccce6e4714efec2e6f49b5aa') in 0.010652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/12.png
+  artifactKey: Guid(080e51e0d5760e94296a358fbaf0500d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/12.png using Guid(080e51e0d5760e94296a358fbaf0500d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18e0d29879d24edcc3ee79ab72eb6a05') in 0.011023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/左1.png
+  artifactKey: Guid(b7c247c6a03c4284eb09baf00f73a9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/左1.png using Guid(b7c247c6a03c4284eb09baf00f73a9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '758a63ffdacfbb32db6ed1207060be3e') in 0.012670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/7.png
+  artifactKey: Guid(c5f3225b943353d4cae90b1614e1dcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/7.png using Guid(c5f3225b943353d4cae90b1614e1dcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '292caa31e6e173c2caf6cb7bc0925c1a') in 0.011672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左9.png
+  artifactKey: Guid(4c1ca4927936fc8499911255f9b37bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/攻击/左9.png using Guid(4c1ca4927936fc8499911255f9b37bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed76a2ffb867e3a431f6680a8e93083') in 0.010931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/待机/1.png
+  artifactKey: Guid(155f5a8fc625bde4fb63a94071436b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/湿气神/待机/1.png using Guid(155f5a8fc625bde4fb63a94071436b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '062adf2031875f207690717be1e02638') in 0.011628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/战争神/待机/2.png
+  artifactKey: Guid(9f293cabb58d3fc44af84e10e47e6ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/战争神/待机/2.png using Guid(9f293cabb58d3fc44af84e10e47e6ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc12c02b8c43b8a94916c16221e5fba') in 0.011573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/7.png
+  artifactKey: Guid(dea136e982ee7b84481875777c728a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/7.png using Guid(dea136e982ee7b84481875777c728a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37cdfac067a5a588cbfacf6fcadb850d') in 0.011569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/UI-artassets/props.png
+  artifactKey: Guid(d72a7ed8f314db446a65fb1c6d6e9b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI-artassets/props.png using Guid(d72a7ed8f314db446a65fb1c6d6e9b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c0ad2bea241874d00d6fece1f8793b') in 0.013122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/3.png
+  artifactKey: Guid(2f0c7430e16e5ff44b5eca03603ef369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/3.png using Guid(2f0c7430e16e5ff44b5eca03603ef369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d28656a55ef1a25d4fc378caf45e032') in 0.010502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/11.png
+  artifactKey: Guid(28c8fd92284b29d4294dcd2b44edb3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/11.png using Guid(28c8fd92284b29d4294dcd2b44edb3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aa398a2e724571149f37a53a4b8ed1d') in 0.010154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/天空神/待机/1.png
+  artifactKey: Guid(0bbc35294e0a3c94da22971f626d2fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/天空神/待机/1.png using Guid(0bbc35294e0a3c94da22971f626d2fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab98fdd1667268e6eecac33919da392e') in 0.012586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/右1.png
+  artifactKey: Guid(c8ecf4dbbe7a9c74c9db54131e320253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/不死鸟/待机/右1.png using Guid(c8ecf4dbbe7a9c74c9db54131e320253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a821bb3f66494653786a532f8814f770') in 0.012042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000422 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/7.png
+  artifactKey: Guid(c637ba1023cea1c40ae88c2c2ab0a155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/7.png using Guid(c637ba1023cea1c40ae88c2c2ab0a155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ade1c55848e6aefc08c403ff037715d') in 0.009729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/2.png
+  artifactKey: Guid(2d453357ad426724a85284538aca3512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/2.png using Guid(2d453357ad426724a85284538aca3512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78dc3664ff8e3ee31e7bd8dffe611e4c') in 0.012007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000461 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/死亡/正面右1.png
+  artifactKey: Guid(c87a6cca354be5043a95ec258f52794b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/死亡/正面右1.png using Guid(c87a6cca354be5043a95ec258f52794b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49ebeb83c443ee278cd2904927877f94') in 0.011584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/10.png
+  artifactKey: Guid(738ae3e344ab4ef4faf77bcec89df74e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/10.png using Guid(738ae3e344ab4ef4faf77bcec89df74e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8a0a9d6421f71a958964fcce2737df3') in 0.011025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/近战木乃伊/受伤/正面右1.png
+  artifactKey: Guid(ee4497db989ca48418510a9ccc2c97b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/近战木乃伊/受伤/正面右1.png using Guid(ee4497db989ca48418510a9ccc2c97b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0653e90b1e9c89f7f7aab4b69b58ee6f') in 0.011793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/5.png
+  artifactKey: Guid(f241d19df00de1a45b598716b09d27e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/5.png using Guid(f241d19df00de1a45b598716b09d27e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdab572c7e914aef8397bee4c1cac709') in 0.011679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/3.png
+  artifactKey: Guid(19284b9c38df8c04f8e8b5b983fa3e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/3.png using Guid(19284b9c38df8c04f8e8b5b983fa3e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e3e12aa5f5395370db3e4c08d2b523') in 0.010423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/5.png
+  artifactKey: Guid(9c0ac922d02be634f9873831af8a9aa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/5.png using Guid(9c0ac922d02be634f9873831af8a9aa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5c2c11bc2ce0644c18865642a1b6121') in 0.011330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/2.png
+  artifactKey: Guid(6e19450512f7eba46bc9ef043483c921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/2.png using Guid(6e19450512f7eba46bc9ef043483c921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40d94480a00fabc4d1f5055b100b1714') in 0.010134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/10.png
+  artifactKey: Guid(bb82658dca286fa4abaf9b93f6a04b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/10.png using Guid(bb82658dca286fa4abaf9b93f6a04b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58dcce10bc964f6cc8e94dbef24d12f4') in 0.009344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/近战木乃伊/攻击/正面右1.png
+  artifactKey: Guid(c1010eeead1a8204a948749d0100ce29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/近战木乃伊/攻击/正面右1.png using Guid(c1010eeead1a8204a948749d0100ce29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '368e5e7a59f0d6f5c90523dd723324c9') in 0.010329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/11.png
+  artifactKey: Guid(862312134d3ab3642bb2454daeebf53b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/降临/11.png using Guid(862312134d3ab3642bb2454daeebf53b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98d222fbd235f13d46bc9fd4422a321a') in 0.011256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/9.png
+  artifactKey: Guid(afc069cfeda7cb04293e852ccdc4dcf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/空气神/降临/9.png using Guid(afc069cfeda7cb04293e852ccdc4dcf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd831ad3951e1fb60bf13ed97fb62a04') in 0.011601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/3.png
+  artifactKey: Guid(e506b67631147514e9f2ba75a9648870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/战争神/降临/3.png using Guid(e506b67631147514e9f2ba75a9648870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3e5bda703c7163c6289eafd83694467') in 0.011373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/丰饶神（随从）/待机/正面右1.png
+  artifactKey: Guid(ea5b370580ba016439368d5f1911dd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/丰饶神（随从）/待机/正面右1.png using Guid(ea5b370580ba016439368d5f1911dd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6925f0e93e625552ed20e53014b202c9') in 0.011683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/6.png
+  artifactKey: Guid(c8ec87c12cc7b2a41aeee5d9e1c09d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/太阳神/不死鸟变身/6.png using Guid(c8ec87c12cc7b2a41aeee5d9e1c09d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ada5270a2dae8db5d450960fa8aa55') in 0.010292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/3.png
+  artifactKey: Guid(58411cd328aa3db468fe2208467c0e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/大地神/降临/3.png using Guid(58411cd328aa3db468fe2208467c0e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23a0f0ce38d33e2b42bd03f112e80171') in 0.010586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000441 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/9.png
+  artifactKey: Guid(81efb2e2bd4050a48b9620f184044920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/9.png using Guid(81efb2e2bd4050a48b9620f184044920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ef35d3e114112e0f0ad95c1c7891bf6') in 0.013471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/8.png
+  artifactKey: Guid(a8b8ff1bc1768fd4b836fb20fb34cfaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/8.png using Guid(a8b8ff1bc1768fd4b836fb20fb34cfaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9396d96c8e64d6186d801f5f5469184c') in 0.011271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/1.png
+  artifactKey: Guid(f79d596899d2e164fabad6110006b5f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/天空神/降临/1.png using Guid(f79d596899d2e164fabad6110006b5f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '734e9d2e45a47f5111d122530a82bee6') in 0.008287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/2.png
+  artifactKey: Guid(f1e5b88c521c1a64da7d585582687db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/死神/降临/2.png using Guid(f1e5b88c521c1a64da7d585582687db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b994fcd9defbc90872f84702f8694067') in 0.008157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000477 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/光炮/消失/1.png
+  artifactKey: Guid(251341cc3b9c8fa4592285c6c2cdbc7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/眼球蝙蝠/光炮/消失/1.png using Guid(251341cc3b9c8fa4592285c6c2cdbc7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66297baab8d27db9d7c3a6aa5b88fb39') in 0.009875 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.670885 seconds.
+  path: Assets/Perfab/Player.prefab
+  artifactKey: Guid(8719942f7ec4fc94181e22416be0f266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Perfab/Player.prefab using Guid(8719942f7ec4fc94181e22416be0f266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b0a560dd7aaba0621eeabebece9bf7') in 0.012473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 231.946440 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/主角/受伤
+  artifactKey: Guid(ca5df4d209c6b934f94ca4156cd2ab29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/主角/受伤 using Guid(ca5df4d209c6b934f94ca4156cd2ab29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62adce65eb95e48983da08f8fb582feb') in 0.002331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.105911 seconds.
+  path: Assets/Pictures/pics/人物动作2.0/人物动作/主角/受伤/正面右1.png
+  artifactKey: Guid(3e27c0fe306811e439f9830015e37016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/pics/人物动作2.0/人物动作/主角/受伤/正面右1.png using Guid(3e27c0fe306811e439f9830015e37016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b4408c44fc79543ebee2a48ceea5ce4') in 0.012115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.842293 seconds.
+  path: Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/GetHit
+  artifactKey: Guid(ca5df4d209c6b934f94ca4156cd2ab29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/GetHit using Guid(ca5df4d209c6b934f94ca4156cd2ab29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a82089544383b91f97e3b2f93db43231') in 0.002620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.000797 seconds.
+  path: Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/待机
+  artifactKey: Guid(dcc3092b6925e2c4caadd9be4fd159f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/待机 using Guid(dcc3092b6925e2c4caadd9be4fd159f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad5073ac85da1da21adc7cb93e96a09a') in 0.002202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.733162 seconds.
+  path: Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/Idle
+  artifactKey: Guid(dcc3092b6925e2c4caadd9be4fd159f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/Idle using Guid(dcc3092b6925e2c4caadd9be4fd159f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e0abd139550b2982890613e34eba105') in 0.002391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.049590 seconds.
+  path: Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/技能
+  artifactKey: Guid(d8fc8c7f0803d6a429f6b90fe87824de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/技能 using Guid(d8fc8c7f0803d6a429f6b90fe87824de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cc2aa2de037e35e424f167a60665be7') in 0.002254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.349710 seconds.
+  path: Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/Skill
+  artifactKey: Guid(d8fc8c7f0803d6a429f6b90fe87824de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/Skill using Guid(d8fc8c7f0803d6a429f6b90fe87824de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81735275c803369340b7d6c6f3dd46d9') in 0.002099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.125188 seconds.
+  path: Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/拳风
+  artifactKey: Guid(11d9b9e874152754887230655ff3cc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/拳风 using Guid(11d9b9e874152754887230655ff3cc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6b8441ffa2f6ecbef1030b6bc97cdf1') in 0.002359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.473439 seconds.
+  path: Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/Effect
+  artifactKey: Guid(11d9b9e874152754887230655ff3cc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/Effect using Guid(11d9b9e874152754887230655ff3cc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c24683c121b2dad199f90005b12fb397') in 0.002488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.542229 seconds.
+  path: Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/攻击
+  artifactKey: Guid(cd9de1040b2ae5e44b1beac68e1387f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/攻击 using Guid(cd9de1040b2ae5e44b1beac68e1387f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d4a028da8bb206add6543eeb7242231') in 0.002266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.464568 seconds.
+  path: Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/Attack
+  artifactKey: Guid(cd9de1040b2ae5e44b1beac68e1387f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/Attack using Guid(cd9de1040b2ae5e44b1beac68e1387f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22f330c217286ab9333e9ecd1618a2d7') in 0.002309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.803703 seconds.
+  path: Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/移动
+  artifactKey: Guid(9d27515c321503d4898dd1dfbcb4b9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/移动 using Guid(9d27515c321503d4898dd1dfbcb4b9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '745e905a238490fb036f1fa9016fd987') in 0.002238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.319073 seconds.
+  path: Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/死亡
+  artifactKey: Guid(4b717938749d3fb4eba954074aaf7cc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/死亡 using Guid(4b717938749d3fb4eba954074aaf7cc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02d4bff74132531491632dc63bca31d6') in 0.002063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.087733 seconds.
+  path: Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/Death
+  artifactKey: Guid(4b717938749d3fb4eba954074aaf7cc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/Death using Guid(4b717938749d3fb4eba954074aaf7cc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9689bb23faadf867d2b18e2a064e4790') in 0.002388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.921247 seconds.
+  path: Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/Move
+  artifactKey: Guid(9d27515c321503d4898dd1dfbcb4b9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/Move using Guid(9d27515c321503d4898dd1dfbcb4b9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57943abf0f31797ed0f2df78932ff959') in 0.002666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.147814 seconds.
+  path: Assets/IGamesTools/IGamesToolsResources
+  artifactKey: Guid(c1862d4da55be0d4a855f0b9cfb282d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsResources using Guid(c1862d4da55be0d4a855f0b9cfb282d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ef5df9743a415a56ba6ec0c2e48fac7') in 0.002613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.249436 seconds.
+  path: Assets/IGamesTools/IGamesToolsResources/AnimationController
+  artifactKey: Guid(615bc9bfb1574d94d8101ea347b6140b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsResources/AnimationController using Guid(615bc9bfb1574d94d8101ea347b6140b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010baf7bdee4d37b08f92a1b7d9c030f') in 0.002113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.173252 seconds.
+  path: Assets/IGamesTools/IGamesToolsResources/Animation
+  artifactKey: Guid(01f86e7fd53de324f82cb5fb4dbedddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsResources/Animation using Guid(01f86e7fd53de324f82cb5fb4dbedddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '381607f7cc9e7626f30bf0483fb7023e') in 0.002262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.209166 seconds.
+  path: Assets/IGamesTools/IGamesToolsResources/Prefabs
+  artifactKey: Guid(6d7fe264bf384b74aaf0c946fd4bc378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsResources/Prefabs using Guid(6d7fe264bf384b74aaf0c946fd4bc378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f75b9fb6a18317190b26380d7f718c3a') in 0.002496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.330431 seconds.
+  path: Assets/IGamesTools/IGamesToolsResources/Animation/Player
+  artifactKey: Guid(3770d3dfa0ee59e4392390576e1eba6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsResources/Animation/Player using Guid(3770d3dfa0ee59e4392390576e1eba6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3bd412371693a4631b611bc2754cbfc') in 0.001785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.905280 seconds.
+  path: Assets/IGamesTools/IGamesToolsResources/Animation/Player/GetHit.anim
+  artifactKey: Guid(0a81d4593e666264ab27dbb5e23077f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsResources/Animation/Player/GetHit.anim using Guid(0a81d4593e666264ab27dbb5e23077f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beb4d1593fbc06518fae50b72c0a2a20') in 0.005325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.465914 seconds.
+  path: Assets/IGamesTools/IGamesToolsResources/Animation/Player/Attack.anim
+  artifactKey: Guid(dc29b9b18d941c6409b3151e010d7aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsResources/Animation/Player/Attack.anim using Guid(dc29b9b18d941c6409b3151e010d7aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c28531a5ccb3396d47902d107cbff6') in 0.002602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.760940 seconds.
+  path: Assets/IGamesTools/IGamesToolsResources/Animation/Player/Skill.anim
+  artifactKey: Guid(6521b9af4369f73458275536c444d353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsResources/Animation/Player/Skill.anim using Guid(6521b9af4369f73458275536c444d353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8656a21d6d801dd6cb50343e344632d1') in 0.003081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.498317 seconds.
+  path: Assets/Animation/Player
+  artifactKey: Guid(d1bb486918ecbf64391c0db32d5323fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Player using Guid(d1bb486918ecbf64391c0db32d5323fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58df60ad4086f230d97626fa294c8047') in 0.002434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.505701 seconds.
+  path: Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/Attack/正面右1.png
+  artifactKey: Guid(c12aa4e846c2cee4f81b363dcc10d247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IGamesTools/IGamesToolsRaw/BuildAnimation/Player/Attack/正面右1.png using Guid(c12aa4e846c2cee4f81b363dcc10d247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba734522a0cc31b6d0a2d72a555c74a8') in 0.011124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.892009 seconds.
+  path: Assets/Animation/Player/Death.anim
+  artifactKey: Guid(a527ba0e877a15648ab01c23f0c98611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Player/Death.anim using Guid(a527ba0e877a15648ab01c23f0c98611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71fca1bf03518af79b5a51e964813d88') in 0.003075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.365990 seconds.
+  path: Assets/Animation/Player/Player.controller
+  artifactKey: Guid(297f13ea7810cec40937bfc715904488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Player/Player.controller using Guid(297f13ea7810cec40937bfc715904488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7b3fe92f4197de6273c4fc7b0f37927') in 0.007355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.949098 seconds.
+  path: Assets/Animation/Player/Idle.anim
+  artifactKey: Guid(60121f65903794a4997c862264174f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Player/Idle.anim using Guid(60121f65903794a4997c862264174f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73de981a05bff7dedbf9fade2f9f7221') in 0.002857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.369807 seconds.
+  path: Assets/Animation/Player/Move.anim
+  artifactKey: Guid(eb0dd81ed6b8a8541931fa58ed46f784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Player/Move.anim using Guid(eb0dd81ed6b8a8541931fa58ed46f784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7fea803b180a19ab13a0ae4a08409eb') in 0.003177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.800003 seconds.
+  path: Assets/Animation/Player/Move.anim
+  artifactKey: Guid(eb0dd81ed6b8a8541931fa58ed46f784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Player/Move.anim using Guid(eb0dd81ed6b8a8541931fa58ed46f784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f32ed9594cbaf0c4fe1c514b358d59dc') in 0.003281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.403886 seconds.
+  path: Assets/Animation/Player/Player.controller
+  artifactKey: Guid(297f13ea7810cec40937bfc715904488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Player/Player.controller using Guid(297f13ea7810cec40937bfc715904488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ca14b717b8b915d6bc65d64d2ba9c9c') in 0.003745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 126.922105 seconds.
+  path: Assets/Animation/Player/Player.controller
+  artifactKey: Guid(297f13ea7810cec40937bfc715904488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Player/Player.controller using Guid(297f13ea7810cec40937bfc715904488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8f035e61b180e77535fd1baf943fc88') in 0.004111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.202777 seconds.
+  path: Assets/Animation/Player/Move.anim
+  artifactKey: Guid(eb0dd81ed6b8a8541931fa58ed46f784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Player/Move.anim using Guid(eb0dd81ed6b8a8541931fa58ed46f784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c7d202ac37592b53cd08d0f7eca446c') in 0.002704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.732407 seconds.
+  path: Assets/Animation/Player/Idle.anim
+  artifactKey: Guid(60121f65903794a4997c862264174f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Player/Idle.anim using Guid(60121f65903794a4997c862264174f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a677091022b5e9c6d5a3cbb62babceb') in 0.002761 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002233 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.025 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1026ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (826ms)
+			LoadAssemblies (127ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (280ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (328ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1686 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.3 MB.
+System memory in use after: 78.4 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2149.
+Total: 2.811000 ms (FindLiveObjects: 0.129100 ms CreateObjectMapping: 0.036100 ms MarkObjects: 2.563800 ms  DeleteObjects: 0.080100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002579 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.260 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1261ms)
+		BeginReloadAssembly (166ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1015ms)
+			LoadAssemblies (146ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (419ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (341ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (226ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1686 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.4 MB.
+System memory in use after: 78.5 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2151.
+Total: 3.418500 ms (FindLiveObjects: 0.197000 ms CreateObjectMapping: 0.082800 ms MarkObjects: 3.009800 ms  DeleteObjects: 0.127500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002749 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.163 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1163ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (935ms)
+			LoadAssemblies (137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (366ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (332ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (212ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1686 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.4 MB.
+System memory in use after: 78.5 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2153.
+Total: 2.714700 ms (FindLiveObjects: 0.114800 ms CreateObjectMapping: 0.036500 ms MarkObjects: 2.505200 ms  DeleteObjects: 0.056600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002267 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.058 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1058ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (855ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (301ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (326ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (213ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1686 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.4 MB.
+System memory in use after: 78.5 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2155.
+Total: 3.215500 ms (FindLiveObjects: 0.124400 ms CreateObjectMapping: 0.038300 ms MarkObjects: 2.957300 ms  DeleteObjects: 0.094400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003260 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.960 seconds
+Domain Reload Profiling:
+	ReloadAssembly (960ms)
+		BeginReloadAssembly (136ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (769ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (261ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (294ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (196ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1686 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.4 MB.
+System memory in use after: 78.5 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2157.
+Total: 2.948200 ms (FindLiveObjects: 0.148600 ms CreateObjectMapping: 0.043200 ms MarkObjects: 2.679700 ms  DeleteObjects: 0.075000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002125 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.953 seconds
+Domain Reload Profiling:
+	ReloadAssembly (954ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (770ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (250ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (305ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (199ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1686 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.4 MB.
+System memory in use after: 78.5 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2159.
+Total: 2.695000 ms (FindLiveObjects: 0.119600 ms CreateObjectMapping: 0.040300 ms MarkObjects: 2.465200 ms  DeleteObjects: 0.068800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003373 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.176 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1177ms)
+		BeginReloadAssembly (155ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (951ms)
+			LoadAssemblies (144ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (326ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (356ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (231ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1686 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.4 MB.
+System memory in use after: 78.5 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2161.
+Total: 3.669900 ms (FindLiveObjects: 0.145800 ms CreateObjectMapping: 0.035900 ms MarkObjects: 3.372500 ms  DeleteObjects: 0.114000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 790.283723 seconds.
+  path: Assets/Perfab/Player.prefab
+  artifactKey: Guid(8719942f7ec4fc94181e22416be0f266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Perfab/Player.prefab using Guid(8719942f7ec4fc94181e22416be0f266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee6032881c06dab8d66cf095f3486911') in 0.064551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.516592 seconds.
+  path: Assets/Animation/Player/Player.controller
+  artifactKey: Guid(297f13ea7810cec40937bfc715904488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Player/Player.controller using Guid(297f13ea7810cec40937bfc715904488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d8c268fa587ef0a6694d206dffe56d3') in 0.003927 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003204 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.072 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1073ms)
+		BeginReloadAssembly (138ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (880ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (361ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (296ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (194ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1686 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.5 MB.
+System memory in use after: 78.6 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2167.
+Total: 2.799200 ms (FindLiveObjects: 0.166100 ms CreateObjectMapping: 0.046700 ms MarkObjects: 2.479700 ms  DeleteObjects: 0.105400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002628 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.962 seconds
+Domain Reload Profiling:
+	ReloadAssembly (962ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (761ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (268ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (283ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1686 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.5 MB.
+System memory in use after: 78.6 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2169.
+Total: 3.019200 ms (FindLiveObjects: 0.141800 ms CreateObjectMapping: 0.044500 ms MarkObjects: 2.771800 ms  DeleteObjects: 0.060300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004015 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.095 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1096ms)
+		BeginReloadAssembly (145ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (884ms)
+			LoadAssemblies (133ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (339ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (305ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (202ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1686 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.5 MB.
+System memory in use after: 78.6 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2171.
+Total: 3.112200 ms (FindLiveObjects: 0.123300 ms CreateObjectMapping: 0.034300 ms MarkObjects: 2.773600 ms  DeleteObjects: 0.178800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002805 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.951 seconds
+Domain Reload Profiling:
+	ReloadAssembly (951ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (766ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (282ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (271ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (177ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1686 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.5 MB.
+System memory in use after: 78.6 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2173.
+Total: 2.694600 ms (FindLiveObjects: 0.132100 ms CreateObjectMapping: 0.040900 ms MarkObjects: 2.453400 ms  DeleteObjects: 0.066800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004656 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.966 seconds
+Domain Reload Profiling:
+	ReloadAssembly (967ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (756ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (258ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (283ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (180ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1686 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.5 MB.
+System memory in use after: 78.6 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2175.
+Total: 3.066400 ms (FindLiveObjects: 0.395100 ms CreateObjectMapping: 0.070400 ms MarkObjects: 2.532300 ms  DeleteObjects: 0.066900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Stone
   - Ground
+  - Patrol
   layers:
   - Default
   - TransparentFX
