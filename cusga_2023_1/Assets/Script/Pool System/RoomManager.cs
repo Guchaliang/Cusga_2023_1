@@ -6,7 +6,7 @@ using PolyNav;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class RoomManager : Singleton<RoomManager>
+public class RoomManager : MonoBehaviour
 {
     public BasicRoom[,] roomArray;//所有房间的二维数组
     public int roomNum;
@@ -17,17 +17,14 @@ public class RoomManager : Singleton<RoomManager>
     
     [HideInInspector]
     public BasicRoom currentRoom;
-    public PlayerTest player;
-
-    protected override void Awake()
+    
+    private void Awake()
     {
-        base.Awake();
-        roomArray = new BasicRoom[roomNum * 2, roomNum * 2];
+        roomArray = new BasicRoom[roomNum*2, roomNum*2];
     }
 
     private void Start()
     {
-        this.player = GameManager.Instance.player;
         CreateRooms();
     }
 
@@ -62,12 +59,11 @@ public class RoomManager : Singleton<RoomManager>
             //创建起始房间
             BasicRoom lastRoom = roomArray[roomArray.GetLength(0) / 2, roomArray.GetLength(1) / 2] =
                 CreateRoom(new Vector2(roomArray.GetLength(0)/2,roomArray.GetLength(1)/2));
-            lastRoom.roomType = RoomType.Initial;
+            lastRoom.myType = RoomType.Initial;
             currentRoom = lastRoom;
             
-            
              //TODO 要改的
-             //GameManager.Instance.cinemachineConfiner.m_BoundingShape2D = currentRoom.GetComponent<PolygonCollider2D>();
+             GameManager.Instance.cinemachineConfiner.m_BoundingShape2D = currentRoom.GetComponent<PolygonCollider2D>();
 
             //创建其他房间
             //Lambda表达式构建临时函数
@@ -113,19 +109,9 @@ public class RoomManager : Singleton<RoomManager>
                     singleDoorRoomList.Add(room);
                 }
             }
-
-            
-            foreach (BasicRoom room in roomArray)
-            {
-                if(room)
-                    room.OpenDoorActive(false);
-            }
         }
-
-        StartCoroutine(MoveToRoom(Vector2.zero));
     }
 
-    //将游戏物体门启用
     public void DoorActive()
     {
         foreach (BasicRoom room in roomArray)
@@ -153,44 +139,4 @@ public class RoomManager : Singleton<RoomManager>
             }
         }
     }
-
-    public void MoveToNextRoom(Vector2 moveDirection)
-    {
-        if (currentRoom.isCleared)
-        {
-            StartCoroutine(MoveToRoom(moveDirection));
-        }
-    }
-
-    IEnumerator MoveToRoom(Vector2 moveDirection)
-    {
-        currentRoom = roomArray[(int)(currentRoom.coordinate.x + moveDirection.x), (int)(currentRoom.coordinate.y + moveDirection.y)];
-        Debug.Log(currentRoom.roomType);
-        
-        //假如没有到达过这个房间，将这个房间先初始化
-        if (!currentRoom.isArrived)
-        {
-            currentRoom.Initialize();
-            currentRoom.isArrived = true;
-        }
-
-        player.canMove = false;
-        player.transform.position += (Vector3)moveDirection*3;
-        
-        
-        //移动摄像机
-        float time = 0;
-        Vector3 targetPos = currentRoom.transform.position;
-        targetPos.z = -10;
-        while (time <= 0.3f)
-        {
-            GameManager.Instance.myCamera.transform.position = Vector3.Lerp(GameManager.Instance.myCamera.transform.position, targetPos, (1 / 0.3f) * (time += Time.deltaTime));
-            yield return null;
-        }
-
-        player.canMove = true;
-        yield return null;
-    }
-    
-    
 }

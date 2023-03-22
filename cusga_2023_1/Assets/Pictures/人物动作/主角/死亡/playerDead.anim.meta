@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:cusga_2023_1/Assets/Pictures/人物动作/主角/死亡/playerDead.anim.meta
 guid: dc29b9b18d941c6409b3151e010d7aaf
+=======
+guid: 797dfe887a6bf0641b72c2e7008b37f1
+>>>>>>> parent of cd1c1ee (移动整好了):cusga_2023_1/Assets/Pictures/pics/人物动作2.0/人物动作/主角/死亡/playerDead.anim.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000

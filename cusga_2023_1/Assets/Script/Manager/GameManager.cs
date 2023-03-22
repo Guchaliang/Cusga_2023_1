@@ -6,18 +6,10 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    public Camera myCamera;
-    public PlayerTest playerPrefab;
-
-    [HideInInspector] public PlayerTest player;
+    public CinemachineConfiner cinemachineConfiner;
 
     private void Start()
     {
-        SetPlayerActive();
-    }
-
-    public void SetPlayerActive()
-    {
-        player = Instantiate(playerPrefab);
+        cinemachineConfiner = FindObjectOfType<CinemachineConfiner>();
     }
 }

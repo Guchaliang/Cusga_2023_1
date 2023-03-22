@@ -6,8 +6,7 @@ using UnityEngine.Windows;
 
 public class PoolManager : MonoBehaviour
 {
-    [SerializeField] private Pool[] bulletPools;
-    [SerializeField] private Pool[] EnemyPools;
+    [SerializeField] private Pool[] enemyBulletPools;
 
     private static Dictionary<GameObject, Pool> directory;
     
@@ -15,8 +14,7 @@ public class PoolManager : MonoBehaviour
     {
         directory = new Dictionary<GameObject, Pool>();
         
-        Initialize(bulletPools);
-        Initialize(EnemyPools);
+        Initialize(enemyBulletPools);
     }
 
 
