@@ -17,7 +17,6 @@ public class EnemyState : IState//Idle状态
     public void OnEnter()
     {
         m_Enemy.animator.Play("Idle");
-        Debug.Log(this);
     }
 
     public void OnUpdate()
@@ -52,7 +51,6 @@ public class PatrolState : IState
         m_Enemy.animator.Play("Move");
         m_Enemy.ChoosePatrolTarget();
         m_Enemy.FlipTo();
-        Debug.Log(this);
     }
 
     public void OnUpdate()
@@ -90,7 +88,6 @@ public class ChaseState : IState
     public void OnEnter()
     {
         m_Enemy.animator.Play("Move");
-        Debug.Log(this);
     }
 
     public void OnUpdate()
@@ -144,7 +141,6 @@ public class AttackState : IState//攻击过程中不可打断
     public void OnEnter()
     {
         m_Enemy.animator.Play("Attack");
-        Debug.Log(this);
         m_Enemy.FlipTo();
         m_Enemy.agent.Stop();
     }

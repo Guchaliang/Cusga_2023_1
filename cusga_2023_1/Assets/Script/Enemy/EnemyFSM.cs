@@ -106,7 +106,14 @@ public class EnemyFSM : MonoBehaviour
     
     protected virtual void AttackPlayer()
     {
-          Physics2D.OverlapCircle(attackPoint.position, enemyInfo.AttackRange);
+        Collider2D target = Physics2D.OverlapCircle(attackPoint.position, enemyInfo.AttackRange,LayerMask.GetMask("Player"));
+        
+        if (target.CompareTag("Player"))
+        {
+            enemyInfo.TakeDamage(enemyInfo,target.gameObject.GetComponent<CharacterInfo>());
+            
+            Debug.Log("OK");
+        }
     }
 
     

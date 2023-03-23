@@ -12,7 +12,7 @@ public class RoomManager : Singleton<RoomManager>
     public int roomNum;
     
     [Header("房间属性")]
-    public BasicRoom roomPrefab;//房间种类
+    public GameObject roomPrefab;//房间种类
     public Vector2 offset;//房间的x y大小
     
     [HideInInspector]
@@ -30,11 +30,12 @@ public class RoomManager : Singleton<RoomManager>
         this.player = GameManager.Instance.player;
         CreateRooms();
     }
-
+    
+    //TODO 待修改
     public BasicRoom CreateRoom(Vector2 Pos)
     {
-        BasicRoom newRoom = Instantiate(roomPrefab, new Vector2(((int) Pos.x - roomArray.GetLength(0) / 2) * offset.x,
-            ((int) Pos.y - roomArray.GetLength(1) / 2) * offset.y),Quaternion.identity,transform);
+        BasicRoom newRoom = PoolManager.Release(roomPrefab, new Vector2(((int) Pos.x - roomArray.GetLength(0) / 2) * offset.x,
+            ((int) Pos.y - roomArray.GetLength(1) / 2) * offset.y),Quaternion.identity).GetComponent<BasicRoom>();
         newRoom.coordinate = Pos;
         newRoom.map.GenerateMap();
         
@@ -62,13 +63,8 @@ public class RoomManager : Singleton<RoomManager>
             //创建起始房间
             BasicRoom lastRoom = roomArray[roomArray.GetLength(0) / 2, roomArray.GetLength(1) / 2] =
                 CreateRoom(new Vector2(roomArray.GetLength(0)/2,roomArray.GetLength(1)/2));
-            lastRoom.roomType = RoomType.Initial;
             currentRoom = lastRoom;
             
-            
-             //TODO 要改的
-             //GameManager.Instance.cinemachineConfiner.m_BoundingShape2D = currentRoom.GetComponent<PolygonCollider2D>();
-
             //创建其他房间
             //Lambda表达式构建临时函数
             Action<int, int> NextRoom = (newX, newY) =>
@@ -118,7 +114,7 @@ public class RoomManager : Singleton<RoomManager>
             foreach (BasicRoom room in roomArray)
             {
                 if(room)
-                    room.OpenDoorActive(false);
+                    room.SetDoorActive(false);
             }
         }
 
@@ -167,10 +163,10 @@ public class RoomManager : Singleton<RoomManager>
         currentRoom = roomArray[(int)(currentRoom.coordinate.x + moveDirection.x), (int)(currentRoom.coordinate.y + moveDirection.y)];
         Debug.Log(currentRoom.roomType);
         
-        //假如没有到达过这个房间，将这个房间先初始化
+        //假如没有到达过这个房间，将这个房间生成对应的东西
         if (!currentRoom.isArrived)
         {
-            currentRoom.Initialize();
+            currentRoom.GenerateInit();
             currentRoom.isArrived = true;
         }
 
@@ -191,6 +187,36 @@ public class RoomManager : Singleton<RoomManager>
         player.canMove = true;
         yield return null;
     }
-    
-    
+
+    public void SetRoomType(List<BasicRoom> singleDoorRoom)
+    {
+        foreach (BasicRoom room in roomArray)
+        {
+            if (room)
+                room.roomType = RoomType.Enemy;
+        }
+        
+        //初始房间设置
+        currentRoom.roomType = RoomType.Initial;
+        
+        //设置Boss房，奖励房，商店房
+        //奖励房
+        for (int i = 0; i < singleDoorRoom.Count-2; i++)
+        {
+            singleDoorRoom[i].roomType = RoomType.Award;
+        }
+        
+        //Boss房
+        singleDoorRoom[singleDoorRoom.Count - 1].roomType = RoomType.Boss;
+
+        //商店房
+        singleDoorRoom[singleDoorRoom.Count - 2].roomType = RoomType.Store;
+        
+        //初始化
+        foreach (BasicRoom room in roomArray)
+        {
+            if(room)
+                room.Initialize();
+        }
+    }
 }

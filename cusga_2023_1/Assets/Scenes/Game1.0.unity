@@ -167,7 +167,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPools: []
-  EnemyPools: []
+  EnemyPools:
+  - prefab: {fileID: 6677643645046339512, guid: d6442dd45025635438ddd7873bf7eea7, type: 3}
+    size: 5
+  - prefab: {fileID: 5777438264688838078, guid: 8a293e743c9e14b439decbbec8c491d5, type: 3}
+    size: 5
+  RoomPools:
+  - prefab: {fileID: 3567276548977110944, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+    size: 12
 --- !u!1 &329993776
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomNum: 12
-  roomPrefab: {fileID: 1773497663017409325, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+  roomPrefab: {fileID: 3567276548977110944, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
   offset: {x: 17.8, y: 10}
   currentRoom: {fileID: 0}
   player: {fileID: 0}

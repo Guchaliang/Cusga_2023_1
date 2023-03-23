@@ -55,6 +55,7 @@
      <Compile Include="Assets\Script\Manager\EnemyManager.cs" />
      <Compile Include="Assets\Script\Doormanager.cs" />
      <Compile Include="Assets\Script\RoomGenerator.cs" />
+     <Compile Include="Assets\Script\RoomLayer\RoomLayout.cs" />
      <Compile Include="Assets\Script\Enemy\EnemyFSM.cs" />
      <Compile Include="Assets\Script\Character Stats\Combat\AttackData_So.cs" />
      <Compile Include="Assets\Script\Character Stats\CharacterInfo.cs" />

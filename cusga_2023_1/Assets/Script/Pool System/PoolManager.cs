@@ -8,6 +8,7 @@ public class PoolManager : MonoBehaviour
 {
     [SerializeField] private Pool[] bulletPools;
     [SerializeField] private Pool[] EnemyPools;
+    [SerializeField] private Pool[] RoomPools;
 
     private static Dictionary<GameObject, Pool> directory;
     
@@ -17,6 +18,7 @@ public class PoolManager : MonoBehaviour
         
         Initialize(bulletPools);
         Initialize(EnemyPools);
+        Initialize(RoomPools);
     }
 
 

@@ -12,7 +12,7 @@ public enum Direction
 
 public enum RoomType
 {
-    Initial,Enemy,Boss,Award,Store
+    Initial,Enemy,Boss,Award,Store,Hide
 }
 
 public class BasicRoom : MonoBehaviour
@@ -33,11 +33,6 @@ public class BasicRoom : MonoBehaviour
     public Dictionary<Direction, BasicRoom> neighboringRooms = new Dictionary<Direction, BasicRoom>();
     public PolyNavMap map;
     
-    private void Start()
-    {
-        
-    }
-
     //将对应方向的房间门显示
     public void SetDoorActive(Direction direction,BasicRoom neighbor)
     {
@@ -51,8 +46,8 @@ public class BasicRoom : MonoBehaviour
         neighboringRooms.Add(direction,neighbor);
     }
     
-    //打开已激活的门
-    public void OpenDoorActive(bool active)
+    //设置已激活的门
+    public void SetDoorActive(bool active)
     {
         foreach(Direction direction in neighboringRooms.Keys)
         {
@@ -61,6 +56,7 @@ public class BasicRoom : MonoBehaviour
         }
     }
 
+    //初始化设置文件
     public void Initialize()
     {
         if (this.roomType == RoomType.Initial)
@@ -81,8 +77,8 @@ public class BasicRoom : MonoBehaviour
         }
     }
 
-    public void GenerateObjectInRoomWithPosition(GameObject obj, Vector2 Pos)
+    public void GenerateInit()
     {
-        PoolManager.Release(obj, Pos);
+        
     }
 }
