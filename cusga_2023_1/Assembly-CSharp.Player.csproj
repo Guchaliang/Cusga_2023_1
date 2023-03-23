@@ -71,6 +71,7 @@
     <Compile Include="Assets\Script\RotatingCamera.cs" />
     <Compile Include="Assets\Script\Character Stats\ScriptableObject\CharacterData_So.cs" />
     <Compile Include="Assets\Script\Obstacles.cs" />
+    <Compile Include="Assets\Script\Pool System\BasicRoom.cs" />
     <Compile Include="Assets\bag\ItemOnWorld.cs" />
     <Compile Include="Assets\scripts\PlayDeath.cs" />
     <Compile Include="Assets\Script\Pool System\Pool.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Assets\scripts\TidyObject.cs" />
     <Compile Include="Assets\Script\Test\PlayerTest.cs" />
     <Compile Include="Assets\scripts\PlayerTest2.cs" />
+    <Compile Include="Assets\Script\Pool System\RoomManager.cs" />
     <Compile Include="Assets\Script\Bullet\Bullet.cs" />
     <Compile Include="Assets\Script\Manager\DialogueManager.cs" />
     <Compile Include="Assets\Script\Room.cs" />
@@ -90,6 +92,7 @@
     <Compile Include="Assets\Script\Dialogue\Talkable.cs" />
     <Compile Include="Assets\Script\Tools\Singleton.cs" />
     <Compile Include="Assets\bag\Slot.cs" />
+    <Compile Include="Assets\Script\Manager\GameManager.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
