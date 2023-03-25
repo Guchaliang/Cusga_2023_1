@@ -20,5 +20,5 @@ public class ItemOnWorld : MonoBehaviour
     {
         playerBag.itemList.Add(thisItem);
         BagMangaer.CreateNewItem(thisItem);
-    }
+    } 
 }
