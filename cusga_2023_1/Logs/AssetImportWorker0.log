@@ -2105,3 +2105,15 @@ Received Import Request.
   path: Assets/Game_Data/AttackData/Player.asset
   artifactKey: Guid(7efc7d80d68cf8e4c8c08d3180a4a7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Game_Data/AttackData/Player.asset using Guid(7efc7d80d68cf8e4c8c08d3180a4a7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3191242a95081b2f19f01cd8273c9758') in 0.005431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2279.301082 seconds.
+  path: Assets/Game_Data/AttackData/Player.asset
+  artifactKey: Guid(7efc7d80d68cf8e4c8c08d3180a4a7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game_Data/AttackData/Player.asset using Guid(7efc7d80d68cf8e4c8c08d3180a4a7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4744ee136d44b99ad4802257f822cec5') in 0.016619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.240331 seconds.
+  path: Assets/Game_Data/CharacterData/Player.asset
+  artifactKey: Guid(094a1bf299e15984ea294cf9f53fe839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game_Data/CharacterData/Player.asset using Guid(094a1bf299e15984ea294cf9f53fe839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b83f0cdb5717f5fb420ab0214fd651b') in 0.001596 seconds 
