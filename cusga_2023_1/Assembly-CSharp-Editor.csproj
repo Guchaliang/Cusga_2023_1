@@ -292,14 +292,32 @@
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
  <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
+ <Reference Include="DemiLib">
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
  <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenProEditor">
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
  </Reference>
  <Reference Include="unityplastic">
  <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
+ <Reference Include="DOTweenEditor">
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DemiEditor">
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll</HintPath>
+ </Reference>
  <Reference Include="log4netPlastic">
  <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenPro">
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -696,9 +714,17 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{6211801c-a91c-a114-707f-e920b7b87219}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{e0fc9ee9-2610-3d88-2394-2624dacf4bdf}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
+      <Project>{b0c0d745-e0a3-df58-7130-25eb8acdd8f8}</Project>
+      <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="PolyNav.csproj">
       <Project>{a73d60c4-ef45-b319-112e-ff0bebb31f38}</Project>

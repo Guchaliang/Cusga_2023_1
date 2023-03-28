@@ -24,7 +24,7 @@ public class EnemyFSM : MonoBehaviour
     public float patrolMaxTime;
     public float patrolMinTime;
     public Obstacles obstacles;//TODO 只是测试，后面改
-    [HideInInspector] public Vector2 awakePos;
+    public Vector2 awakePos;
     [HideInInspector] public Vector2 targetPos;
     
     private void Awake()
@@ -48,15 +48,11 @@ public class EnemyFSM : MonoBehaviour
         TransformState(StateType.Idle);
         
         Player = FindObjectOfType<PlayerTest>().gameObject;
-
-        awakePos = transform.position;
-        agent.map = PolyNavMap.current;
     }
 
     private void FixedUpdate()
     {
         currentState.OnUpdate();
-        
     }
 
     public float GetPatrolTime()
@@ -123,10 +119,5 @@ public class EnemyFSM : MonoBehaviour
         {
             enemyInfo.TakeDamage(1,other.gameObject.GetComponent<CharacterInfo>());
         }
-    }
-    
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireCube(awakePos,new Vector2(patrolRange*2,patrolRange*2));
     }
 }

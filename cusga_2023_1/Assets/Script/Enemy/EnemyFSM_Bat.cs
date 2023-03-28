@@ -13,6 +13,7 @@ public class EnemyFSM_Bat : EnemyFSM
 
         GameObject newBullet = PoolManager.Release(bullet, attackPoint.position, Quaternion.identity);
 
-        newBullet.GetComponent<Bullet>().SetSpeed(direction);    
+        newBullet.GetComponent<Bullet>().SetDirection(direction);
+        newBullet.GetComponent<Bullet>().SetSpeed(5);    
     }
 }

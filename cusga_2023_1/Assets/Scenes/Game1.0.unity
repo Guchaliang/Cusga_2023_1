@@ -152,7 +152,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &12617659
 MonoBehaviour:
@@ -169,9 +169,9 @@ MonoBehaviour:
   bulletPools: []
   EnemyPools:
   - prefab: {fileID: 6677643645046339512, guid: d6442dd45025635438ddd7873bf7eea7, type: 3}
-    size: 5
+    size: 3
   - prefab: {fileID: 5777438264688838078, guid: 8a293e743c9e14b439decbbec8c491d5, type: 3}
-    size: 5
+    size: 3
   RoomPools:
   - prefab: {fileID: 3567276548977110944, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
     size: 12
@@ -204,7 +204,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &329993778
 MonoBehaviour:
@@ -220,6 +220,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCamera: {fileID: 692274577}
   playerPrefab: {fileID: 6187343208951420637, guid: 8719942f7ec4fc94181e22416be0f266, type: 3}
+  enemyList:
+  - {fileID: 6677643645046339512, guid: d6442dd45025635438ddd7873bf7eea7, type: 3}
+  - {fileID: 5777438264688838078, guid: 8a293e743c9e14b439decbbec8c491d5, type: 3}
+  itemList: []
   player: {fileID: 0}
 --- !u!1 &692274575
 GameObject:
@@ -333,11 +337,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb5e710fda330344adf9ca9c19bfd96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomNum: 12
+  roomNum: 10
   roomPrefab: {fileID: 3567276548977110944, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
   offset: {x: 17.8, y: 10}
   currentRoom: {fileID: 0}
   player: {fileID: 0}
+  enemyRoomLayouts:
+  - {fileID: 11400000, guid: f28f17ca7d8b800438632a2d8e4ff130, type: 2}
+  storeRoomLayouts: []
 --- !u!4 &1024334525
 Transform:
   m_ObjectHideFlags: 0

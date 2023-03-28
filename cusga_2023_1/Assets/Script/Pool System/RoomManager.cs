@@ -17,12 +17,24 @@ public class RoomManager : Singleton<RoomManager>
     
     [HideInInspector]
     public BasicRoom currentRoom;
+    [HideInInspector]
     public PlayerTest player;
+    
+    //房间生成点位管理
+    public Dictionary<RoomType, List<RoomLayout>> layoutsMap = new Dictionary<RoomType, List<RoomLayout>>();
+    [SerializeField]
+    private List<RoomLayout> enemyRoomLayouts;
+    [SerializeField]
+    private List<RoomLayout> storeRoomLayouts;
+
 
     protected override void Awake()
     {
         base.Awake();
         roomArray = new BasicRoom[roomNum * 2, roomNum * 2];
+        
+        layoutsMap.Add(RoomType.Enemy,enemyRoomLayouts);
+        layoutsMap.Add(RoomType.Store,storeRoomLayouts);
     }
 
     private void Start()
@@ -31,7 +43,6 @@ public class RoomManager : Singleton<RoomManager>
         CreateRooms();
     }
     
-    //TODO 待修改
     public BasicRoom CreateRoom(Vector2 Pos)
     {
         BasicRoom newRoom = PoolManager.Release(roomPrefab, new Vector2(((int) Pos.x - roomArray.GetLength(0) / 2) * offset.x,
@@ -109,12 +120,15 @@ public class RoomManager : Singleton<RoomManager>
                     singleDoorRoomList.Add(room);
                 }
             }
-
             
+            SetRoomType(singleDoorRoomList);
+
             foreach (BasicRoom room in roomArray)
             {
-                if(room)
-                    room.SetDoorActive(false);
+                if (room)
+                {
+                    room.CheckActiveDoor(false);
+                }
             }
         }
 
@@ -166,11 +180,11 @@ public class RoomManager : Singleton<RoomManager>
         //假如没有到达过这个房间，将这个房间生成对应的东西
         if (!currentRoom.isArrived)
         {
-            currentRoom.GenerateInit();
+            currentRoom.GenerateInitContent();
             currentRoom.isArrived = true;
         }
 
-        player.canMove = false;
+        player.canAct = false;
         player.transform.position += (Vector3)moveDirection*3;
         
         
@@ -184,7 +198,7 @@ public class RoomManager : Singleton<RoomManager>
             yield return null;
         }
 
-        player.canMove = true;
+        player.canAct = true;
         yield return null;
     }
 
@@ -218,5 +232,22 @@ public class RoomManager : Singleton<RoomManager>
             if(room)
                 room.Initialize();
         }
+    }
+
+    public RoomLayout GetTheRoomLayout(RoomType type)
+    {
+        if (layoutsMap.ContainsKey(type)&&layoutsMap[type].Count!=0)
+        {
+            return layoutsMap[type][Random.Range(0, layoutsMap[type].Count - 1)];
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public PolyNavMap GetMap()
+    {
+        return currentRoom.GetComponentInChildren<PolyNavMap>();
     }
 }

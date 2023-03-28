@@ -52,22 +52,22 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\ParadoxNotion\PolyNav2D\DEMO\Scripts\PatrolWaypoints.cs" />
-     <Compile Include="Assets\ParadoxNotion\PolyNav2D\Scripts\Runtime\PolyNavAgent.cs" />
-     <Compile Include="Assets\ParadoxNotion\PolyNav2D\Scripts\Runtime\Heap.cs" />
-     <Compile Include="Assets\ParadoxNotion\PolyNav2D\DEMO\Scripts\FollowTarget.cs" />
-     <Compile Include="Assets\ParadoxNotion\PolyNav2D\DEMO\Scripts\ChangeSpeedOnDepth.cs" />
-     <Compile Include="Assets\ParadoxNotion\PolyNav2D\Scripts\Editor\PolyNavMapInspector.cs" />
-     <Compile Include="Assets\ParadoxNotion\PolyNav2D\Scripts\Runtime\PolyNavMap.cs" />
-     <Compile Include="Assets\ParadoxNotion\PolyNav2D\Scripts\Runtime\PolyNavObstacle.cs" />
-     <Compile Include="Assets\ParadoxNotion\PolyNav2D\Scripts\Runtime\AStar.cs" />
-     <Compile Include="Assets\ParadoxNotion\PolyNav2D\DEMO\Scripts\PatrolRandomWaypoints.cs" />
-     <Compile Include="Assets\ParadoxNotion\PolyNav2D\DEMO\Scripts\CustomMapProvider.cs" />
-     <Compile Include="Assets\ParadoxNotion\PolyNav2D\DEMO\Scripts\DirectionChecker.cs" />
-     <Compile Include="Assets\ParadoxNotion\PolyNav2D\DEMO\Scripts\ClickToMove.cs" />
-     <Compile Include="Assets\ParadoxNotion\PolyNav2D\Scripts\Editor\PolyNavObstacleInspector.cs" />
-     <None Include="Assets\ParadoxNotion\PolyNav2D\README.txt" />
-     <None Include="Assets\ParadoxNotion\PolyNav2D\PolyNav.asmdef" />
+     <Compile Include="Assets\Plugins\ParadoxNotion\PolyNav2D\DEMO\Scripts\PatrolWaypoints.cs" />
+     <Compile Include="Assets\Plugins\ParadoxNotion\PolyNav2D\Scripts\Runtime\PolyNavAgent.cs" />
+     <Compile Include="Assets\Plugins\ParadoxNotion\PolyNav2D\Scripts\Runtime\Heap.cs" />
+     <Compile Include="Assets\Plugins\ParadoxNotion\PolyNav2D\DEMO\Scripts\FollowTarget.cs" />
+     <Compile Include="Assets\Plugins\ParadoxNotion\PolyNav2D\DEMO\Scripts\ChangeSpeedOnDepth.cs" />
+     <Compile Include="Assets\Plugins\ParadoxNotion\PolyNav2D\Scripts\Editor\PolyNavMapInspector.cs" />
+     <Compile Include="Assets\Plugins\ParadoxNotion\PolyNav2D\Scripts\Runtime\PolyNavMap.cs" />
+     <Compile Include="Assets\Plugins\ParadoxNotion\PolyNav2D\Scripts\Runtime\PolyNavObstacle.cs" />
+     <Compile Include="Assets\Plugins\ParadoxNotion\PolyNav2D\Scripts\Runtime\AStar.cs" />
+     <Compile Include="Assets\Plugins\ParadoxNotion\PolyNav2D\DEMO\Scripts\PatrolRandomWaypoints.cs" />
+     <Compile Include="Assets\Plugins\ParadoxNotion\PolyNav2D\DEMO\Scripts\CustomMapProvider.cs" />
+     <Compile Include="Assets\Plugins\ParadoxNotion\PolyNav2D\DEMO\Scripts\DirectionChecker.cs" />
+     <Compile Include="Assets\Plugins\ParadoxNotion\PolyNav2D\DEMO\Scripts\ClickToMove.cs" />
+     <Compile Include="Assets\Plugins\ParadoxNotion\PolyNav2D\Scripts\Editor\PolyNavObstacleInspector.cs" />
+     <None Include="Assets\Plugins\ParadoxNotion\PolyNav2D\README.txt" />
+     <None Include="Assets\Plugins\ParadoxNotion\PolyNav2D\PolyNav.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>F:/unity/2020.3.30f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -305,14 +305,32 @@
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
  <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
+ <Reference Include="DemiLib">
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
  <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenProEditor">
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
  </Reference>
  <Reference Include="unityplastic">
  <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
+ <Reference Include="DOTweenEditor">
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DemiEditor">
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll</HintPath>
+ </Reference>
  <Reference Include="log4netPlastic">
  <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenPro">
+ <HintPath>F:/Github/Cusga_2023_1/cusga_2023_1/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>F:/unity/2020.3.30f1c1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

@@ -1,33 +1,41 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class PlayerTest : MonoBehaviour
 {
     //移动相关
     private Rigidbody2D rb;
-    public bool canMove;
+    public bool canAct;
     
     //动画相关
     private Animator anim;
-    [HideInInspector]public bool isDead;
-    [HideInInspector]public bool isGetHit;
+    [HideInInspector] public bool isAttacked;
+    [HideInInspector] public bool isDead;
+    [HideInInspector] public bool isGetHit;
 
     [SerializeField] private float moveSpeed;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        canMove = true;
+        canAct = true;
     }
 
     
     void FixedUpdate()
     {
-        if (canMove)
+        if (canAct)
         {
             MoveMent();
+            if (!isAttacked)
+            {
+                MoveFlipTo();
+                SwitchAttackAnim();
+            }
         }
         
         SwithAnim();
@@ -41,7 +49,10 @@ public class PlayerTest : MonoBehaviour
         if (direction.magnitude > 1)
             direction = direction.normalized;
         rb.velocity = direction * ( 0.5f + 0.5f * moveSpeed )* 1.7f;
+    }
 
+    public void MoveFlipTo()
+    {
         if (Input.GetAxis("Horizontal") > 0f)
             transform.localScale = new Vector3(1, 1, 1);
         else if(Input.GetAxis("Horizontal") < 0f)
@@ -51,6 +62,39 @@ public class PlayerTest : MonoBehaviour
     private void SwithAnim()
     {
         anim.SetFloat("Speed",rb.velocity.sqrMagnitude);
+        anim.SetBool("AttackH",isAttacked);
+    }
+
+    public void Attack(Vector2 direction)
+    {
+        
+    }
+
+    public void TestAtk()
+    {
+        isAttacked = false;
+    }
+
+    public void SwitchAttackAnim()
+    {
+        /*if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            
+        }
+        else */if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+            isAttacked = true;
+        }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+            isAttacked = true;
+        }
     }
     
     private void OnCollisionEnter2D(Collision2D other)

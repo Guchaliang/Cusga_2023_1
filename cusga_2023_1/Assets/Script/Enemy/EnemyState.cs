@@ -21,7 +21,6 @@ public class EnemyState : IState//Idle状态
 
     public void OnUpdate()
     {
-        //TODO 进入房间后，可以行动
         timer += Time.deltaTime;
         
         if(m_Enemy.getHit)
@@ -104,11 +103,6 @@ public class ChaseState : IState
         RaycastHit2D hit2D = Physics2D.Raycast(m_Enemy.transform.position,
             m_Enemy.targetPos - (Vector2) m_Enemy.transform.position);
 
-        if (hit2D)
-        {
-            Debug.Log(hit2D.collider.gameObject.name); 
-        }
-        
         if (((Vector2)m_Enemy.transform.position - m_Enemy.targetPos).magnitude <
             0.9f * m_Enemy.enemyInfo.AttackRange&& hit2D&&hit2D.collider.CompareTag("Player"))
         { 
@@ -211,6 +205,8 @@ public class DeathState : IState
 
     public void OnExit()
     {
+        RoomManager.Instance.currentRoom.EnemyNum--;
+        this.m_Enemy.gameObject.SetActive(false);
     }
 }
 

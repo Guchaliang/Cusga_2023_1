@@ -6,11 +6,13 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     private Rigidbody2D rb;
-    [HideInInspector]public float speed;
-
+    private float speed;
+    private Vector2 direction;
     public float damage;
 
     private Animator animator;
+
+    
 
     private void Awake()
     {
@@ -23,7 +25,12 @@ public class Bullet : MonoBehaviour
         animator.Play("Bullet");
     }
 
-    public void SetSpeed(Vector2 direction)
+    public void SetDirection(Vector2 direct)
+    {
+        this.direction = direct;
+    }
+
+    public void SetSpeed(float sp)
     {
         rb.velocity = direction * speed;
     }

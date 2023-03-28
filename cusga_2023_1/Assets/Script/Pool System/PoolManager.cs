@@ -17,8 +17,8 @@ public class PoolManager : MonoBehaviour
         directory = new Dictionary<GameObject, Pool>();
         
         Initialize(bulletPools);
-        Initialize(EnemyPools);
         Initialize(RoomPools);
+        Initialize(EnemyPools);
     }
 
 
