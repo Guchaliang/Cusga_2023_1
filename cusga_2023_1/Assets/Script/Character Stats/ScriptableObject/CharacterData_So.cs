@@ -28,4 +28,5 @@ public class CharacterData_So : ScriptableObject
 
     public float dodgelength;//位移距离
 
+    
 }

@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c5fd29a4acb4542a4ef68689041952, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  maxHealth: 5
-  currentHealth: 5
-  Defence: 1
+  maxHealth: 100
+  currentHealth: 100
+  Defence: 100
+  currentDefence: 100
+  dashSpeed: 2
+  dashLength: 2
+  maxSpeed: 4
+  addSpeed: 4
+  delSpeed: 4
+  dodgeId: 2.8
+  dodgelength: 2

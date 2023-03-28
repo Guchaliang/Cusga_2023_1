@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Equipment
       objectReference: {fileID: 0}
+    - target: {fileID: 6168040725861540353, guid: fc7c25ae04b503b42bd6dc5dbe0c2d43, type: 3}
+      propertyPath: thisItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 911ab238a44a1c0489ffb5c5dad6ec67, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc7c25ae04b503b42bd6dc5dbe0c2d43, type: 3}
 --- !u!1 &399865233
@@ -1408,5 +1412,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7578247725951495015, guid: 846982cbb9c9c904b9d5ff6eebf377d7, type: 3}
+      propertyPath: temattackData
+      value: 
+      objectReference: {fileID: 11400000, guid: 7efc7d80d68cf8e4c8c08d3180a4a7ab, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 846982cbb9c9c904b9d5ff6eebf377d7, type: 3}
