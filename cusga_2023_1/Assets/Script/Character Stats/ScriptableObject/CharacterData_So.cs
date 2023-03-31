@@ -24,9 +24,17 @@ public class CharacterData_So : ScriptableObject
 
     public float delSpeed;//减速加速度
 
-    public float dodgeId ;//位移cd
+    public float dodgeId ;//冲刺cd
 
     public float dodgelength;//位移距离
 
-    
+    public float defencedropRate;//护盾掉落率
+
+    public float healthdropRate;//血包掉落率
+
+    public int room_award=1;//是否进入新房间
+
+    public int boss_award = 2;//boss掉落装备数量
+
+    public int protect=0;//护盾值
 }

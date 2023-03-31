@@ -16,4 +16,5 @@ public class AttackData_So : ScriptableObject
     public float damage;//伤害值
 
     public float CoolDown;//冷却
+    
 }

@@ -6,4 +6,5 @@ using UnityEngine;
 public class BagList : ScriptableObject
 {
     public List<Itemm> itemList= new List<Itemm>();
+    
 }

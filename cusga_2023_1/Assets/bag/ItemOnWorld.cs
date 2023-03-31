@@ -12,6 +12,7 @@ public class ItemOnWorld : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             AddNewItem();
+
             Destroy(gameObject);
         }
     }

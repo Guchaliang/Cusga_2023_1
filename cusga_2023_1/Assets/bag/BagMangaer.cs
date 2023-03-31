@@ -19,11 +19,15 @@ public class BagMangaer : MonoBehaviour
         if(instance != null)
             Destroy(this);
         instance = this;
+        if(myBag != null)//清空背包数据中的获取装备
+        {
+            myBag.itemList.Clear();
+        }
     }
 
     private void OnEnable()
     {
-        instance.itemText.text = "";
+        instance.itemText.text = " ";
     }
 
     public static void UpdateItemText(string itemTxt)

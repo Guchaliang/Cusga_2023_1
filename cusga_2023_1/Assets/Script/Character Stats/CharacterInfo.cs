@@ -24,6 +24,11 @@ public class CharacterInfo : MonoBehaviour
         templeteData.delSpeed = 4;
         templeteData.dodgeId = 3;
         templeteData.dodgelength = 2;
+        templeteData.defencedropRate =0.2f;
+        templeteData.healthdropRate = 0.2f;
+        templeteData.room_award = 1;
+        templeteData.boss_award = 2;
+        templeteData.protect = 0;
         temattackData.attackBullet=1;//攻击子弹种类,从一到4中随机
 
         temattackData.attackSpeed=2.0f;//射速
@@ -135,6 +140,34 @@ public class CharacterInfo : MonoBehaviour
         }
         set { characterData.dodgelength = value; }
     }
+    public float defencedropRate
+    {
+        get
+        {
+            if (characterData != null) return characterData.defencedropRate;
+            else return 0;
+        }
+        set { characterData.defencedropRate = value; }
+    }
+    public float healthdropRate
+    {
+        get
+        {
+            if (characterData != null) return characterData.healthdropRate;
+            else return 0;
+        }
+        set { characterData.healthdropRate = value; }
+    }
+        public float room_award
+    {
+        get
+        {
+            if (characterData != null) return characterData.room_award;
+            else return 0;
+        }
+        set { characterData.room_award = (int)value; }
+    }
+
     public float attackBullet
     {
         get

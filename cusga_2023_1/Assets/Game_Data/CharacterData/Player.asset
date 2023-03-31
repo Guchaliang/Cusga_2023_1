@@ -21,5 +21,10 @@ MonoBehaviour:
   maxSpeed: 4
   addSpeed: 4
   delSpeed: 4
-  dodgeId: 2.8
+  dodgeId: 3
   dodgelength: 2
+  defencedropRate: 0.2
+  healthdropRate: 0.2
+  room_award: 1
+  boss_award: 2
+  protect: 0
