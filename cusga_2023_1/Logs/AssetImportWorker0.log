@@ -15,11 +15,11 @@ F:/git/Cusga_2023_1/cusga_2023_1
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49926
+55058
 Successfully changed project path to: F:/git/Cusga_2023_1/cusga_2023_1
 F:/git/Cusga_2023_1/cusga_2023_1
 Using Asset Import Pipeline V2.
-AS: AutoStreaming module initializing.Refreshing native plugins compatible for Editor in 38.64 ms, found 2 plugins.
+AS: AutoStreaming module initializing.Refreshing native plugins compatible for Editor in 42.13 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1c1 (b9cd9c36b8f8)
 [Subsystems] Discovering subsystems at path F:/unity/Unity 2020.3.30f1c1/Editor/Data/Resources/UnitySubsystems
@@ -35,89 +35,89 @@ Initialize mono
 Mono path[0] = 'F:/unity/Unity 2020.3.30f1c1/Editor/Data/Managed'
 Mono path[1] = 'F:/unity/Unity 2020.3.30f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'F:/unity/Unity 2020.3.30f1c1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56060
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56404
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: F:/unity/Unity 2020.3.30f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000986 seconds.
+Registered in 0.001108 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 37.01 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 42.04 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.495 seconds
+- Completed reload, in  0.542 seconds
 Domain Reload Profiling:
-	ReloadAssembly (495ms)
-		BeginReloadAssembly (55ms)
+	ReloadAssembly (543ms)
+		BeginReloadAssembly (58ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (385ms)
-			LoadAssemblies (54ms)
+		EndReloadAssembly (423ms)
+			LoadAssemblies (57ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (127ms)
+			SetupTypeCache (140ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (151ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (168ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (37ms)
-				BeforeProcessingInitializeOnLoad (14ms)
-				ProcessInitializeOnLoadAttributes (71ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				RefreshPlugins (42ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (79ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001784 seconds.
+Registered in 0.002075 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.889 seconds
+- Completed reload, in  0.943 seconds
 Domain Reload Profiling:
-	ReloadAssembly (890ms)
-		BeginReloadAssembly (134ms)
+	ReloadAssembly (944ms)
+		BeginReloadAssembly (141ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (707ms)
-			LoadAssemblies (81ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (751ms)
+			LoadAssemblies (87ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (247ms)
+			SetupTypeCache (257ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (268ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (284ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (71ms)
-				ProcessInitializeOnLoadAttributes (182ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (192ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1702 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 75.3 MB.
 System memory in use after: 75.3 MB.
 
 Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2138.
-Total: 2.347500 ms (FindLiveObjects: 0.146700 ms CreateObjectMapping: 0.085100 ms MarkObjects: 2.044600 ms  DeleteObjects: 0.070400 ms)
+Total: 2.391500 ms (FindLiveObjects: 0.161700 ms CreateObjectMapping: 0.069500 ms MarkObjects: 2.090400 ms  DeleteObjects: 0.069300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,103 +132,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Pictures/charactor
-  artifactKey: Guid(fc40fc92cf533fd42966b12e0b5fbe0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor using Guid(fc40fc92cf533fd42966b12e0b5fbe0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a20f52561c9e0b84fd1412f57f1d43b4') in 0.003794 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.501290 seconds.
-  path: Assets/Pictures/charactor/太阳神
-  artifactKey: Guid(01f9582960c7ece4e8cba95275c12485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神 using Guid(01f9582960c7ece4e8cba95275c12485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccdf3b7a13f5f4df125a92b4c0e0fcf8') in 0.002294 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.057322 seconds.
-  path: Assets/Pictures/charactor/太阳神/不死鸟变身
-  artifactKey: Guid(f142b93f763407a48a6a26d5e0895e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神/不死鸟变身 using Guid(f142b93f763407a48a6a26d5e0895e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b55a41ea1c209e6e71412d641d43d15') in 0.002541 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.341560 seconds.
-  path: Assets/Pictures/charactor/太阳神/降临
-  artifactKey: Guid(9924f17aeaab3b34cbd2f70e8c43ef60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神/降临 using Guid(9924f17aeaab3b34cbd2f70e8c43ef60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4fc609f7fcec3dee44178720269fd44') in 0.002294 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.133428 seconds.
-  path: Assets/Pictures/charactor/太阳神/降临/1.png
-  artifactKey: Guid(f684b57098fc3ef45ad88e5fd6a72dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神/降临/1.png using Guid(f684b57098fc3ef45ad88e5fd6a72dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df1139abd75a0512394077e71da5f49b') in 0.081876 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Pictures/charactor/太阳神/降临/2.png
-  artifactKey: Guid(146a8e895fe752344938071db7bde3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神/降临/2.png using Guid(146a8e895fe752344938071db7bde3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa557d2fb0fa0a71934474f5d39ac2e') in 0.008832 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/Pictures/charactor/太阳神/降临/4.png
-  artifactKey: Guid(d215e060e6fc0f049bbe69a473a2fe6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神/降临/4.png using Guid(d215e060e6fc0f049bbe69a473a2fe6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6811ceccadeb8c4114c7a2e34e66eae7') in 0.007642 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000401 seconds.
-  path: Assets/Pictures/charactor/太阳神/降临/12.png
-  artifactKey: Guid(bc44bedee801f984c953498a78d7590c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神/降临/12.png using Guid(bc44bedee801f984c953498a78d7590c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '460829e0530950af7ceab2b49bba0fa5') in 0.009141 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/Pictures/charactor/太阳神/降临/13.png
-  artifactKey: Guid(4826d698f1749ed4f8b6baa6d7e0ae19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神/降临/13.png using Guid(4826d698f1749ed4f8b6baa6d7e0ae19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '532d251f50444c6ff7bca2bee94f026d') in 0.011472 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000385 seconds.
-  path: Assets/Pictures/charactor/太阳神/降临/9.png
-  artifactKey: Guid(5c2b9f9729e814640bfc551062f1be42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神/降临/9.png using Guid(5c2b9f9729e814640bfc551062f1be42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7fb50f78115eb3c6d45565a0bf950ba') in 0.009777 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Pictures/charactor/太阳神/降临/7.png
-  artifactKey: Guid(0f687efabaf5c224b809821d179467e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神/降临/7.png using Guid(0f687efabaf5c224b809821d179467e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26ae271a99a5d30609298ea7f78acd87') in 0.008312 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/Pictures/charactor/太阳神/降临/11.png
-  artifactKey: Guid(862312134d3ab3642bb2454daeebf53b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神/降临/11.png using Guid(862312134d3ab3642bb2454daeebf53b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b4da334a7a695496b761ad16e9186f') in 0.008619 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/Pictures/charactor/太阳神/降临/10.png
-  artifactKey: Guid(9ad7240656ef32240b5a278dd04da7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神/降临/10.png using Guid(9ad7240656ef32240b5a278dd04da7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb58db736a8187852ac17dcd0f86997e') in 0.011217 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Pictures/charactor/太阳神/降临/6.png
-  artifactKey: Guid(9803f6378e07c254d81cde9f7ab9530b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神/降临/6.png using Guid(9803f6378e07c254d81cde9f7ab9530b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef825057d5336f00e47c7e1c5fe5bea4') in 0.008059 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Pictures/charactor/太阳神/降临/5.png
-  artifactKey: Guid(8cd608587643e6942aec4e67a708a251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神/降临/5.png using Guid(8cd608587643e6942aec4e67a708a251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d53a7c9ed46b8288aaa53ccc2a0bc28') in 0.008094 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/Pictures/charactor/太阳神/降临/3.png
-  artifactKey: Guid(98f1cbac2bd518545ad6b77f3161f13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神/降临/3.png using Guid(98f1cbac2bd518545ad6b77f3161f13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cfe2bded5df1e07324b66d152fef4bf') in 0.008911 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/Pictures/charactor/太阳神/降临/8.png
-  artifactKey: Guid(d4d411e38d10bac4a8434e4fc3c83232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/charactor/太阳神/降临/8.png using Guid(d4d411e38d10bac4a8434e4fc3c83232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '181b699e434fdd005d21a17122a17aa6') in 0.010640 seconds 
+  path: Assets/sfx
+  artifactKey: Guid(537fbb7bee92fa8429770d4b4e301f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sfx using Guid(537fbb7bee92fa8429770d4b4e301f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6915628d072c6885ffbd279db17f0ca5') in 0.004120 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
