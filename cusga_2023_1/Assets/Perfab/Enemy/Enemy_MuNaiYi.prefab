@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5777438263802380251}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -46,9 +46,9 @@ GameObject:
   - component: {fileID: 5777438264688838048}
   - component: {fileID: 5777438264688838055}
   - component: {fileID: 5777438264688838054}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy_MuNaiYi
-  m_TagString: Untagged
+  m_TagString: EnemyOrBoss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +106,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1029036925
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 95b3578f17c7d2e4996df18f73817cc6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -127,7 +127,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5777438264688838078}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -239,6 +239,5 @@ MonoBehaviour:
   patrolRange: 1
   patrolMaxTime: 3
   patrolMinTime: 1
-  obstacles: {fileID: 0}
   awakePos: {x: 0, y: 0}
   targetPos: {x: 0, y: 0}

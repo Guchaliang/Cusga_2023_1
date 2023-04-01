@@ -36,7 +36,7 @@ public class BasicRoom : MonoBehaviour
     public Dictionary<Direction, BasicRoom> neighboringRooms = new Dictionary<Direction, BasicRoom>();
     public PolyNavMap map;
     
-    //将对应方向的房间门显示
+    //将对应方向的房间门启用
     public void SetDoorActive(Direction direction,BasicRoom neighbor)
     {
         GameObject door = doorList[(int) direction];
@@ -71,7 +71,6 @@ public class BasicRoom : MonoBehaviour
         if (roomLayout)
         {
             Vector2 myCoordinate = (Vector2) RoomManager.Instance.currentRoom.transform.localPosition;
-            Debug.Log(myCoordinate);
             for (int i = 0; i < roomLayout.enemyGeneratePoints.Count; i++)
             {
                 Vector2 temp = myCoordinate + roomLayout.enemyGeneratePoints[i];
@@ -81,11 +80,13 @@ public class BasicRoom : MonoBehaviour
                 else if (obj.GetComponent<EnemyFSM_Bat>())
                     obj.GetComponent<EnemyFSM_Bat>().awakePos = temp;
                 obj.GetComponent<PolyNavAgent>().map = RoomManager.Instance.GetMap();
+                EnemyNum++;
             }
         }
         else
         {
-            
+            EnemyNum = 0;
+            isCleared = true;
         }
     }
 }

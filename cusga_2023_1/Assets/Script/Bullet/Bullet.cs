@@ -6,53 +6,53 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private float speed;
     private Vector2 direction;
-    public float damage;
+    [HideInInspector]public float damage;
 
     private Animator animator;
-
     
-
     private void Awake()
     {
         rb = GetComponent <Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        if(GetComponent<Animator>())
+            animator = GetComponent<Animator>();
     }
 
     private void OnEnable()
     {
-        animator.Play("Bullet");
+        if(animator)
+            animator.Play("Bullet");
     }
 
     public void SetDirection(Vector2 direct)
     {
         this.direction = direct;
+        if (this.direction == Vector2.left)
+            transform.rotation = new Quaternion(0, 0, 180, 0);
+        else if(this.direction == Vector2.right)
+            transform.rotation= Quaternion.identity;
+        else if (this.direction == Vector2.up)
+            transform.rotation = new Quaternion(0, 0, 90, 0);
+        else if (this.direction == Vector2.down)
+            transform.rotation = new Quaternion(0, 0, -90, 0);
     }
 
     public void SetSpeed(float sp)
     {
-        rb.velocity = direction * speed;
+        rb.velocity = direction * sp;
     }
 
-    protected void OnTriggerEnter2D(Collider2D other)
+    protected virtual void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             other.gameObject.GetComponent<CharacterInfo>()
                 .TakeDamage(damage, other.gameObject.GetComponent<CharacterInfo>());
-            Debug.Log(other.gameObject.GetComponent<CharacterInfo>().Defence);
-            Debug.Log(other.gameObject.GetComponent<CharacterInfo>().CurrentHealth);
+            //设置受击
             this.gameObject.SetActive(false);
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Ground"))
+        }else if (other.CompareTag("Ground")||other.CompareTag("Patrol"))
         {
             this.gameObject.SetActive(false);
         }
     }
-
 }

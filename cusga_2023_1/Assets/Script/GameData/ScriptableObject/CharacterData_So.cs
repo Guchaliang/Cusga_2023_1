@@ -11,4 +11,10 @@ public class CharacterData_So : ScriptableObject
     public float currentHealth;
 
     public float defence;
+    
+    public void ResetInfo(float def)
+    {
+        currentHealth = maxHealth;
+        defence = def;
+    }
 }

@@ -1,131 +1,63 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterInfo : MonoBehaviour
 {
-    public CharacterData_So templeteData;
+    public float maxHealth;//最大生命值
 
-    [HideInInspector]public CharacterData_So characterData;
+    public float currentHealth;
 
-    public AttackData_So attackData;
-
-    private float currentHealth;
-            
-    private void Awake()
-    {
-        if (templeteData != null)
-            characterData = Instantiate(templeteData);
-        currentHealth = templeteData.maxHealth;
-    }
-
-    #region Read from Info
-
-    public float MaxHealth
-    {
-        get
-        {
-            if (characterData != null) return characterData.maxHealth;
-            else return 0;
-        }
-        set { characterData.maxHealth = value; }
-    }
-
-    public float CurrentHealth{
-        get
-        {
-            if (characterData != null) return characterData.currentHealth;
-            else return 0;
-        }
-        set
-        {
-            characterData.currentHealth = value;
-        }
-    }
-
-    public float Defence
-
-    {
-        get
-        {
-            if (characterData != null) return characterData.defence;
-            else return 0;
-        }
-        set { characterData.defence = value; }
-    }
-
-    public float AttackRange
-    {
-        get
-        {
-            if (attackData != null) return attackData.attackRange;
-            else return 0;
-        }
-        set { attackData.attackRange = value; }
-    }
-
-    public float FindRange
-    {
-        get
-        {
-            if (attackData != null) return attackData.findRange;
-            else return 0;
-        }
-        set { attackData.findRange = value; }
-    }
-
-    public float Damage
-    {
-        get
-        {
-            if (attackData != null) return attackData.damage;
-            else return 0;
-        }
-        set {attackData.damage = value; }
-    }
+    public float defence;
     
-    public float CoolDown
-    {
-        get
-        {
-            if (attackData != null) return attackData.CoolDown;
-            else return 0;
-        }
-        set { attackData.CoolDown = value; }
-    }
-    #endregion 
+    public float attackRange;//攻击距离
 
+    public float findRange;//索敌距离
+
+    public float damage;//伤害值
+
+    public float coolDown;//冷却
+
+    public float skillCollDown;//技能冷却
+    
     #region Read from Combat
 
-    //TODO 近身攻击判定
     public void TakeDamage(CharacterInfo attacker, CharacterInfo defener)
     {
-        if (defener.Defence != 0)
+        if (defener.defence > 0)
         {
-            defener.Defence -= attacker.Damage;
+            defener.defence -= attacker.damage;
+            if (defener.defence < 0)
+            {
+                defener.currentHealth += defener.defence;
+                defener.defence = 0;
+            }
         }
-        else
+
+        if (defener.defence == 0)
         {
-            defener.CurrentHealth -= attacker.Damage;
+            defener.currentHealth = Mathf.Max(defener.currentHealth-attacker.damage,0) ;
         }
     }
     
     public void TakeDamage(float damage, CharacterInfo defener)
     {
-        if (defener.Defence != 0)
+        if (defener.defence > 0)
         {
-            defener.Defence -= damage;
+            defener.defence -= damage;
+            if (defener.defence < 0)
+            {
+                defener.currentHealth += defener.defence;
+                defener.defence = 0;
+            }
         }
-        else
+
+        if (defener.defence == 0)
         {
-            defener.CurrentHealth -= damage;
+            defener.currentHealth = Mathf.Max(defener.currentHealth - damage,0);
         }
     }
 
     #endregion
-
-    public void ResetInfo()
-    {
-        this.characterData = Instantiate(this.templeteData);
-    }
 }

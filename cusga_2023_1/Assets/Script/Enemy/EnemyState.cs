@@ -21,6 +21,9 @@ public class EnemyState : IState//Idle状态
 
     public void OnUpdate()
     {
+        if(m_Enemy.enemyInfo.currentHealth == 0)
+            m_Enemy.TransformState(StateType.Death);
+        
         timer += Time.deltaTime;
         
         if(m_Enemy.getHit)
@@ -54,7 +57,10 @@ public class PatrolState : IState
 
     public void OnUpdate()
     {
-        if ((m_Enemy.Player.transform.position - m_Enemy.transform.position).magnitude < m_Enemy.enemyInfo.FindRange)//玩家与敌人距离小于索敌距离
+        if(m_Enemy.enemyInfo.currentHealth == 0)
+            m_Enemy.TransformState(StateType.Death);
+        
+        if ((m_Enemy.Player.transform.position - m_Enemy.transform.position).magnitude < m_Enemy.enemyInfo.findRange)//玩家与敌人距离小于索敌距离
         {
             m_Enemy.TransformState(StateType.Chase);
         }
@@ -95,6 +101,9 @@ public class ChaseState : IState
         m_Enemy.FlipTo();
         m_Enemy.agent.SetDestination(m_Enemy.targetPos);
 
+        if(m_Enemy.enemyInfo.currentHealth == 0)
+            m_Enemy.TransformState(StateType.Death);
+        
         if (m_Enemy.getHit)
         {
             m_Enemy.TransformState(StateType.GetHit);
@@ -104,17 +113,15 @@ public class ChaseState : IState
             m_Enemy.targetPos - (Vector2) m_Enemy.transform.position);
 
         if (((Vector2)m_Enemy.transform.position - m_Enemy.targetPos).magnitude <
-            0.9f * m_Enemy.enemyInfo.AttackRange&& hit2D&&hit2D.collider.CompareTag("Player"))
+            0.9f * m_Enemy.enemyInfo.attackRange&& hit2D&&hit2D.collider.CompareTag("Player"))
         { 
             m_Enemy.TransformState(StateType.Attack);
         }
         
-        if (((Vector2) m_Enemy.transform.position - m_Enemy.targetPos).magnitude > m_Enemy.enemyInfo.FindRange)
+        if (((Vector2) m_Enemy.transform.position - m_Enemy.targetPos).magnitude > m_Enemy.enemyInfo.findRange)
         {
             m_Enemy.TransformState(StateType.Patrol);
         }
-        
-        
     }
 
     public void OnExit()
@@ -141,10 +148,13 @@ public class AttackState : IState//攻击过程中不可打断
 
     public void OnUpdate()
     {
+        if(m_Enemy.enemyInfo.currentHealth == 0)
+            m_Enemy.TransformState(StateType.Death);
+        
         //切换至移动状态
         if (m_Enemy.animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.95f)
         {
-            if((m_Enemy.Player.transform.position - m_Enemy.transform.position).magnitude < m_Enemy.enemyInfo.FindRange)
+            if((m_Enemy.Player.transform.position - m_Enemy.transform.position).magnitude < m_Enemy.enemyInfo.findRange)
                 m_Enemy.TransformState(StateType.Chase);
             else
                 m_Enemy.TransformState(StateType.Patrol);
@@ -164,7 +174,6 @@ public class GetHitState : IState
     public GetHitState(EnemyFSM enemy)
     {
         m_Enemy = enemy;
-        Debug.Log(this);
     }
     
     public void OnEnter()
@@ -174,7 +183,8 @@ public class GetHitState : IState
 
     public void OnUpdate()
     {
-        //受击函数
+        if(m_Enemy.enemyInfo.currentHealth == 0)
+            m_Enemy.TransformState(StateType.Death);
     }
 
     public void OnExit()
@@ -195,18 +205,20 @@ public class DeathState : IState
     public void OnEnter()
     {
         m_Enemy.animator.Play("Death");
-        Debug.Log(this);
+        m_Enemy.agent.Stop();
     }
 
     public void OnUpdate()
     {
-        
+        RoomManager.Instance.currentRoom.EnemyNum--;
+        if (RoomManager.Instance.currentRoom.EnemyNum == 0)
+            RoomManager.Instance.currentRoom.isCleared = true;
+        this.m_Enemy.gameObject.SetActive(false);
     }
 
     public void OnExit()
     {
-        RoomManager.Instance.currentRoom.EnemyNum--;
-        this.m_Enemy.gameObject.SetActive(false);
+        
     }
 }
 

@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 97402828}
   m_Layer: 7
   m_Name: Enemy_Bat
-  m_TagString: Untagged
+  m_TagString: EnemyOrBoss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +106,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1029036925
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b27de06151d51244cbd199715f62e6d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -146,7 +146,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6677643645046339512}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -239,7 +239,6 @@ MonoBehaviour:
   patrolRange: 3
   patrolMaxTime: 1
   patrolMinTime: 3
-  obstacles: {fileID: 0}
   awakePos: {x: 0, y: 0}
   targetPos: {x: 0, y: 0}
-  bullet: {fileID: 2928596645361232866, guid: 927a286d0b3ddb4428841ba8c090e38f, type: 3}
+  bullet: {fileID: 4761922254483613305, guid: 842e1a5c473b3d04fa80345b652ee2bd, type: 3}

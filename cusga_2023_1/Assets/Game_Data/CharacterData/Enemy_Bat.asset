@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c5fd29a4acb4542a4ef68689041952, type: 3}
   m_Name: Enemy_Bat
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  currentHealth: 0
-  maxDenfence: 0
-  currentDefence: 0
-  moveSpeed: 5
+  maxHealth: 1
+  currentHealth: 1
+  defence: 0

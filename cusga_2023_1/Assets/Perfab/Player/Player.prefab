@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1029036925
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: fd7d830d4469cf149bc72c7b5c6beaff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -121,8 +121,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0066916943, y: 0.030113935}
-  m_Size: {x: 0.5631232, y: 1.2256284}
+  m_Offset: {x: 0.0066916943, y: -0.19010514}
+  m_Size: {x: 0.5631232, y: 0.7851902}
   m_Direction: 0
 --- !u!114 &6187343208951420637
 MonoBehaviour:
@@ -136,10 +136,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67a3dee2ab4e114982afec0fbe9d6fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canMove: 1
+  canAct: 0
+  playerInfo: {fileID: 6187343208951420636}
+  bullet: {fileID: 3270114172751012177, guid: 5d21f96d20d55eb4d9dda6639cc8939d, type: 3}
+  skillSpeed: 9
+  isAttacked: 0
+  isSkilled: 0
   isDead: 0
   isGetHit: 0
-  moveSpeed: 5
+  moveSpeed: 3
 --- !u!114 &6187343208951420636
 MonoBehaviour:
   m_ObjectHideFlags: 0

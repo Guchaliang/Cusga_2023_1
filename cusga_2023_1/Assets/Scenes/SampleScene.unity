@@ -252,6 +252,8 @@ MonoBehaviour:
   bulletPools:
   - prefab: {fileID: 4761922254483613305, guid: 842e1a5c473b3d04fa80345b652ee2bd, type: 3}
     size: 10
+  - prefab: {fileID: 3270114172751012177, guid: 5d21f96d20d55eb4d9dda6639cc8939d, type: 3}
+    size: 10
   EnemyPools: []
   RoomPools: []
 --- !u!1001 &1209161898
@@ -261,6 +263,70 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3567276547071472505, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567276547071472505, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567276547117797108, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567276547117797108, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567276547649079014, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567276547649079014, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567276548122461411, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567276548122461411, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567276548244306733, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567276548244306733, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567276548378156772, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567276548378156772, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567276548505157724, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567276548505157724, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567276548911443855, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567276548911443855, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 3567276548977110944, guid: 703c92adf566ee045841f42803f8aceb, type: 3}
       propertyPath: m_Name
       value: BasicRoom
@@ -355,18 +421,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6187343208951420638, guid: 8719942f7ec4fc94181e22416be0f266, type: 3}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6187343208951420638, guid: 8719942f7ec4fc94181e22416be0f266, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6187343208951420638, guid: 8719942f7ec4fc94181e22416be0f266, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6187343208951420638, guid: 8719942f7ec4fc94181e22416be0f266, type: 3}
-      propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6187343208951420638, guid: 8719942f7ec4fc94181e22416be0f266, type: 3}

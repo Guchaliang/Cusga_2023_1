@@ -122,10 +122,12 @@ public class RoomManager : Singleton<RoomManager>
             }
             
             SetRoomType(singleDoorRoomList);
-
+            
+            FindObjectOfType<MiniMap>().CreateMiniMap();
+            
             foreach (BasicRoom room in roomArray)
             {
-                if (room)
+                if (room )
                 {
                     room.CheckActiveDoor(false);
                 }
@@ -175,7 +177,6 @@ public class RoomManager : Singleton<RoomManager>
     IEnumerator MoveToRoom(Vector2 moveDirection)
     {
         currentRoom = roomArray[(int)(currentRoom.coordinate.x + moveDirection.x), (int)(currentRoom.coordinate.y + moveDirection.y)];
-        Debug.Log(currentRoom.roomType);
         
         //假如没有到达过这个房间，将这个房间生成对应的东西
         if (!currentRoom.isArrived)
@@ -184,9 +185,11 @@ public class RoomManager : Singleton<RoomManager>
             currentRoom.isArrived = true;
         }
 
+        //更新小地图
+        FindObjectOfType<MiniMap>().UpdateMiniMap(moveDirection);
+        
         player.canAct = false;
         player.transform.position += (Vector3)moveDirection*3;
-        
         
         //移动摄像机
         float time = 0;

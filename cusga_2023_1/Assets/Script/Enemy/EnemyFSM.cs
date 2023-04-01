@@ -23,7 +23,6 @@ public class EnemyFSM : MonoBehaviour
     public float patrolRange;
     public float patrolMaxTime;
     public float patrolMinTime;
-    public Obstacles obstacles;//TODO 只是测试，后面改
     public Vector2 awakePos;
     [HideInInspector] public Vector2 targetPos;
     
@@ -32,6 +31,11 @@ public class EnemyFSM : MonoBehaviour
         animator = GetComponent<Animator>();
         enemyInfo = GetComponent<CharacterInfo>();
         agent = GetComponent<PolyNavAgent>();
+    }
+
+    private void OnEnable()
+    {
+        Debug.Log("OK");
     }
 
     private void Start()
@@ -102,13 +106,11 @@ public class EnemyFSM : MonoBehaviour
     
     protected virtual void AttackPlayer()
     {
-        Collider2D target = Physics2D.OverlapCircle(attackPoint.position, enemyInfo.AttackRange,LayerMask.GetMask("Player"));
+        Collider2D target = Physics2D.OverlapCircle(attackPoint.position, enemyInfo.attackRange,LayerMask.GetMask("Player"));
         
-        if (target.CompareTag("Player"))
+        if (target&&target.CompareTag("Player"))
         {
             enemyInfo.TakeDamage(enemyInfo,target.gameObject.GetComponent<CharacterInfo>());
-            
-            Debug.Log("OK");
         }
     }
 
@@ -118,6 +120,7 @@ public class EnemyFSM : MonoBehaviour
         if (other.collider.CompareTag("Player"))
         {
             enemyInfo.TakeDamage(1,other.gameObject.GetComponent<CharacterInfo>());
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
     }
 }

@@ -12,4 +12,6 @@ public class AttackData_So : ScriptableObject
     public float damage;//伤害值
 
     public float CoolDown;//冷却
+
+    public float SkillCollDown;//技能冷却
 }
