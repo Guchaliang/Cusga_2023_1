@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638149165778297330
+      ticks: 638161070672084311
     m_Hash: 4232137519
   m_LockFileStatus:
     m_FilePath: F:/Github/Cusga_2023_1/cusga_2023_1/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638149165778317299
+      ticks: 638161070672084311
     m_Hash: 3302680064
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -283,6 +283,7 @@ m_PackageAssets:
         - 2.0.0-preview.22
         - 2.0.0
         - 2.0.1
+        - 2.0.3
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
@@ -307,6 +308,7 @@ m_PackageAssets:
         - 2.0.0-preview.22
         - 2.0.0
         - 2.0.1
+        - 2.0.3
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
@@ -706,6 +708,7 @@ m_PackageAssets:
         - 1.3.1
         - 1.3.2
         - 1.3.3
+        - 1.3.4
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
@@ -719,6 +722,7 @@ m_PackageAssets:
         - 1.3.1
         - 1.3.2
         - 1.3.3
+        - 1.3.4
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12

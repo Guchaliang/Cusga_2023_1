@@ -157,9 +157,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ab616dcdd79712439027f9382f7cc64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  templeteData: {fileID: 11400000, guid: 094a1bf299e15984ea294cf9f53fe839, type: 2}
-  characterData: {fileID: 0}
-  attackData: {fileID: 11400000, guid: 7efc7d80d68cf8e4c8c08d3180a4a7ab, type: 2}
+  characterData: {fileID: 11400000, guid: 094a1bf299e15984ea294cf9f53fe839, type: 2}
+  maxHealth: 0
+  currentHealth: 0
+  defence: 0
+  attackRange: 0
+  findRange: 0
+  damage: 0
+  coolDown: 0
+  skillCollDown: 0
 --- !u!95 &1453255118869916133
 Animator:
   serializedVersion: 3

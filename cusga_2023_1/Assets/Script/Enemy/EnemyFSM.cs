@@ -31,15 +31,7 @@ public class EnemyFSM : MonoBehaviour
         animator = GetComponent<Animator>();
         enemyInfo = GetComponent<CharacterInfo>();
         agent = GetComponent<PolyNavAgent>();
-    }
-
-    private void OnEnable()
-    {
-        Debug.Log("OK");
-    }
-
-    private void Start()
-    {
+        
         states = new Dictionary<StateType, IState>();
         
         states.Add(StateType.Idle, new EnemyState(this));
@@ -48,7 +40,16 @@ public class EnemyFSM : MonoBehaviour
         states.Add(StateType.Attack, new AttackState(this));
         states.Add(StateType.GetHit,new GetHitState(this));
         states.Add(StateType.Death,new DeathState(this));
-        
+    }
+
+    private void OnEnable()
+    {
+        enemyInfo.InitTheInfo();
+        TransformState(StateType.Idle);
+    }
+
+    private void Start()
+    {
         TransformState(StateType.Idle);
         
         Player = FindObjectOfType<PlayerTest>().gameObject;

@@ -5,22 +5,37 @@ using UnityEngine;
 
 public class CharacterInfo : MonoBehaviour
 {
-    public float maxHealth;//最大生命值
-
-    public float currentHealth;
-
-    public float defence;
+    public CharacterData_So characterData;
     
-    public float attackRange;//攻击距离
+    [HideInInspector]public float maxHealth;//最大生命值
+    [HideInInspector]public float currentHealth;//当前生命值
+    [HideInInspector]public float defence;//护盾量
+    [HideInInspector]public float attackRange;//攻击距离
+    [HideInInspector]public float findRange;//索敌距离
+    [HideInInspector]public float damage;//伤害值
+    [HideInInspector]public float coolDown;//冷却
+    [HideInInspector]public float skillCollDown;//技能冷却
 
-    public float findRange;//索敌距离
+    private void Awake()
+    {
+        InitTheInfo();
+    }
 
-    public float damage;//伤害值
+    public void InitTheInfo()
+    {
+        if (this.characterData)
+        {
+            this.maxHealth = characterData.maxHealth;
+            this.currentHealth = characterData.maxHealth;
+            this.defence = characterData.defence;
+            this.attackRange = characterData.attackRange;
+            this.findRange = characterData.findRange;
+            this.damage = characterData.damage;
+            this.coolDown = characterData.CoolDown;
+            this.skillCollDown = characterData.SkillCollDown;
+        }
+    }
 
-    public float coolDown;//冷却
-
-    public float skillCollDown;//技能冷却
-    
     #region Read from Combat
 
     public void TakeDamage(CharacterInfo attacker, CharacterInfo defener)

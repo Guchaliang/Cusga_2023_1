@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   maxHealth: 5
-  currentHealth: 5
-  defence: 0
+  defence: 1
+  attackRange: 0
+  findRange: 0
+  damage: 3
+  CoolDown: 0.5
+  SkillCollDown: 3
