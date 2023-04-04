@@ -25,13 +25,17 @@ public class MiniMap : UIBase
 
     public void CreateMiniMap()
     {
+        if (miniMap != null){
+            Array.Clear(miniMap,0,miniMap.Length);
+        }
+
         miniMap = new GameObject[RoomManager.Instance.roomArray.GetLength(0), RoomManager.Instance.roomArray.GetLength(1)];
         
         foreach (var room in RoomManager.Instance.roomArray)
         {
             if (room)
             {
-                var miniRoom = Instantiate(miniRoomPrefab, roomNode);
+                var miniRoom = PoolManager.Release(miniRoomPrefab,transform.position);
                 miniMap[(int) room.coordinate.x, (int) room.coordinate.y] = miniRoom;
 
                 miniRoom.transform.localPosition = new Vector2((room.coordinate.x - miniMap.GetLength(0)/2)*offset.x,

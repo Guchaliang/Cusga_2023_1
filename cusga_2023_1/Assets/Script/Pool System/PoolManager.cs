@@ -9,6 +9,7 @@ public class PoolManager : MonoBehaviour
     [SerializeField] private Pool[] bulletPools;
     [SerializeField] private Pool[] EnemyPools;
     [SerializeField] private Pool[] RoomPools;
+    [SerializeField] private Pool[] mapPools;
 
     private static Dictionary<GameObject, Pool> directory;
     
@@ -19,6 +20,7 @@ public class PoolManager : MonoBehaviour
         Initialize(bulletPools);
         Initialize(RoomPools);
         Initialize(EnemyPools);
+        Initialize(mapPools,FindObjectOfType<MiniMap>().roomNode);
     }
 
 
@@ -57,6 +59,16 @@ public class PoolManager : MonoBehaviour
 
             poolParent.parent = transform;
             pool.Initialize(poolParent);
+        }
+    }
+    
+    void Initialize(Pool[] pools,Transform parent)
+    {
+        foreach (var pool in pools)
+        {
+            directory.Add(pool.Prefab,pool);
+            
+            pool.Initialize(parent);
         }
     }
 
@@ -99,3 +111,4 @@ public class PoolManager : MonoBehaviour
         return directory[prefab].PreparedObject(position,rotation,localScale);
     }
 }
+
