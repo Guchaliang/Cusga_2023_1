@@ -136,6 +136,7 @@ public class RoomManager : Singleton<RoomManager>
 
         StartCoroutine(MoveToRoom(Vector2.zero));
     }
+    
 
     //将游戏物体门启用
     public void DoorActive()

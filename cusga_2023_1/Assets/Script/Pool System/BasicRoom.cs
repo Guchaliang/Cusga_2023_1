@@ -89,4 +89,19 @@ public class BasicRoom : MonoBehaviour
             isCleared = true;
         }
     }
+    
+    public void ResetMyRoom()
+    {
+        this.isArrived = false;
+        this.isCleared = false;
+
+        for (int i = 0; i < doorList.Count; i++)
+        {
+            doorList[i].transform.GetChild(0).gameObject.SetActive(false);
+            doorList[i].transform.GetChild(1).gameObject.SetActive(false);
+        }
+        
+        neighboringRooms.Clear();
+        this.gameObject.SetActive(false);
+    }
 }
