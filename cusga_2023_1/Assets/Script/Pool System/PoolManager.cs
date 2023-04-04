@@ -6,7 +6,14 @@ using UnityEngine.Windows;
 
 public class PoolManager : MonoBehaviour
 {
+<<<<<<< Updated upstream
     [SerializeField] private Pool[] enemyBulletPools;
+=======
+    [SerializeField] private Pool[] bulletPools;
+    [SerializeField] private Pool[] EnemyPools;
+    [SerializeField] private Pool[] RoomPools;
+    [SerializeField] private Pool[] mapPools;
+>>>>>>> Stashed changes
 
     private static Dictionary<GameObject, Pool> directory;
     
@@ -14,7 +21,14 @@ public class PoolManager : MonoBehaviour
     {
         directory = new Dictionary<GameObject, Pool>();
         
+<<<<<<< Updated upstream
         Initialize(enemyBulletPools);
+=======
+        Initialize(bulletPools);
+        Initialize(RoomPools);
+        Initialize(EnemyPools);
+        Initialize(mapPools,FindObjectOfType<MiniMap>().roomNode);
+>>>>>>> Stashed changes
     }
 
 
@@ -53,6 +67,16 @@ public class PoolManager : MonoBehaviour
 
             poolParent.parent = transform;
             pool.Initialize(poolParent);
+        }
+    }
+    
+    void Initialize(Pool[] pools,Transform parent)
+    {
+        foreach (var pool in pools)
+        {
+            directory.Add(pool.Prefab,pool);
+            
+            pool.Initialize(parent);
         }
     }
 

@@ -210,7 +210,12 @@ public class DeathState : IState
 
     public void OnUpdate()
     {
+<<<<<<< Updated upstream
         
+=======
+        RoomManager.Instance.currentRoom.EnemyNum--;
+        this.m_Enemy.gameObject.SetActive(false);
+>>>>>>> Stashed changes
     }
 
     public void OnExit()
