@@ -79,7 +79,6 @@
     <Compile Include="Assets\bag\ItemOnWorld.cs" />
     <Compile Include="Assets\scripts\PlayDeath.cs" />
     <Compile Include="Assets\Script\Pool System\Pool.cs" />
-    <Compile Include="Assets\Script\AllEquipment\keyii\e0201.cs" />
     <Compile Include="Assets\bag\openbag.cs" />
     <Compile Include="Assets\scripts\TidyObject.cs" />
     <Compile Include="Assets\Script\Test\PlayerTest.cs" />
@@ -87,10 +86,7 @@
     <Compile Include="Assets\Script\AllEquipment\key\e0009.cs" />
     <Compile Include="Assets\scripts\PlayerTest2.cs" />
     <Compile Include="Assets\Script\Bullet\Bullet.cs" />
-    <Compile Include="Assets\store\commodity.cs" />
-    <Compile Include="Assets\store\storeData.cs" />
     <Compile Include="Assets\Script\Manager\DialogueManager.cs" />
-    <Compile Include="Assets\Script\AllEquipment\keyii\e0101.cs" />
     <Compile Include="Assets\Script\Room.cs" />
     <Compile Include="Assets\Script\AllEquipment\key\e0001.cs" />
     <Compile Include="Assets\Script\AllEquipment\key\e0003.cs" />
@@ -107,16 +103,20 @@
     <Compile Include="Assets\Script\Tools\Singleton.cs" />
     <Compile Include="Assets\bag\Slot.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />
-    <Compile Include="Assets\Script\AllEquipment\keyi\e0102.cs" />
-    <Compile Include="Assets\Script\AllEquipment\keyi\e0103.cs" />
-    <Compile Include="Assets\Script\AllEquipment\keyi\e0104.cs" />
-    <Compile Include="Assets\Script\AllEquipment\keyi\e0105.cs" />
-    <Compile Include="Assets\Script\AllEquipment\keyi\e0106.cs" />
-    <Compile Include="Assets\Script\AllEquipment\keyi\e0202.cs" />
-    <Compile Include="Assets\Script\AllEquipment\keyi\e0203.cs" />
-    <Compile Include="Assets\Script\AllEquipment\keyi\e0204.cs" />
     <Compile Include="Assets\Script\AllEquipment\keyi\e0205.cs" />
+    <Compile Include="Assets\store\storeData.cs" />
+    <Compile Include="Assets\store\commodity.cs" />
+    <Compile Include="Assets\Script\AllEquipment\keyi\e0203.cs" />
+    <Compile Include="Assets\Script\AllEquipment\keyii\e0101.cs" />
+    <Compile Include="Assets\Script\AllEquipment\keyi\e0103.cs" />
+    <Compile Include="Assets\Script\AllEquipment\keyii\e0201.cs" />
+    <Compile Include="Assets\Script\AllEquipment\keyi\e0106.cs" />
     <Compile Include="Assets\Script\AllEquipment\keyi\e206.cs" />
+    <Compile Include="Assets\Script\AllEquipment\keyi\e0104.cs" />
+    <Compile Include="Assets\Script\AllEquipment\keyi\e0202.cs" />
+    <Compile Include="Assets\Script\AllEquipment\keyi\e0204.cs" />
+    <Compile Include="Assets\Script\AllEquipment\keyi\e0102.cs" />
+    <Compile Include="Assets\Script\AllEquipment\keyi\e0105.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
