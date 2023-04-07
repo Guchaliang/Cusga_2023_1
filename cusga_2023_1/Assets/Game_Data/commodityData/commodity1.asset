@@ -16,5 +16,5 @@ MonoBehaviour:
   commodityID: 1
   commodityprice: 13
   commoditycost: 7
-  commodityImage: {fileID: 0}
-  commodityText: 
+  commodityImage: {fileID: 21300000, guid: f5afc0b537ccb7a4a962b9205bade308, type: 3}
+  commodityText: TEST

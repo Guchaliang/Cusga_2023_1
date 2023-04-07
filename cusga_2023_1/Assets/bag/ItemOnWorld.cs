@@ -7,12 +7,14 @@ public class ItemOnWorld : MonoBehaviour
     public Itemm thisItem;
     public BagList playerBag;
 
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             AddNewItem();
-
+            
             Destroy(gameObject);
         }
     }
@@ -21,5 +23,6 @@ public class ItemOnWorld : MonoBehaviour
     {
         playerBag.itemList.Add(thisItem);
         BagMangaer.CreateNewItem(thisItem);
-    } 
+    }
+
 }

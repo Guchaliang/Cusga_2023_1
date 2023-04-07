@@ -11,7 +11,7 @@ public class BagMangaer : MonoBehaviour
 
     public BagList myBag;
     public GameObject slotGrid;
-    public Slot slot;
+    public SlotBag slot;
     public Text itemText;
 
     private void Awake()
@@ -37,7 +37,8 @@ public class BagMangaer : MonoBehaviour
 
     public static void CreateNewItem(Itemm item)
     {
-        Slot newitem = Instantiate(instance.slot,instance.slotGrid.transform.position,Quaternion.identity);
+
+        SlotBag newitem = Instantiate(instance.slot,instance.slotGrid.transform.position,Quaternion.identity);
         newitem.gameObject.transform.SetParent(instance.slotGrid.transform);
         newitem.slotItem = item;
         newitem.slotImage.sprite = item.itemImage;
