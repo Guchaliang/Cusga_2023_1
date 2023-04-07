@@ -5,7 +5,7 @@ using UnityEngine;
 public class commodityOnWorld : MonoBehaviour
 {
 
-    public commodity commodity;
+
     public storeData playStore;
 
     private void Start()
