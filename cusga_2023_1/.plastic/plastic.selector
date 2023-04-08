@@ -1,4 +1,0 @@
-repository "cusga_2023_1@cusga_2023@cloud.cn"
-  path "/"
-    smartbranch "/main/ljn" changeset "15"                   
-     
