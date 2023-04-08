@@ -256,6 +256,7 @@ MonoBehaviour:
     size: 10
   EnemyPools: []
   RoomPools: []
+  mapPools: []
 --- !u!1001 &1209161898
 PrefabInstance:
   m_ObjectHideFlags: 0

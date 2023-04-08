@@ -114,6 +114,11 @@ public class PlayerTest : MonoBehaviour
         }
     }
 
+    public void VelocitySetZero()
+    {
+        rb.velocity = Vector2.zero;
+    }
+
     public void EndSkill()
     {
         isSkilled = false;

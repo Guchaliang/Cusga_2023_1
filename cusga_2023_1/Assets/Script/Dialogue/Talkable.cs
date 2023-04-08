@@ -6,15 +6,16 @@ using UnityEngine;
 public class Talkable : MonoBehaviour
 {
     [SerializeField] private bool isEnter;
-    [TextArea(1,3)]public string[] lines;
+    private NPCTalkContant theContant;
 
     [SerializeField] private bool hasName;
+
     private void OnEnable()
     {
-        
+        InitLines();
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
@@ -22,7 +23,7 @@ public class Talkable : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
@@ -32,15 +33,16 @@ public class Talkable : MonoBehaviour
 
     private void Update()
     {
-        if (isEnter && Input.GetKeyUp(KeyCode.Space)&&!DialogueManager.Instance.dialogueBox.activeInHierarchy)
+        if (isEnter && Input.GetKeyUp(KeyCode.Space)&&!DialogueManager.Instance.dialogueBox.activeInHierarchy&&DialogueManager.Instance.canTalk)
         {
-            StartCoroutine(DialogueManager.Instance.ShowDialogue(lines,hasName));
+            StartCoroutine(DialogueManager.Instance.ShowDialogue(theContant._contant,hasName));
         }
     }
     
     //TODO 文件初始化文本
-    private void InitLines(int times)
+    private void InitLines()
     {
-        
+        string path = "Dialogue/NPC" + DialogueManager.Instance.talkTimes.ToString();
+        theContant = Instantiate(Resources.Load(path)) as NPCTalkContant;
     }
 }

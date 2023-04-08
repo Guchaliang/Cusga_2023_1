@@ -54,7 +54,7 @@ public class RoomManager : Singleton<RoomManager>
             this.currentRoom.isCleared = false;
         }
     }
-    
+
     public void NextLevel()
     {
         foreach (var room in roomArray)
