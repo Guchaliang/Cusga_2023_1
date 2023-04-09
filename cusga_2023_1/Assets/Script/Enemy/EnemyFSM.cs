@@ -123,5 +123,6 @@ public class EnemyFSM : MonoBehaviour
             enemyInfo.TakeDamage(1,other.gameObject.GetComponent<CharacterInfo>());
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
+
     }
 }

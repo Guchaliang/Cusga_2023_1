@@ -54,6 +54,30 @@ public class UIManager : Singleton<UIManager>
         return ui;
     }
 
+    //建立但不显示ui
+    public UIBase CreateUI<T>(string uiName) where T : UIBase
+    {
+        UIBase ui = FindUI(uiName);
+        if (ui == null)
+        {
+            GameObject newUiobj = GameObject.Instantiate(Resources.Load("UI/" + uiName), CanvasTransform) as GameObject;
+
+            newUiobj.name = uiName;
+
+            ui = newUiobj.GetComponent<UIBase>();
+
+            uiList.Add(ui);
+
+            ui.Hide();
+        }
+        else
+        {
+            Debug.Log(uiName + "已经创建过了");
+        }
+        return ui;
+    }
+
+
     //查找ui
     public UIBase FindUI(string uiName)
     {
@@ -66,10 +90,10 @@ public class UIManager : Singleton<UIManager>
         }
 
         return null;
-    }    
-    
+    }
+
     //UI是否存在且可见
-    public bool ExistUI(string uiName)
+    public bool ActiveExistUI(string uiName)
     {
         for (int i = 0; i < uiList.Count; i++)
         {
@@ -77,9 +101,26 @@ public class UIManager : Singleton<UIManager>
             {
                 if (uiList[i].gameObject.activeInHierarchy)
                 {
-                return true;
+                    return true;
 
                 }
+            }
+        }
+
+        return false;
+    }
+
+    //UI是否存在
+    public bool ExistUI(string uiName)
+    {
+        for (int i = 0; i < uiList.Count; i++)
+        {
+            if (uiList[i].name == uiName)
+            {
+
+                return true;
+
+
             }
         }
 

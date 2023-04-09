@@ -74,16 +74,25 @@ public class BossFSM_1 : BossFSM,IGetHurt
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision);
         if (collision.gameObject.CompareTag("PlayerBullet"))
         {
-            IEnumerator hit = HitColor();
-            StartCoroutine(hit);
-            UIManager.Instance.GetUI<BossHpItemUI>("BossHpItemUI").ChangeHpValue(-10);
+
         }
     }
 
-    IEnumerator HitColor()
+    public void GetHit(float damage)
+    {
+        IEnumerator hit = HitColor();
+        StartCoroutine(hit);
+        UIManager.Instance.GetUI<BossHpItemUI>("BossHpItemUI").ChangeHpValue(-damage*10);
+        if (hurtTime >= changeHurtTime)
+        {
+            TransformState(BossStateType.Death_1_1);
+            //UIManager.Instance.GetUI<BossHpItemUI>("BossHpItemUI").SetMax(100);
+            hurtTime = 0;
+        }
+    }
+        IEnumerator HitColor()
     {
         spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.2f);
@@ -358,6 +367,5 @@ public class BossFSM_1 : BossFSM,IGetHurt
     {
         UIManager.Instance.GetUI<BossHpItemUI>("BossHpItemUI").ChangeHpValue(-10);
     }
+    
 }
-
-

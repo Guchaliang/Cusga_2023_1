@@ -19,7 +19,6 @@ public class BagUI : UIBase
 
     private void OnCloseBtn(GameObject arg1, PointerEventData arg2)
     {
-        Debug.Log("1");
         Close();
     }
 

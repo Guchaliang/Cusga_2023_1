@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
   enemyInfo: {fileID: 0}
   getHit: 0
   StartAttackTime: 2
@@ -224,9 +225,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.015405774, y: 0}
+  m_Offset: {x: 0.015405798, y: -0.04226246}
   serializedVersion: 2
-  m_Radius: 0.35
+  m_Radius: 0.6035751
 --- !u!114 &660654547895516796
 MonoBehaviour:
   m_ObjectHideFlags: 0

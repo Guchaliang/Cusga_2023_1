@@ -43,6 +43,8 @@ public class BossDebut1_2State : IState
 
     public void OnEnter()
     {
+        UIManager.Instance.GetUI<BossHpItemUI>("BossHpItemUI").SetName("肉球");
+        UIManager.Instance.GetUI<BossHpItemUI>("BossHpItemUI").SetMax(100);
         m_Boss.animator.Play("Debut_2");
         Debug.Log(this);
     }
@@ -69,6 +71,8 @@ public class BossDebut1_3State : IState
 
     public void OnEnter()
     {
+        UIManager.Instance.GetUI<BossHpItemUI>("BossHpItemUI").SetName("球");
+        UIManager.Instance.GetUI<BossHpItemUI>("BossHpItemUI").SetMax(100);
         m_Boss.animator.Play("Debut_3");
         Debug.Log(this);
     }
@@ -226,6 +230,14 @@ public class BossAttack1_2State : IState//攻击过程中不可打断
     {
         m_Boss.animator.Play("Attack_2");
         Debug.Log("Boss状态" + this);
+        int skill = Random.Range(1, 3);
+        switch (skill)
+        {
+            case 1: m_Boss.Invoke("State2Skill_1", 0); break;
+            case 2: m_Boss.Invoke("State2Skill_2", 0); break;
+            case 3: m_Boss.Invoke("State2Skill_3", 0); break;
+            default: break;
+        }
     }
 
     public void OnUpdate()
@@ -234,13 +246,7 @@ public class BossAttack1_2State : IState//攻击过程中不可打断
         int skill = Random.Range(1, 3);
         if (timer >= 5f)
         {
-            switch (skill)
-            {
-                case 1: m_Boss.Invoke("State2Skill_1", 0); break;
-                case 2: m_Boss.Invoke("State2Skill_2", 0); break;
-                case 3: m_Boss.Invoke("State2Skill_3", 0); break;
-                default: break;
-            }
+
         }
     }
 
@@ -263,21 +269,21 @@ public class BossAttack1_3State : IState//攻击过程中不可打断
     {
         m_Boss.animator.Play("Attack_3");
         Debug.Log("Boss状态" + this);
+        int skill = Random.Range(1, 3);
+        switch (skill)
+        {
+            case 1: m_Boss.Invoke("State3Skill_1", 0); break;
+            case 2: m_Boss.Invoke("State3Skill_2", 0); break;
+            case 3: m_Boss.Invoke("State3Skill_3", 0); break;
+            default: break;
+        }
     }
 
     public void OnUpdate()
     {
         timer += Time.deltaTime;
-        int skill = Random.Range(1, 3);
         if (timer >= 5f)
         {
-            switch (skill)
-            {
-                case 1: m_Boss.Invoke("State3Skill_1", 0); break;
-                case 2: m_Boss.Invoke("State3Skill_2", 0); break;
-                case 3: m_Boss.Invoke("State3Skill_3", 0); break;
-                default: break;
-            }
         }
     }
 

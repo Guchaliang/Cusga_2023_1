@@ -19,6 +19,7 @@ public class LoginUI : UIBase
         Close();
         Time.timeScale = 1;
         UIManager.Instance.ShowUI<HpItemUI>("HpItemUI");
+        UIManager.Instance.CreateUI<BagUI>("BagUI");
         SceneManager.LoadScene("SampleScene");
     }
 

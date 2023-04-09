@@ -35,12 +35,13 @@ public class BossHpItemUI : UIBase
     public void SetMax(int value)
     {
         maxValue = value;
-        Value = maxValue;
+        ChangeHpValue(maxValue);
     }
 
+    
 
     //调节条形长度
-    private IEnumerator AdjustBarWidth(int amount)
+    private IEnumerator AdjustBarWidth(float amount)
     {
         //当数值大于0时 底层条形快速变换 顶层条形缓慢变换(回复状态)
         //当数值小于0时 顶层条形快速变换 底层条形缓慢变换(扣除状态)
@@ -55,7 +56,7 @@ public class BossHpItemUI : UIBase
         }
         slowChangeBar.SetWidth(TargetWidth);
     }
-    public void ChangeHpValue(int amount)
+    public void ChangeHpValue(float amount)
     {
         Value = Mathf.Clamp(value: Value + amount, min: 0, maxValue);
         if (adjustBarWidthCoroutine != null)

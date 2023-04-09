@@ -29,10 +29,11 @@ public class PlayerBullet : Bullet
     {
         if (other.CompareTag("EnemyOrBoss"))
         {
-            other.gameObject.GetComponent<CharacterInfo>()
-                .TakeDamage(damage, other.gameObject.GetComponent<CharacterInfo>());
+            other.gameObject.GetComponent<CharacterInfo>().TakeDamage(1, other.gameObject.GetComponent<CharacterInfo>());
+            other.gameObject.GetComponent<BossFSM_1>().GetHit(1);
             this.gameObject.SetActive(false);
-        }else if (other.CompareTag("Ground")||other.CompareTag("Patrol"))
+        }
+        else if (other.CompareTag("Ground")||other.CompareTag("Patrol"))
         {
             this.gameObject.SetActive(false);
         }
