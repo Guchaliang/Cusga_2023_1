@@ -13,6 +13,7 @@ TagManager:
   - Bag
   - goods
   - PlayerBullet
+  - Equipment
   layers:
   - Default
   - TransparentFX

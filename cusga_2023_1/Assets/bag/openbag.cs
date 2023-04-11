@@ -17,6 +17,7 @@ public class openbag : MonoBehaviour
         if(Input.GetKeyUp(KeyCode.E))
         {
             UIManager.Instance.ShowUI<BagUI>("BagUI");
+            Time.timeScale = 0;
         }
     }
     void Openstore()

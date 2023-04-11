@@ -6,16 +6,20 @@ public class e0001 : MonoBehaviour
 {
     public CharacterData_So templeteData;
     public float dodgeIdchange;
-
+    
+    public void f0001()
+    {
+        if (templeteData.dodgeId > dodgeIdchange)
+            templeteData.dodgeId -= dodgeIdchange;
+        else
+            templeteData.dodgeId = 0;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (templeteData.dodgeId > dodgeIdchange)
-                templeteData.dodgeId -= dodgeIdchange;
-            else
-                templeteData.dodgeId = 0;
-            Debug.Log(templeteData.dodgeId);
+
+            f0001();
             
         }
     }

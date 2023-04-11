@@ -153,6 +153,9 @@
     <Compile Include="Assets\Script\Manager\GameManager.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />
     <Compile Include="Assets\Script\store\T.cs" />
+    <Compile Include="Assets\test11.cs" />
+    <Compile Include="Assets\Script\AllEquipment\keyi\e0206.cs" />
+    <Compile Include="Assets\Script\AllEquipment\destroyEquipment.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

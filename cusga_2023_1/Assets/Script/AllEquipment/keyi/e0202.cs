@@ -14,23 +14,29 @@ public class e0202 : MonoBehaviour
     public float thisinjury;//当前收到的伤害
     public float injury_total;//最终应受到的伤害
     public int room_num_total;//总房间数量，后期在用房间的脚本改
+    public bool ise0202=true;
+    public void f0202()
+    {
+        if (isHit)//将来可以改成如果isHit调用这个脚本下面
+        {
+
+            if (currentInjury < injuryMax)
+            {
+                currentInjury += thisinjury;//记录总免伤量
+            }
+            else
+            {
+
+                injury_total = (room_num_total - passroom_num) / room_num_total * injuryMax + (currentInjury - injuryMax);//加上超出的部分才行
+
+            }
+
+        }
+    }
     void Update()
     {
         if (myBag.itemList.Find(z => z.itemName.Contains("0202")))//携带了这件装备
-            if (isHit)//将来可以改成如果isHit调用这个脚本下面
-            {
-                
-                if (currentInjury < injuryMax)
-                {
-                    currentInjury += thisinjury;//记录总免伤量
-                }
-                else
-                {
-
-                 injury_total = (room_num_total-passroom_num) / room_num_total* injuryMax+(currentInjury-injuryMax);//加上超出的部分才行
-
-                }
-              
-            }
+            if(ise0202)
+           f0202();
     }
 }

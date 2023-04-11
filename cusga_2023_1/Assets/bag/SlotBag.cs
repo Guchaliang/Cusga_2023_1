@@ -13,5 +13,6 @@ public class SlotBag : MonoBehaviour
     public void ItemOnClick1()
     {
         UIManager.Instance.GetUI<BagUI>("BagUI").UpdateItemText(slotItem.itemText);
+        UIManager.Instance.GetUI<BagUI>("BagUI").UpdateCurItem(slotItem);
     }
 }
