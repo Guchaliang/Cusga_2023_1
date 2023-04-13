@@ -816,6 +816,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99ca2ea61ef89874c94c495498d3e5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  miniIcons:
+  - {fileID: 4151965863486031576, guid: 89b43da8fdc768f48b0d1d718344f412, type: 3}
+  - {fileID: 4151965863486031576, guid: fc764981254968d409d0eec3376caea2, type: 3}
   miniRoomPrefab: {fileID: 5189994684464275237, guid: 592c70b488d3144409fd74328446735c, type: 3}
   roomNode: {fileID: 1188051384}
 --- !u!1 &1188051383
