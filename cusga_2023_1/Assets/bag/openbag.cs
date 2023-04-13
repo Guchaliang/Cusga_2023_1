@@ -4,23 +4,27 @@ using UnityEngine;
 
 public class openbag : MonoBehaviour
 {
-    public GameObject myBag;
-    bool isOpen;
-    // Start is called before the first frame update
-    
-    // Update is called once per frame
+    bool isOpenb;
+    bool isOpens;
     void Update()
     {
         OpenBag();
+        Openstore();
     }
 
     void OpenBag()
     {
         if(Input.GetKeyUp(KeyCode.E))
         {
-            isOpen = myBag.activeSelf;
-            isOpen=!isOpen;
-            myBag.SetActive(isOpen);
+            UIManager.Instance.ShowUI<BagUI>("BagUI");
+            Time.timeScale = 0;
+        }
+    }
+    void Openstore()
+    {
+        if (Input.GetKeyUp(KeyCode.I))
+        {
+
         }
     }
 }

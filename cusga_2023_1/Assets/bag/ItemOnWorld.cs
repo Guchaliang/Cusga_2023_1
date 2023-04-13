@@ -12,13 +12,16 @@ public class ItemOnWorld : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             AddNewItem();
-            Destroy(gameObject);
+
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
     
     void AddNewItem()
     {
         playerBag.itemList.Add(thisItem);
-        BagMangaer.CreateNewItem(thisItem);
-    } 
+        UIManager.Instance.GetUI<BagUI>("BagUI").CreateNewItem(thisItem);
+    }
+
 }

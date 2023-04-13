@@ -353,7 +353,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -401,9 +401,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  inertia: 3
-  addSpeed: 3
   maxSpeed: 3
+  inputX: 0
+  inputY: 0
+  oldvec: {x: 0, y: 0}
+  olddrag: 0
+  newdrag: 0
 --- !u!1 &2116906066
 GameObject:
   m_ObjectHideFlags: 0

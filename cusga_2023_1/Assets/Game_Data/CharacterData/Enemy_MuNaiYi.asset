@@ -12,7 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c5fd29a4acb4542a4ef68689041952, type: 3}
   m_Name: Enemy_MuNaiYi
   m_EditorClassIdentifier: 
-  maxHealth: 0
+  maxHealth: 100
   currentHealth: 0
-  maxDenfence: 0
-  currentDefence: 0
+  Defence: 100
+  currentDefence: 100
+  dashSpeed: 2
+  dashLength: 2
+  maxSpeed: 4
+  addSpeed: 4
+  delSpeed: 4
+  dodgeId: 3
+  dodgelength: 2
+  defencedropRate: 0.3
+  healthdropRate: 0.2

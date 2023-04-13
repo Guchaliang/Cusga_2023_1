@@ -96,3 +96,15 @@ The following packages were added:
   com.unity.textmeshpro@3.0.6
   com.unity.timeline@1.4.8
   com.unity.ugui@1.0.0
+
+=== Tue Apr  4 19:51:08 2023
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 已更新:
+  com.unity.collab-proxy 从版本 1.15.12 到 1.17.2
+  com.unity.ide.rider 从版本 2.0.7 到 3.0.15
+  com.unity.ide.visualstudio 从版本 2.0.14 到 2.0.16
+  com.unity.ide.vscode 从版本 1.2.4 到 1.2.5
+  com.unity.test-framework 从版本 1.1.29 到 1.1.33

@@ -4,8 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Stone
   - Ground
+  - Patrol
+  - EnemyOrBoss
+  - stone
+  - wall
+  - door
+  - Bag
+  - goods
+  - PlayerBullet
+  - Equipment
   layers:
   - Default
   - TransparentFX
@@ -42,9 +50,6 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Stone
-    uniqueID: 2577359311
     locked: 0
   - name: Player
     uniqueID: 3265930371

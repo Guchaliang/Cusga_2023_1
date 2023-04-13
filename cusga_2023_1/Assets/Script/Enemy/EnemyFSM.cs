@@ -23,8 +23,7 @@ public class EnemyFSM : MonoBehaviour
     public float patrolRange;
     public float patrolMaxTime;
     public float patrolMinTime;
-    public Obstacles obstacles;//TODO 只是测试，后面改
-    [HideInInspector] public Vector2 awakePos;
+    public Vector2 awakePos;
     [HideInInspector] public Vector2 targetPos;
     
     private void Awake()
@@ -32,10 +31,7 @@ public class EnemyFSM : MonoBehaviour
         animator = GetComponent<Animator>();
         enemyInfo = GetComponent<CharacterInfo>();
         agent = GetComponent<PolyNavAgent>();
-    }
-
-    private void Start()
-    {
+        
         states = new Dictionary<StateType, IState>();
         
         states.Add(StateType.Idle, new EnemyState(this));
@@ -44,19 +40,24 @@ public class EnemyFSM : MonoBehaviour
         states.Add(StateType.Attack, new AttackState(this));
         states.Add(StateType.GetHit,new GetHitState(this));
         states.Add(StateType.Death,new DeathState(this));
-        
+    }
+
+    private void OnEnable()
+    {
+        enemyInfo.InitTheInfo();
+        TransformState(StateType.Idle);
+    }
+
+    private void Start()
+    {
         TransformState(StateType.Idle);
         
         Player = FindObjectOfType<PlayerTest>().gameObject;
-
-        awakePos = transform.position;
-        agent.map = PolyNavMap.current;
     }
 
     private void FixedUpdate()
     {
         currentState.OnUpdate();
-        
     }
 
     public float GetPatrolTime()
@@ -82,13 +83,13 @@ public class EnemyFSM : MonoBehaviour
         targetPos.x = awakePos.x + randomX;
         targetPos.y = awakePos.y + randomY;
 
-        while (obstacles.GetPosInCollider(targetPos))
+        while (!agent.map.PointIsValid(targetPos))
         {
-            randomX = Random.Range(-patrolRange,patrolRange);
+            randomX = Random.Range(-patrolRange, patrolRange);
             randomY = Random.Range(-patrolRange, patrolRange);
-            
+
             targetPos.x = awakePos.x + randomX;
-            targetPos.y = awakePos.y + randomY; 
+            targetPos.y = awakePos.y + randomY;
         }
     }
 
@@ -106,7 +107,12 @@ public class EnemyFSM : MonoBehaviour
     
     protected virtual void AttackPlayer()
     {
+        Collider2D target = Physics2D.OverlapCircle(attackPoint.position, enemyInfo.attackRange,LayerMask.GetMask("Player"));
         
+        if (target&&target.CompareTag("Player"))
+        {
+            enemyInfo.TakeDamage(enemyInfo,target.gameObject.GetComponent<CharacterInfo>());
+        }
     }
 
     
@@ -115,11 +121,8 @@ public class EnemyFSM : MonoBehaviour
         if (other.collider.CompareTag("Player"))
         {
             enemyInfo.TakeDamage(1,other.gameObject.GetComponent<CharacterInfo>());
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
-    }
-    
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireCube(awakePos,new Vector2(patrolRange*2,patrolRange*2));
+
     }
 }

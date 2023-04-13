@@ -12,6 +12,6 @@ public class Slot : MonoBehaviour
 
     public void ItemOnClick()
     {
-        BagMangaer.UpdateItemText(slotItem.itemText);
+       UIManager.Instance.GetUI<BagUI>("BagUI").UpdateItemText(slotItem.itemText);
     }
 }

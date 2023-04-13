@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class RoomGenerator : MonoBehaviour
 {
-    public enum Direction { up,down,left,right};//枚举
    //public enum Stone1 { stone1,stone2, stone3,stone4 };//枚举石头
     public Direction direction;
     //public Stone1 stone;
