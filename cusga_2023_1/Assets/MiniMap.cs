@@ -8,6 +8,8 @@ using Debug = UnityEngine.Debug;
 
 public class MiniMap : UIBase
 {
+    public GameObject[] miniIcons;
+    
     public GameObject miniRoomPrefab;
     public Transform roomNode;
     
@@ -25,13 +27,18 @@ public class MiniMap : UIBase
 
     public void CreateMiniMap()
     {
+        if (miniMap != null){
+            ResetTheMinimap();
+            Array.Clear(miniMap,0,miniMap.Length);
+        }
+
         miniMap = new GameObject[RoomManager.Instance.roomArray.GetLength(0), RoomManager.Instance.roomArray.GetLength(1)];
         
         foreach (var room in RoomManager.Instance.roomArray)
         {
             if (room)
             {
-                var miniRoom = Instantiate(miniRoomPrefab, roomNode);
+                var miniRoom = PoolManager.Release(miniRoomPrefab,transform.position);
                 miniMap[(int) room.coordinate.x, (int) room.coordinate.y] = miniRoom;
 
                 miniRoom.transform.localPosition = new Vector2((room.coordinate.x - miniMap.GetLength(0)/2)*offset.x,
@@ -41,10 +48,12 @@ public class MiniMap : UIBase
                 switch(room.roomType)
                 { 
                     case RoomType.Boss:
+                        Instantiate(miniIcons[0],miniRoom.transform);
                         break;
-                    case RoomType.Award:
-                        break;
+                    /*case RoomType.Award:
+                        break;*/
                     case RoomType.Store:
+                        Instantiate(miniIcons[1],miniRoom.transform);
                         break;
                     default:
                         break;
@@ -55,6 +64,23 @@ public class MiniMap : UIBase
         currentCoordinate = new Vector2(RoomManager.Instance.currentRoom.coordinate.x,
             RoomManager.Instance.currentRoom.coordinate.x);
         currentRoom = miniMap[(int) currentCoordinate.x, (int) currentCoordinate.x];
+    }
+
+    public void ResetTheMinimap()
+    {
+        foreach (var room in miniMap)
+        {
+            if (room)
+            {
+                if (room.transform.childCount!=0)
+                {
+                    Destroy(room.transform.GetChild(0).gameObject);
+                }
+                room.GetComponent<Image>().color = Color.clear;
+                room.gameObject.SetActive(false);
+            }
+        }
+        hasBeenToList.Clear();
     }
 
     public void UpdateMiniMap(Vector2 moveDirection)

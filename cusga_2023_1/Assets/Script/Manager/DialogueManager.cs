@@ -9,6 +9,9 @@ public class DialogueManager : Singleton<DialogueManager>
 {
     public GameObject dialogueBox;
     public Text dialogueText, nameText;
+    [HideInInspector]public bool canTalk = true;
+    
+    [HideInInspector]public int talkTimes;
 
     [TextArea(1, 3)] public string[] dialogueLines;
     [SerializeField] private int currentLines;
@@ -25,7 +28,7 @@ public class DialogueManager : Singleton<DialogueManager>
     {
         if (dialogueBox.activeInHierarchy)
         {
-            if (Input.GetKeyUp(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 if (!isScrolling)
                 {
@@ -37,15 +40,10 @@ public class DialogueManager : Singleton<DialogueManager>
                     }
                     else
                     {
+                        GameManager.Instance.player.canAct = true;
                         dialogueBox.SetActive(false);
-                        //TODO 人物可以移动
+                        StartCoroutine(SetNextTimeCanActive());
                     }
-                }
-                else
-                {
-                    StopAllCoroutines();
-                    dialogueText.text = dialogueLines[currentLines];
-                    isScrolling = false;
                 }
             }
         }
@@ -57,12 +55,22 @@ public class DialogueManager : Singleton<DialogueManager>
         currentLines = 0;
         CheckName();
 
-        //TODO 人物禁止移动
+        GameManager.Instance.player.canAct = false;
+        GameManager.Instance.player.VelocitySetZero();
+
+        
         yield return null;
         StartCoroutine(ScrollingText());
+        canTalk = false;
         dialogueBox.SetActive(true);
         
         nameText.gameObject.SetActive(_hasName);
+    }
+
+    IEnumerator SetNextTimeCanActive()
+    {
+        yield return new WaitForSeconds(0.5f);
+        canTalk = true;
     }
 
     public void CheckName()

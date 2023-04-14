@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6187343208951420633}
   - component: {fileID: 6187343208951420639}
   - component: {fileID: 6187343208951420632}
+  - component: {fileID: -2257194816297497438}
   - component: {fileID: 6187343208951420637}
   - component: {fileID: 6187343208951420636}
-  - component: {fileID: 7642058673121692507}
   - component: {fileID: 1453255118869916133}
   m_Layer: 6
   m_Name: Player
@@ -125,6 +125,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0066916943, y: -0.19010514}
   m_Size: {x: 0.5631232, y: 0.7851902}
   m_Direction: 0
+--- !u!114 &-2257194816297497438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6187343208951420635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be206c9fdc5e3f46bd3a03a6e3cb4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6187343208951420637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,20 +180,6 @@ MonoBehaviour:
   damage: 0
   coolDown: 0
   skillCollDown: 0
---- !u!114 &7642058673121692507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6187343208951420635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3be206c9fdc5e3f46bd3a03a6e3cb4f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myBag: {fileID: 0}
-  mySore: {fileID: 0}
 --- !u!95 &1453255118869916133
 Animator:
   serializedVersion: 3

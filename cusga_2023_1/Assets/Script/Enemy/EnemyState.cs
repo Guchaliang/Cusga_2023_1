@@ -50,6 +50,7 @@ public class PatrolState : IState
     
     public void OnEnter()
     {
+
         m_Enemy.animator.Play("Move");
         m_Enemy.ChoosePatrolTarget();
         m_Enemy.FlipTo();
@@ -114,7 +115,7 @@ public class ChaseState : IState
 
         if (((Vector2)m_Enemy.transform.position - m_Enemy.targetPos).magnitude <
             0.9f * m_Enemy.enemyInfo.attackRange&& hit2D&&hit2D.collider.CompareTag("Player"))
-        { 
+        {
             m_Enemy.TransformState(StateType.Attack);
         }
         

@@ -7,7 +7,9 @@ public class Bullet : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Vector2 direction;
-    [HideInInspector]public float damage;
+
+    [HideInInspector]
+    public float damage;
 
     private Animator animator;
     
@@ -46,6 +48,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            
             other.gameObject.GetComponent<CharacterInfo>()
                 .TakeDamage(damage, other.gameObject.GetComponent<CharacterInfo>());
             //设置受击

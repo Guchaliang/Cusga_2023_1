@@ -25,3 +25,12 @@ MonoBehaviour:
   dodgelength: 2
   defencedropRate: 0.3
   healthdropRate: 0.2
+  room_award: 1
+  boss_award: 2
+  protect: 0
+  defence: 0
+  attackRange: 4
+  findRange: 5
+  damage: 1
+  CoolDown: 0
+  SkillCollDown: 0

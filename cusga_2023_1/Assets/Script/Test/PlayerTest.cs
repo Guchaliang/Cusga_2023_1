@@ -75,6 +75,11 @@ public class PlayerTest : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
     }
 
+    internal void VelocitySetZero()
+    {
+        rb.velocity = Vector2.zero;
+    }
+
     private void SwithAnim()
     {
         anim.SetFloat("Speed",rb.velocity.sqrMagnitude);

@@ -54,6 +54,8 @@ public class CharacterInfo : MonoBehaviour
         {
             defener.currentHealth = Mathf.Max(defener.currentHealth - attacker.damage, 0);
         }
+
+        //updateUI
     }
 
     public void TakeDamage(float damage, CharacterInfo defener)

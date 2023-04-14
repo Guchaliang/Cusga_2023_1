@@ -22,9 +22,8 @@ public class BasicRoom : MonoBehaviour
     public bool isCleared;//玩家是否清理空怪物
     public RoomType roomType;//当前房间的类型
     public Vector2 coordinate;//坐标
-    [HideInInspector]public int EnemyNum = 0;
+    [HideInInspector]public int EnemyNum;
     private RoomLayout roomLayout;
-    
 
     public int activeDoorNum
     {
@@ -35,8 +34,14 @@ public class BasicRoom : MonoBehaviour
     public List<GameObject> doorList;//启用的门列表
     public Dictionary<Direction, BasicRoom> neighboringRooms = new Dictionary<Direction, BasicRoom>();
     public PolyNavMap map;
-    
-    //将对应方向的房间门启用
+
+    private void Update()
+    {
+        if(this.isCleared)
+            CheckActiveDoor(false);
+    }
+
+    //将对应方向的房间门启用，然后将其存入字典
     public void SetDoorActive(Direction direction,BasicRoom neighbor)
     {
         GameObject door = doorList[(int) direction];
@@ -86,7 +91,21 @@ public class BasicRoom : MonoBehaviour
         else
         {
             EnemyNum = 0;
-            isCleared = true;
         }
+    }
+
+    public void ResetMyRoom()
+    {
+        this.isArrived = false;
+        this.isCleared = false;
+
+        for (int i = 0; i < doorList.Count; i++)
+        {
+            doorList[i].transform.GetChild(0).gameObject.SetActive(false);
+            doorList[i].transform.GetChild(1).gameObject.SetActive(false);
+        }
+        
+        neighboringRooms.Clear();
+        this.gameObject.SetActive(false);
     }
 }

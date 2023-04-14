@@ -20,7 +20,7 @@ public class LoginUI : UIBase
         Time.timeScale = 1;
         UIManager.Instance.ShowUI<HpItemUI>("HpItemUI");
         UIManager.Instance.CreateUI<BagUI>("BagUI");
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Game1.0");
     }
 
     private void OnCollectionBtn(GameObject obj, PointerEventData data)

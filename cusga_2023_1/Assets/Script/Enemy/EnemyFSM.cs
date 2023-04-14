@@ -112,6 +112,7 @@ public class EnemyFSM : MonoBehaviour
         if (target&&target.CompareTag("Player"))
         {
             enemyInfo.TakeDamage(enemyInfo,target.gameObject.GetComponent<CharacterInfo>());
+            Debug.Log(target.gameObject.GetComponent<CharacterInfo>().currentHealth);
         }
     }
 

@@ -42,7 +42,30 @@ public class RoomManager : Singleton<RoomManager>
         this.player = GameManager.Instance.player;
         CreateRooms();
     }
-    
+
+    private void Update()
+    {
+        if (this.currentRoom.EnemyNum == 0)
+        {
+            this.currentRoom.isCleared = true;
+        }
+        else
+        {
+            this.currentRoom.isCleared = false;
+        }
+    }
+
+    public void NextLevel()
+    {
+        foreach (var room in roomArray)
+        {
+            if(room)
+                room.ResetMyRoom();
+        }
+        
+        CreateRooms();
+    }
+
     public BasicRoom CreateRoom(Vector2 Pos)
     {
         BasicRoom newRoom = PoolManager.Release(roomPrefab, new Vector2(((int) Pos.x - roomArray.GetLength(0) / 2) * offset.x,
@@ -125,13 +148,13 @@ public class RoomManager : Singleton<RoomManager>
             
             FindObjectOfType<MiniMap>().CreateMiniMap();
             
-            foreach (BasicRoom room in roomArray)
+            /*foreach (BasicRoom room in roomArray)
             {
-                if (room )
+                if (room)
                 {
                     room.CheckActiveDoor(false);
                 }
-            }
+            }*/
         }
 
         StartCoroutine(MoveToRoom(Vector2.zero));

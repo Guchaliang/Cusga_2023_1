@@ -100,6 +100,7 @@
     <Compile Include="Assets\Script\AllEquipment\keyi\e0106.cs" />
     <Compile Include="Assets\Script\TidyObject.cs" />
     <Compile Include="Assets\Script\Boss2\Circle.cs" />
+    <Compile Include="Assets\Script\GameData\Takeble\NPCTalkContant.cs" />
     <Compile Include="Assets\Script\Test\PlayerTest.cs" />
     <Compile Include="Assets\Script\AllEquipment\key\e0011.cs" />
     <Compile Include="Assets\Script\AllEquipment\key\e0009.cs" />
@@ -124,6 +125,7 @@
     <Compile Include="Assets\Script\Stone.cs" />
     <Compile Include="Assets\Script\UI\SettingUI.cs" />
     <Compile Include="Assets\Script\Boss1\IGetHurt.cs" />
+    <Compile Include="Assets\Script\AllEquipment\keyi\e0206.cs" />
     <Compile Include="Assets\Script\UI\CollectionLegacyUI.cs" />
     <Compile Include="Assets\Script\AllEquipment\keyi\e0204.cs" />
     <Compile Include="Assets\Script\UI\GameEntry.cs" />
@@ -143,19 +145,18 @@
     <Compile Include="Assets\bag\SlotBag.cs" />
     <Compile Include="Assets\Script\Boss1\BossFSM_1.cs" />
     <Compile Include="Assets\Script\AllEquipment\keyi\e0105.cs" />
+    <Compile Include="Assets\Script\AllEquipment\destroyEquipment.cs" />
     <Compile Include="Assets\Script\AllEquipment\keyi\e0104.cs" />
     <Compile Include="Assets\Script\Boss2\BombFSM.cs" />
     <Compile Include="Assets\Script\Dialogue\Talkable.cs" />
     <Compile Include="Assets\Script\Tools\Singleton.cs" />
     <Compile Include="Assets\Script\UI\UIBase.cs" />
+    <Compile Include="Assets\test11.cs" />
     <Compile Include="Assets\bag\SlotStore.cs" />
     <Compile Include="Assets\Script\UI\BossHpItemUI.cs" />
     <Compile Include="Assets\Script\Manager\GameManager.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />
     <Compile Include="Assets\Script\store\T.cs" />
-    <Compile Include="Assets\test11.cs" />
-    <Compile Include="Assets\Script\AllEquipment\keyi\e0206.cs" />
-    <Compile Include="Assets\Script\AllEquipment\destroyEquipment.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
