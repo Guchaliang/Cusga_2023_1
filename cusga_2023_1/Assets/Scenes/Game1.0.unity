@@ -1036,23 +1036,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2136826262048555500, guid: b013207c3b777cc48b070c0a97d06373, type: 3}
       propertyPath: m_Type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2136826262048555500, guid: b013207c3b777cc48b070c0a97d06373, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 21300000, guid: 0268bbcea5eb3584bb6f1cc40fede019, type: 3}
     - target: {fileID: 2136826262048555500, guid: b013207c3b777cc48b070c0a97d06373, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2136826262048555500, guid: b013207c3b777cc48b070c0a97d06373, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2136826262048555500, guid: b013207c3b777cc48b070c0a97d06373, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2136826262048555502, guid: b013207c3b777cc48b070c0a97d06373, type: 3}
       propertyPath: m_IsActive
