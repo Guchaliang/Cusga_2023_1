@@ -117,7 +117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2600387560407150153, guid: fc7c25ae04b503b42bd6dc5dbe0c2d43, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2873189932756158034, guid: fc7c25ae04b503b42bd6dc5dbe0c2d43, type: 3}
       propertyPath: templeteData
@@ -193,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4510065794253221278, guid: fc7c25ae04b503b42bd6dc5dbe0c2d43, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5221885883268367796, guid: fc7c25ae04b503b42bd6dc5dbe0c2d43, type: 3}
       propertyPath: m_SortingOrder
@@ -486,6 +486,48 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2828886140135367596, guid: fc7c25ae04b503b42bd6dc5dbe0c2d43, type: 3}
   m_PrefabInstance: {fileID: 3934800249977646845}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1271711085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7134405114838690296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85855fa979ea3ef4b8238ba6c4cfe4f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bag: {fileID: 11400000, guid: 11620ace99c59cb4d948bbcd431cac7c, type: 2}
+  original: {fileID: 11400000, guid: a27e3fd4e93cd5b4ca69cfa759074d42, type: 2}
+  current: {fileID: 11400000, guid: 094a1bf299e15984ea294cf9f53fe839, type: 2}
+  currentAttack: {fileID: 11400000, guid: 7efc7d80d68cf8e4c8c08d3180a4a7ab, type: 2}
+  originalAttack: {fileID: 11400000, guid: 0906ece7ea39cab4c917e04d73d8bb4a, type: 2}
+  equ_Throw: 0
+  e0001: {fileID: 580347573522613091}
+  e0002: {fileID: 1336822863094644916}
+  e0003: {fileID: 4072878905978014003}
+  e0004: {fileID: 6242696622553889306}
+  e0005: {fileID: 3033246584719009857}
+  e0006: {fileID: 1941562255056816071}
+  e0007: {fileID: 1082835763612225912}
+  e0008: {fileID: 8821326436815557345}
+  e0009: {fileID: 1558026084577045371}
+  e0010: {fileID: 4583785571791842652}
+  e0011: {fileID: 6097746075293038267}
+  e0012: {fileID: 5159782049387110205}
+  e0101: {fileID: 1286075721642560849}
+  e0201: {fileID: 1023778662206208174}
+  e0102: {fileID: 2273995497165713961}
+  e0103: {fileID: 745859086628262936}
+  e0104: {fileID: 4833561960302398787}
+  e0105: {fileID: 2562708182916992167}
+  e0106: {fileID: 550274320615423164}
+  e0202: {fileID: 3582499292783605621}
+  e0203: {fileID: 6499683463762926256}
+  e0204: {fileID: 4673813176584093593}
+  e0205: {fileID: 3341950576623975667}
+  e0206: {fileID: 3084578436112867320}
 --- !u!114 &265719244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,45 +623,3 @@ MonoBehaviour:
   AttackData_So: {fileID: 11400000, guid: 7efc7d80d68cf8e4c8c08d3180a4a7ab, type: 2}
   myBag: {fileID: 11400000, guid: 11620ace99c59cb4d948bbcd431cac7c, type: 2}
   thisattackDamage: 0
---- !u!114 &1271711085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7134405114838690296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85855fa979ea3ef4b8238ba6c4cfe4f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bag: {fileID: 11400000, guid: 11620ace99c59cb4d948bbcd431cac7c, type: 2}
-  original: {fileID: 11400000, guid: a27e3fd4e93cd5b4ca69cfa759074d42, type: 2}
-  current: {fileID: 11400000, guid: 094a1bf299e15984ea294cf9f53fe839, type: 2}
-  currentAttack: {fileID: 11400000, guid: 7efc7d80d68cf8e4c8c08d3180a4a7ab, type: 2}
-  originalAttack: {fileID: 11400000, guid: 0906ece7ea39cab4c917e04d73d8bb4a, type: 2}
-  equ_Throw: 0
-  e0001: {fileID: 580347573522613091}
-  e0002: {fileID: 1336822863094644916}
-  e0003: {fileID: 4072878905978014003}
-  e0004: {fileID: 6242696622553889306}
-  e0005: {fileID: 3033246584719009857}
-  e0006: {fileID: 1941562255056816071}
-  e0007: {fileID: 1082835763612225912}
-  e0008: {fileID: 8821326436815557345}
-  e0009: {fileID: 1558026084577045371}
-  e0010: {fileID: 4583785571791842652}
-  e0011: {fileID: 6097746075293038267}
-  e0012: {fileID: 5159782049387110205}
-  e0101: {fileID: 1286075721642560849}
-  e0201: {fileID: 1023778662206208174}
-  e0102: {fileID: 2273995497165713961}
-  e0103: {fileID: 745859086628262936}
-  e0104: {fileID: 4833561960302398787}
-  e0105: {fileID: 2562708182916992167}
-  e0106: {fileID: 550274320615423164}
-  e0202: {fileID: 3582499292783605621}
-  e0203: {fileID: 6499683463762926256}
-  e0204: {fileID: 4673813176584093593}
-  e0205: {fileID: 3341950576623975667}
-  e0206: {fileID: 3084578436112867320}
