@@ -55,7 +55,12 @@ public class CharacterInfo : MonoBehaviour
             defener.currentHealth = Mathf.Max(defener.currentHealth - attacker.damage, 0);
         }
 
-        //updateUI
+        if (defener.CompareTag("Player"))
+        {
+            UIManager.Instance.GetUI<HpItemUI>("HpItemUI").ChangeHpValue((int)-attacker.damage);
+            defener.GetComponent<PlayerTest>().PlayerGetHit();
+
+        }
     }
 
     public void TakeDamage(float damage, CharacterInfo defener)
@@ -74,6 +79,12 @@ public class CharacterInfo : MonoBehaviour
         {
             defener.currentHealth = Mathf.Max(defener.currentHealth - damage, 0);
         }
+        if (defener.CompareTag("Player"))
+        {
+            UIManager.Instance.GetUI<HpItemUI>("HpItemUI").ChangeHpValue((int)-damage);
+            defener.GetComponent<PlayerTest>().PlayerGetHit();
+        }
+        Debug.Log(defener.currentHealth);
     }
     #endregion
 

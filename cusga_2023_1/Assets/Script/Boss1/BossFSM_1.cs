@@ -8,7 +8,7 @@ using DG.Tweening;
 using Random = UnityEngine.Random;
 
 
-public class BossFSM_1 : BossFSM,IGetHurt
+public class BossFSM_1 : BossFSM, IGetHurt
 {
     [Header("子弹")]
     public GameObject bullet;
@@ -18,8 +18,8 @@ public class BossFSM_1 : BossFSM,IGetHurt
     public GameObject rainBullet;
 
     [Header("粘液子弹")]
-    public GameObject mucusBullet; 
-    
+    public GameObject mucusBullet;
+
     [Header("分裂的粘液子弹")]
     public GameObject explodeMucusBullet;
 
@@ -46,8 +46,8 @@ public class BossFSM_1 : BossFSM,IGetHurt
         states = new Dictionary<BossStateType, IState>();
         states.Add(BossStateType.Debut1_1, new BossDebut1_1State(this));
         states.Add(BossStateType.Debut1_2, new BossDebut1_2State(this));
-        states.Add(BossStateType.Debut1_3, new BossDebut1_3State(this));       
-        
+        states.Add(BossStateType.Debut1_3, new BossDebut1_3State(this));
+
         states.Add(BossStateType.Idle_1_1, new BossIdle1_1State(this));
         states.Add(BossStateType.Idle_1_2, new BossIdle1_2State(this));
         states.Add(BossStateType.Idle_1_3, new BossIdle1_3State(this));
@@ -84,7 +84,7 @@ public class BossFSM_1 : BossFSM,IGetHurt
     {
         IEnumerator hit = HitColor();
         StartCoroutine(hit);
-        UIManager.Instance.GetUI<BossHpItemUI>("BossHpItemUI").ChangeHpValue(-damage*10);
+        UIManager.Instance.GetUI<BossHpItemUI>("BossHpItemUI").ChangeHpValue(-damage * 10);
         if (hurtTime >= changeHurtTime)
         {
             TransformState(BossStateType.Death_1_1);
@@ -92,14 +92,14 @@ public class BossFSM_1 : BossFSM,IGetHurt
             hurtTime = 0;
         }
     }
-        IEnumerator HitColor()
+    IEnumerator HitColor()
     {
         spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.2f);
         spriteRenderer.color = Color.white;
     }
 
-    public void ChangeState(BossStateType state,float hpValue)
+    public void ChangeState(BossStateType state, float hpValue)
     {
         TransformState(state);
     }
@@ -143,55 +143,55 @@ public class BossFSM_1 : BossFSM,IGetHurt
         //每波粘液球降落间隔时间
         float delayTime = 0.5f;
         //波数
-        int  rainCount = 4;
+        int rainCount = 4;
         //持续时间
         float lastTime = 10f;
         //总计粘液球数
         int place = 12;
         //粘液球爆炸时间
-        float explodeTime=1f;
+        float explodeTime = 1f;
 
         bool skillOn = true;
 
         IEnumerator timer1 = Timer(lastTime, skillOn);
         if (skillOn)
         {
-            IEnumerator rain = RainMucus(delayTime, lastTime, place,rainCount,explodeTime);
+            IEnumerator rain = RainMucus(delayTime, lastTime, place, rainCount, explodeTime);
             StartCoroutine(rain);
         }
     }
 
-    IEnumerator RainMucus(float delayTime,float lastTime = 10f, int rainPlace = 12,int rainCount =4,float explodeTime =1f)
+    IEnumerator RainMucus(float delayTime, float lastTime = 10f, int rainPlace = 12, int rainCount = 4, float explodeTime = 1f)
     {
         Vector2[] vector2s;
         vector2s = new Vector2[rainPlace];
 
-        float limitHeight= 3.5f;
-        float limitWeight= 5f;
+        float limitHeight = 3.5f;
+        float limitWeight = 5f;
 
 
         for (int i = 0; i < rainPlace; i++)
         {
             yield return new WaitForSeconds(delayTime);
- 
-                float x = Random.Range(-limitWeight, limitWeight);//规定x轴方向上的范围
-                float y = Random.Range(-limitHeight, limitHeight);//规定z轴方向上的范围
-                vector2s[i] = new Vector2(x, y);
 
-                //在随机地点创建瞄准地区
-                GameObject bossBullet = PoolManager.Release(rainBullet, vector2s[i], Quaternion.identity);
-                bossBullet.GetComponent<Bullet>().SetDirection(Vector2.zero);
-                IEnumerator killBullet = KillBullet(2, bossBullet);
-                StartCoroutine(killBullet);
+            float x = Random.Range(-limitWeight, limitWeight);//规定x轴方向上的范围
+            float y = Random.Range(-limitHeight, limitHeight);//规定z轴方向上的范围
+            vector2s[i] = new Vector2(x, y);
 
-                //开始爆炸倒计时
-                IEnumerator r = RainExplode(explodeTime,bossBullet.transform.position);
-                StartCoroutine(r);
-            
+            //在随机地点创建瞄准地区
+            GameObject bossBullet = PoolManager.Release(rainBullet, vector2s[i], Quaternion.identity);
+            bossBullet.GetComponent<Bullet>().SetDirection(Vector2.zero);
+            IEnumerator killBullet = KillBullet(2, bossBullet);
+            StartCoroutine(killBullet);
+
+            //开始爆炸倒计时
+            IEnumerator r = RainExplode(explodeTime, bossBullet.transform.position);
+            StartCoroutine(r);
+
         }
     }
 
-    IEnumerator RainExplode(float explodeTime,Vector2 pos)
+    IEnumerator RainExplode(float explodeTime, Vector2 pos)
     {
         yield return new WaitForSeconds(explodeTime);
         GameObject bossBullet = PoolManager.Release(explodeMucusBall, pos, Quaternion.identity);
@@ -206,12 +206,12 @@ public class BossFSM_1 : BossFSM,IGetHurt
     {
         Vector2 playerPos = new Vector2(Player.transform.position.x, Player.transform.position.y);
         Vector2 dir = (Player.transform.position - this.transform.position);
-        IEnumerator shoot = ShootDelayBullet(5, playerPos, dir, 0.5f, 3f,mucusBullet);
+        IEnumerator shoot = ShootDelayBullet(5, playerPos, dir, 0.5f, 3f, mucusBullet);
         StartCoroutine(shoot);
     }
 
 
-    IEnumerator KillBullet(float delayTime,GameObject bullet)
+    IEnumerator KillBullet(float delayTime, GameObject bullet)
     {
         yield return new WaitForSeconds(delayTime);
         bullet.gameObject.SetActive(false);
@@ -226,7 +226,7 @@ public class BossFSM_1 : BossFSM,IGetHurt
     /// <param name="dir"></param>
     /// <param name="delayTime">每延迟一段时间 出现一个子弹</param>
     /// <returns></returns>
-    IEnumerator ShootDelayBullet(int time, Vector2 playerPos, Vector2 dir, float delayTime,float lastTime, GameObject delayBullet)
+    IEnumerator ShootDelayBullet(int time, Vector2 playerPos, Vector2 dir, float delayTime, float lastTime, GameObject delayBullet)
     {
 
         Vector2 myPos = new Vector2(transform.position.x, transform.position.y); ;
@@ -236,8 +236,8 @@ public class BossFSM_1 : BossFSM,IGetHurt
         {
             track[i] = myPos + i * dir / time;
             yield return new WaitForSeconds(delayTime);
-            GameObject bossBullet = PoolManager.Release(delayBullet, track[i], Quaternion.identity);    
-            IEnumerator k = KillBullet(lastTime,bossBullet);
+            GameObject bossBullet = PoolManager.Release(delayBullet, track[i], Quaternion.identity);
+            IEnumerator k = KillBullet(lastTime, bossBullet);
             StartCoroutine(k);
         }
     }
@@ -250,12 +250,13 @@ public class BossFSM_1 : BossFSM,IGetHurt
 
         Vector2 playerPos = new Vector2(Player.transform.position.x, Player.transform.position.y);
         Vector2 dir = (Player.transform.position - this.transform.position);
-        this.transform.DOMove(new Vector3(dir.x, dir.y, 0), 2f).SetEase(Ease.OutCubic).OnComplete(() =>{
-            GameObject bossBullet = PoolManager.Release(mucusPool, playerPos-dir, Quaternion.identity);
+        this.transform.DOMove(new Vector3(dir.x, dir.y, 0), 2f).SetEase(Ease.OutCubic).OnComplete(() =>
+        {
+            GameObject bossBullet = PoolManager.Release(mucusPool, playerPos - dir, Quaternion.identity);
             IEnumerator killBullet = KillBullet(mucusPoolLastTime, bossBullet);
             StartCoroutine(killBullet);
 
-        }) ;
+        });
     }
 
     //向主角吐出粘液球，粘液球越飞越慢，当粘液球速度为0时销毁，向角色发射5题小散弹
@@ -268,8 +269,8 @@ public class BossFSM_1 : BossFSM,IGetHurt
 
         Vector2 dir = (Player.transform.position - this.transform.position);
         GameObject bossBullet = PoolManager.Release(mucusBall, transform.position, Quaternion.identity);
-        bossBullet.GetComponent<Bullet>().SetDirection(dir/10);  
-        IEnumerator slowDownBullet = MucusBallExplode(bossBullet, startValue, delayTime, deduceValue,dir);
+        bossBullet.GetComponent<Bullet>().SetDirection(dir / 10);
+        IEnumerator slowDownBullet = MucusBallExplode(bossBullet, startValue, delayTime, deduceValue, dir);
         StartCoroutine(slowDownBullet);
     }
 
@@ -281,7 +282,7 @@ public class BossFSM_1 : BossFSM,IGetHurt
     /// <param name="delayTime">每次减速所需时间</param>
     /// <param name="deduceValue">每次减速的数值</param>
     /// <returns></returns>
-    IEnumerator MucusBallExplode(GameObject bullet,float startValue,float delayTime,float deduceValue,Vector2 dir)
+    IEnumerator MucusBallExplode(GameObject bullet, float startValue, float delayTime, float deduceValue, Vector2 dir)
     {
         float value = startValue;
         while (value >= 0)
@@ -297,15 +298,15 @@ public class BossFSM_1 : BossFSM,IGetHurt
         {
             GameObject bossBullet = PoolManager.Release(explodeMucusBall, explodePos, Quaternion.identity);
             bossBullet.GetComponent<Bullet>().SetSpeed(1f);
-            bossBullet.GetComponent<Bullet>().SetDirection(playerPos-explodePos);
+            bossBullet.GetComponent<Bullet>().SetDirection(playerPos - explodePos);
             Quaternion q = Quaternion.AngleAxis(-60 + i * 30, Vector3.forward);
-            
+
             Vector2 newDir = q * dir;
-            bossBullet.GetComponent<Bullet>().SetDirection(playerPos - explodePos+newDir);
-            
+            bossBullet.GetComponent<Bullet>().SetDirection(playerPos - explodePos + newDir);
+
 
         }
-        
+
     }
 
     //在场内吐出小滚石怪n只
@@ -314,7 +315,7 @@ public class BossFSM_1 : BossFSM,IGetHurt
         int stoneMobCount = 5;
         for (int i = 0; i < stoneMobCount; i++)
         {
-            GameObject stone= PoolManager.Release(stoneMob, transform.position, Quaternion.identity);
+            GameObject stone = PoolManager.Release(stoneMob, transform.position, Quaternion.identity);
         }
     }
 
@@ -328,7 +329,7 @@ public class BossFSM_1 : BossFSM,IGetHurt
         Vector2 dir2 = (Player.transform.position - this.transform.position);
 
         for (int i = 0; i < time; i++)
-        {       
+        {
             GameObject bossBullet = PoolManager.Release(bullet, transform.position, Quaternion.identity);
             bossBullet.GetComponent<Bullet>().SetDirection(dir2);
             bossBullet.GetComponent<Bullet>().SetSpeed(10f);
@@ -367,5 +368,5 @@ public class BossFSM_1 : BossFSM,IGetHurt
     {
         UIManager.Instance.GetUI<BossHpItemUI>("BossHpItemUI").ChangeHpValue(-10);
     }
-    
+
 }

@@ -14,8 +14,7 @@ public class RoomManager : Singleton<RoomManager>
     [Header("房间属性")]
     public GameObject roomPrefab;//房间种类
     public Vector2 offset;//房间的x y大小
-    
-    [HideInInspector]
+    [Header("当前房间")]
     public BasicRoom currentRoom;
     [HideInInspector]
     public PlayerTest player;
@@ -45,7 +44,7 @@ public class RoomManager : Singleton<RoomManager>
 
     private void Update()
     {
-        if (this.currentRoom.EnemyNum == 0)
+        if (this.currentRoom.EnemyNum <= 0)
         {
             this.currentRoom.isCleared = true;
         }

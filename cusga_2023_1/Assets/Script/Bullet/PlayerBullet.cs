@@ -27,13 +27,18 @@ public class PlayerBullet : Bullet
 
     protected override void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("EnemyOrBoss"))
+        if (other.CompareTag("Enemy"))
         {
-            Debug.Log(damage);
-            other.gameObject.GetComponent<CharacterInfo>()
-                .TakeDamage(damage, other.gameObject.GetComponent<CharacterInfo>());
+            other.gameObject.GetComponent<CharacterInfo>().TakeDamage(damage, other.gameObject.GetComponent<CharacterInfo>());
+            other.gameObject.GetComponent<EnemyFSM>().GetHit();
             this.gameObject.SetActive(false);
-        }else if (other.CompareTag("Ground")||other.CompareTag("Patrol"))
+        }
+        else if (other.CompareTag("Boss"))
+        {
+            other.gameObject.GetComponent<CharacterInfo>().TakeDamage(damage, other.gameObject.GetComponent<CharacterInfo>());
+            this.gameObject.SetActive(false);
+        }
+        else if (other.CompareTag("Ground")||other.CompareTag("Patrol"))
         {
             this.gameObject.SetActive(false);
         }

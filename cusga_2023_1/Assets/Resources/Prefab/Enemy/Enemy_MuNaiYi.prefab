@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 5777438264688838054}
   m_Layer: 7
   m_Name: Enemy_MuNaiYi
-  m_TagString: EnemyOrBoss
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,6 +239,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   enemyInfo: {fileID: 0}
   agent: {fileID: 0}
+  spriteRenderer: {fileID: 0}
   getHit: 0
   Player: {fileID: 0}
   attackPoint: {fileID: 5777438263802380251}

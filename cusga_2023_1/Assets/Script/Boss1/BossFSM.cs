@@ -39,13 +39,11 @@ public class BossFSM : MonoBehaviour
     {
         states = new Dictionary<BossStateType, IState>();
         Player = FindObjectOfType<PlayerTest>().gameObject;
-
         awakePos = transform.position;
     }
     private void FixedUpdate()
     {
         currentState.OnUpdate();
-
     }
     public void TransformState(BossStateType type)
     {
@@ -71,4 +69,9 @@ public class BossFSM : MonoBehaviour
             this.transform.localScale = new Vector3(-1, 1, 1);
         }
     }
+    public void BossGetHurt()
+    {
+        UIManager.Instance.GetUI<BossHpItemUI>("BossHpItemUI").ChangeHpValue(-10);
+    }
+
 }

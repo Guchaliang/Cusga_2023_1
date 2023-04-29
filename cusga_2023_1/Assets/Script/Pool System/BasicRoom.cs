@@ -22,7 +22,8 @@ public class BasicRoom : MonoBehaviour
     public bool isCleared;//玩家是否清理空怪物
     public RoomType roomType;//当前房间的类型
     public Vector2 coordinate;//坐标
-    [HideInInspector]public int EnemyNum;
+    [Header("房间怪物数量")]
+    public int EnemyNum = 0;
     private RoomLayout roomLayout;
 
     public int activeDoorNum

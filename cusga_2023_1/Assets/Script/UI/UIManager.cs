@@ -218,18 +218,12 @@ public class UIManager : Singleton<UIManager>
         });
         MonoBehaviour.Destroy(obj, 2);
     }
-
-
-
-
-
-
     public void BiggerAndReturn(GameObject gameObject, Vector3 initScale)
     {
         gameObject.transform.DOScale(new Vector3(initScale.x * 1.5f, initScale.y * 1.5f, initScale.z * 1.5f), 0.2f).OnComplete(() =>
         {
             gameObject.transform.DOScale(new Vector3(initScale.x, initScale.y, initScale.z), 0.2f);
         });
-
     }
+
 }

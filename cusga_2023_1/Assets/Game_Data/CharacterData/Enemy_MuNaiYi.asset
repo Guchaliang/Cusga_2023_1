@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c5fd29a4acb4542a4ef68689041952, type: 3}
   m_Name: Enemy_MuNaiYi
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
+  maxHealth: 2
+  currentHealth: -1400
   Defence: 100
   currentDefence: 100
   dashSpeed: 2
@@ -29,8 +29,8 @@ MonoBehaviour:
   boss_award: 2
   protect: 0
   defence: 0
-  attackRange: 4
+  attackRange: 1
   findRange: 5
-  damage: 1
+  damage: 5
   CoolDown: 0
   SkillCollDown: 0

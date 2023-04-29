@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using PolyNav;
 using UnityEngine;
 using UnityEngine.Windows;
@@ -15,6 +16,7 @@ public class EnemyFSM : MonoBehaviour
     [HideInInspector] public Animator animator;
     [HideInInspector] public CharacterInfo enemyInfo;
     [HideInInspector] public PolyNavAgent agent;
+    [HideInInspector] public SpriteRenderer spriteRenderer;
     [HideInInspector] public bool getHit; 
     [HideInInspector] public GameObject Player;//直接获得，不后期获得了,后期放到OnEnable
     public Transform attackPoint;
@@ -24,6 +26,7 @@ public class EnemyFSM : MonoBehaviour
     public float patrolMaxTime;
     public float patrolMinTime;
     public Vector2 awakePos;
+    public Vector3 initScale;
     [HideInInspector] public Vector2 targetPos;
     
     private void Awake()
@@ -31,9 +34,11 @@ public class EnemyFSM : MonoBehaviour
         animator = GetComponent<Animator>();
         enemyInfo = GetComponent<CharacterInfo>();
         agent = GetComponent<PolyNavAgent>();
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
         states = new Dictionary<StateType, IState>();
-        
+        initScale = GetComponent<Transform>().localScale;
+
+
         states.Add(StateType.Idle, new EnemyState(this));
         states.Add(StateType.Patrol, new PatrolState(this));
         states.Add(StateType.Chase,new ChaseState(this));
@@ -112,18 +117,39 @@ public class EnemyFSM : MonoBehaviour
         if (target&&target.CompareTag("Player"))
         {
             enemyInfo.TakeDamage(enemyInfo,target.gameObject.GetComponent<CharacterInfo>());
-            Debug.Log(target.gameObject.GetComponent<CharacterInfo>().currentHealth);
+            //Debug.Log(target.gameObject.name+"血量为"+target.gameObject.GetComponent<CharacterInfo>().currentHealth);
         }
     }
 
-    
     protected void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.CompareTag("Player"))
         {
-            enemyInfo.TakeDamage(1,other.gameObject.GetComponent<CharacterInfo>());
+            enemyInfo.TakeDamage(this.gameObject.GetComponent<CharacterInfo>(),other.gameObject.GetComponent<CharacterInfo>());
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
-
     }
+
+    public void GetHit()
+    {
+        IEnumerator hit = HitColor();
+        StartCoroutine(hit);
+        BiggerAndReturn(this.gameObject, initScale);
+    }
+
+    IEnumerator HitColor()
+    {
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.2f);
+        spriteRenderer.color = Color.white;
+    }
+
+    public void BiggerAndReturn(GameObject gameObject, Vector3 initScale)
+    {
+        gameObject.transform.DOScale(new Vector3(initScale.x * 1.5f, initScale.y * 1.5f, initScale.z * 1.5f), 0.2f).OnComplete(() =>
+        {
+            gameObject.transform.DOScale(new Vector3(initScale.x, initScale.y, initScale.z), 0.2f);
+        });
+    }
+
 }

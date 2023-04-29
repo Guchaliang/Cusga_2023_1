@@ -31,6 +31,8 @@ public class BagUI : UIBase
 
     private void OnUnloadBtn(GameObject arg1, PointerEventData arg2)
     {
+        if (!curItem)
+            return;
         equip.GetComponent<destroyEquipment>().bagList_sub(curItem.itemName);
         GameObject newObj= GameObject.Find(curItem.itemName);
         Destroy(newObj);
@@ -60,5 +62,10 @@ public class BagUI : UIBase
         newitem.slotItem = item;
         newitem.slotImage.sprite = item.itemImage;
         newitem.name = item.itemName;
+    }
+
+    public void UpdateAttribute()
+    {
+
     }
 }

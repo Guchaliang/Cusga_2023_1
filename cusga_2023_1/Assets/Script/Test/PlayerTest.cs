@@ -25,17 +25,25 @@ public class PlayerTest : MonoBehaviour
 
     //动画相关
     private Animator anim;
+    private SpriteRenderer spriteRenderer;
+
     [HideInInspector] public bool isAttacked;
     [HideInInspector] public bool isSkilled;
     [HideInInspector] public bool isDead;
     [HideInInspector] public bool isGetHit;
 
+    //原始尺寸
+    public Vector3 initScale;
+
+    
     [SerializeField] 
     public float moveSpeed;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        initScale = GetComponent<Transform>().localScale;
         canAct = true;
     }
 
@@ -130,6 +138,20 @@ public class PlayerTest : MonoBehaviour
         isSkilled = false;
     }
 
+    public void PlayerGetHit()
+    {
+        UIManager.Instance.BiggerAndReturn(this.gameObject, initScale);
+        IEnumerator hit = HitColor();
+        StartCoroutine(hit);
+        CameraControll.Instance.CallShake();
+    }
+
+    IEnumerator HitColor()
+    {
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.2f);
+        spriteRenderer.color = Color.white;
+    }
     public void SwitchAttackAnim()
     {
         if (timer != 0)
